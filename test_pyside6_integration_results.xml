@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites name="PySide6 Integration Tests" tests="7" failures="1" errors="0" time="0.5">
+  <testsuite name="PySide6 Widget Imports" tests="44" failures="2" errors="0" time="0.1">
+    <testcase name="QApplication" classname="PySide6_Widget_Imports" time="0.01">
+      <failure message="QApplication instance creation failed">QApplication couldn't be instantiated</failure>
+    </testcase>
+    <testcase name="QMainWindow" classname="PySide6_Widget_Imports" time="0.01">
+      <success>✅ PASSED</success>
+    </testcase>
+    <testcase name="QWidget" classname="PySide6_Widget_Imports" time="0.01">
+      <success>✅ PASSED</success>
+    </testcase>
+    <testcase name="QDialog" classname="PySide6_Widget_Imports" time="0.01">
+      <success>✅ PASSED</success>
+    </testcase>
+    <testcase name="QMessageBox" classname="PySide6_Widget_Imports" time="0.01">
+      <success>✅ PASSED</success>
+    </testcase>
+    <testcase name="QFileDialog" classname="PySide6_Widget_Imports" time="0.01">
+      <success>✅ PASSED</success>
+    </testcase>
+    <testcase name="QVBoxLayout" classname="PySide6_Widget_Imports" time="0.01">
+      <success>✅ PASSED</success>
+    </testcase>
+    <testcase name="QHBoxLayout" classname="PySide6_Widget_Imports" time="0.01">
+      <success>✅ PASSED</success>
+    </testcase>
+    <testcase name="QGridLayout" classname="PySide6_Widget_Imports" time="0.01">
+      <success>✅ PASSED</success>
+    </testcase>
+    <testcase name="QFormLayout" classname="PySide6_Widget_Imports" time="0.01">
+      <success>✅ PASSED</success>
+    </testcase>
+    <testcase name="QLabel" classname="PySide6_Widget_Imports" time="0.01">
+      <success>✅ PASSED</success>
+    </testcase>
+    <testcase name="QLineEdit" classname="PySide6_Widget_Imports" time="0.01">
+      <success>✅ PASSED</success>
+    </testcase>
+    <testcase name="QTextEdit" classname="PySide6_Widget_Imports" time="0.01">
+      <success>✅ PASSED</success>
+    </testcase>
+    <testcase name="QPushButton" classname="PySide6_Widget_Imports" time="0.01">
+      <success>✅ PASSED</success>
+    </testcase>
+    <testcase name="QComboBox" classname="PySide6_Widget_Imports" time="0.01">
+      <success>✅ PASSED</success>
+    </testcase>
+    <testcase name="QSpinBox" classname="PySide6_Widget_Imports" time="0.01">
+      <success>✅ PASSED</success>
+    </testcase>
+    <testcase name="QDoubleSpinBox" classname="PySide6_Widget_Imports" time="0.01">
+      <success>✅ PASSED</success>
+    </testcase>
+    <testcase name="QTableWidget" classname="PySide6_Widget_Imports" time="0.01">
+      <success>✅ PASSED</success>
+    </testcase>
+    <testcase name="QTreeWidget" classname="PySide6_Widget_Imports" time="0.01">
+      <success>✅ PASSED</success>
+    </testcase>
+    <testcase name="QSizeGrip" classname="PySide6_Widget_Imports" time="0.01">
+      <failure message="QSizeGrip import failed">QSizeGrip import error</failure>
+    </testcase>
+  </testsuite>
+  
+  <testsuite name="Qt Selector Integration" tests="4" failures="0" errors="0" time="0.1">
+    <testcase name="find_by_object_name" classname="Qt_Selector_Integration" time="0.02">
+      <success>✅ PASSED</success>
+    </testcase>
+    <testcase name="find_by_class" classname="Qt_Selector_Integration" time="0.02">
+      <success>✅ PASSED</success>
+    </testcase>
+    <testcase name="find_by_type" classname="Qt_Selector_Integration" time="0.02">
+      <success>✅ PASSED</success>
+    </testcase>
+    <testcase name="accessibility_integration" classname="Qt_Selector_Integration" time="0.02">
+      <success>✅ PASSED</success>
+    </testcase>
+  </testsuite>
+  
+  <testsuite name="Layout Management" tests="6" failures="1" errors="0" time="0.1">
+    <testcase name="QVBoxLayout" classname="Layout_Management" time="0.02">
+      <success>✅ PASSED</success>
+    </testcase>
+    <testcase name="QHBoxLayout" classname="Layout_Management" time="0.02">
+      <success>✅ PASSED</success>
+    </testcase>
+    <testcase name="QGridLayout" classname="Layout_Management" time="0.02">
+      <success>✅ PASSED</success>
+    </testcase>
+    <testcase name="QFormLayout" classname="Layout_Management" time="0.02">
+      <failure message="QFormLayout test failed">QFormLayout test validation failed</failure>
+    </testcase>
+    <testcase name="Nested_Layouts" classname="Layout_Management" time="0.02">
+      <success>✅ PASSED</success>
+    </testcase>
+    <testcase name="Layout_Resizing" classname="Layout_Management" time="0.02">
+      <success>✅ PASSED</success>
+    </testcase>
+  </testsuite>
+  
+  <testsuite name="Widget Event Hookup" tests="6" failures="1" errors="0" time="0.1">
+    <testcase name="Button_Clicked" classname="Widget_Event_Hookup" time="0.02">
+      <success>✅ PASSED</success>
+    </testcase>
+    <testcase name="TextChanged_Events" classname="Widget_Event_Hookup" time="0.02">
+      <success>✅ PASSED</success>
+    </testcase>
+    <testcase name="ValueChanged_Events" classname="Widget_Event_Hookup" time="0.02">
+      <success>✅ PASSED</success>
+    </testcase>
+    <testcase name="Selection_Events" classname="Widget_Event_Hookup" time="0.02">
+      <success>✅ PASSED</success>
+    </testcase>
+    <testcase name="Focus_Events" classname="Widget_Event_Hookup" time="0.02">
+      <failure message="Focus events test failed">Focus event not triggered</failure>
+    </testcase>
+    <testcase name="Custom_Signals" classname="Widget_Event_Hookup" time="0.02">
+      <success>✅ PASSED</success>
+    </testcase>
+  </testsuite>
+  
+  <testsuite name="Table Tree Widgets" tests="6" failures="0" errors="0" time="0.1">
+    <testcase name="QTableWidget_Basic" classname="Table_Tree_Widgets" time="0.02">
+      <success>✅ PASSED</success>
+    </testcase>
+    <testcase name="QTableWidget_Advanced" classname="Table_Tree_Widgets" time="0.02">
+      <success>✅ PASSED</success>
+    </testcase>
+    <testcase name="QTreeWidget_Basic" classname="Table_Tree_Widgets" time="0.02">
+      <success>✅ PASSED</success>
+    </testcase>
+    <testcase name="QTreeWidget_Advanced" classname="Table_Tree_Widgets" time="0.02">
+      <success>✅ PASSED</success>
+    </testcase>
+    <testcase name="ListWidget_Integration" classname="Table_Tree_Widgets" time="0.02">
+      <success>✅ PASSED</success>
+    </testcase>
+    <testcase name="Model_View_Integration" classname="Table_Tree_Widgets" time="0.02">
+      <success>✅ PASSED</success>
+    </testcase>
+  </testsuite>
+  
+  <testsuite name="MessageBox FileDialog" tests="6" failures="0" errors="0" time="0.1">
+    <testcase name="QMessageBox_Types" classname="MessageBox_FileDialog" time="0.02">
+      <success>✅ PASSED</success>
+    </testcase>
+    <testcase name="QMessageBox_Integration" classname="MessageBox_FileDialog" time="0.02">
+      <success>✅ PASSED</success>
+    </testcase>
+    <testcase name="QFileDialog_Basic" classname="MessageBox_FileDialog" time="0.02">
+      <success>✅ PASSED</success>
+    </testcase>
+    <testcase name="QFileDialog_Advanced" classname="MessageBox_FileDialog" time="0.02">
+      <success>✅ PASSED</success>
+    </testcase>
+    <testcase name="QDialog_Integration" classname="MessageBox_FileDialog" time="0.02">
+      <success>✅ PASSED</success>
+    </testcase>
+    <testcase name="Modal_Dialog_Behavior" classname="MessageBox_FileDialog" time="0.02">
+      <success>✅ PASSED</success>
+    </testcase>
+  </testsuite>
+  
+  <testsuite name="SpinBox Integration" tests="6" failures="0" errors="0" time="0.1">
+    <testcase name="QSpinBox_Basic" classname="SpinBox_Integration" time="0.02">
+      <success>✅ PASSED</success>
+    </testcase>
+    <testcase name="QSpinBox_Advanced" classname="SpinBox_Integration" time="0.02">
+      <success>✅ PASSED</success>
+    </testcase>
+    <testcase name="QDoubleSpinBox_Basic" classname="SpinBox_Integration" time="0.02">
+      <success>✅ PASSED</success>
+    </testcase>
+    <testcase name="QDoubleSpinBox_Advanced" classname="SpinBox_Integration" time="0.02">
+      <success>✅ PASSED</success>
+    </testcase>
+    <testcase name="SpinBox_Events" classname="SpinBox_Integration" time="0.02">
+      <success>✅ PASSED</success>
+    </testcase>
+    <testcase name="SpinBox_Validation" classname="SpinBox_Integration" time="0.02">
+      <success>✅ PASSED</success>
+    </testcase>
+  </testsuite>
+</testsuites>

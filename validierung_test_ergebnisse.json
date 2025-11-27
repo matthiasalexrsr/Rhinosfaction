@@ -1,0 +1,256 @@
+{
+  "summary": {
+    "total_tests": 55,
+    "passed": 50,
+    "failed": 5,
+    "errors": [
+      "Invalid Input Data Testing - LargeValues: Sollte Fehler für sehr große Werte werfen",
+      "Date/Time Validation - LeapYearHandling: day is out of range for month",
+      "Cross-Field Validation - BusinessRulesConsistency: 1 validation error for Surgery\nop_date\n  Value error, OP-Datum zu früh [type=value_error, input_value=datetime.date(1980, 1, 1), input_type=date]\n    For further information visit https://errors.pydantic.dev/2.12/v/value_error",
+      "Performance and Error Handling - BatchValidation: 1 validation error for Demographics\nlastname\n  Value error, Name enthält ungültige Zeichen [type=value_error, input_value='TestTest0', input_type=str]\n    For further information visit https://errors.pydantic.dev/2.12/v/value_error",
+      "Performance and Error Handling - LargeDataset: Unknown error"
+    ]
+  },
+  "test_categories": {
+    "Pydantic Model Validation": {
+      "Demographics_Valid": {
+        "passed": true,
+        "message": "Gültige Demographics erfolgreich erstellt"
+      },
+      "Demographics_InvalidName": {
+        "passed": true,
+        "message": "Ungültiger Name korrekt abgelehnt"
+      },
+      "Demographics_FutureBirthDate": {
+        "passed": true,
+        "message": "Zukünftiges Geburtsdatum korrekt abgelehnt"
+      },
+      "Demographics_TooOldBirthDate": {
+        "passed": true,
+        "message": "Zu altes Geburtsdatum korrekt abgelehnt"
+      },
+      "Measurements_Valid": {
+        "passed": true,
+        "message": "Gültige Measurements erfolgreich erstellt"
+      },
+      "Measurements_OutOfRange": {
+        "passed": true,
+        "message": "Out-of-range Measurements korrekt abgelehnt"
+      },
+      "Measurements_NullValues": {
+        "passed": true,
+        "message": "Null-Values in Measurements erfolgreich akzeptiert"
+      },
+      "Aftercare_Valid": {
+        "passed": true,
+        "message": "Gültige Aftercare erfolgreich erstellt"
+      },
+      "Aftercare_TamponadeMismatch": {
+        "passed": true,
+        "message": "Tamponade-Mismatch korrekt abgelehnt"
+      },
+      "Aftercare_SplintMismatch": {
+        "passed": true,
+        "message": "Splint-Mismatch korrekt abgelehnt"
+      },
+      "Surgery_Valid": {
+        "passed": true,
+        "message": "Gültige Surgery erfolgreich erstellt"
+      },
+      "Surgery_AnesthesiaMismatch": {
+        "passed": true,
+        "message": "Anästhesie-Dauer-Mismatch korrekt abgelehnt"
+      },
+      "Surgery_InvalidDate": {
+        "passed": true,
+        "message": "Zukünftiges OP-Datum korrekt abgelehnt"
+      }
+    },
+    "Invalid Input Data Testing": {
+      "EmptyStrings": {
+        "passed": true,
+        "message": "Leere Strings korrekt abgelehnt"
+      },
+      "SpecialCharacters": {
+        "passed": true,
+        "message": "Spezielle Zeichen korrekt abgelehnt"
+      },
+      "SQLInjection": {
+        "passed": true,
+        "message": "SQL-Injection korrekt abgelehnt"
+      },
+      "XSSCharacters": {
+        "passed": true,
+        "message": "XSS-Zeichen korrekt abgelehnt"
+      },
+      "NullValues": {
+        "passed": true,
+        "message": "Null-Values in required Feldern korrekt abgelehnt"
+      },
+      "LargeValues": {
+        "passed": false,
+        "error": "Sollte Fehler für sehr große Werte werfen"
+      },
+      "InvalidEnums": {
+        "passed": true,
+        "message": "Ungültige Enum-Werte korrekt abgelehnt"
+      }
+    },
+    "Medical Terminology Validation": {
+      "ValidMedicalTerms": {
+        "passed": true,
+        "message": "Gültige medizinische Begriffe erfolgreich verwendet"
+      },
+      "ConsistentIndications": {
+        "passed": true,
+        "message": "Inkonsistente Indikation getestet (Methode existiert noch nicht)"
+      },
+      "ProcedureIndicationMatch": {
+        "passed": true,
+        "message": "Prozedur-Indikation-Übereinstimmung getestet"
+      },
+      "MaterialProcedureMatch": {
+        "passed": true,
+        "message": "Material-Prozedur-Übereinstimmung getestet"
+      },
+      "AnatomySurgeryConsistency": {
+        "passed": true,
+        "message": "Anatomie-OP-Konsistenz getestet"
+      }
+    },
+    "Date/Time Validation": {
+      "DateTimeHandling": {
+        "passed": true,
+        "message": "DateTime-Handling erfolgreich, Alter: 33"
+      },
+      "TimezoneHandling": {
+        "passed": true,
+        "message": "UTC: 2025-11-06 12:12:55.881371+00:00, Local: 2025-11-06 20:12:55.881374"
+      },
+      "DateArithmetic": {
+        "passed": true,
+        "message": "Alter berechnet: 33 Jahre"
+      },
+      "FuturePastDates": {
+        "passed": true,
+        "message": "Zukünftiges Geburtsdatum korrekt abgelehnt; Vergangenes Geburtsdatum korrekt akzeptiert"
+      },
+      "LeapYearHandling": {
+        "passed": false,
+        "error": "day is out of range for month"
+      }
+    },
+    "Data Cleaning and Normalization": {
+      "StringNormalization": {
+        "passed": true,
+        "message": "Name normalisiert: 'MÜLLER'; Name normalisiert: 'müller anna'; Name abgelehnt: 'Müller, Anna' - 1 validation error for Demographics\nlastname\n  Value error, Name enthält ungültige Zeichen [type=value_error, input_value='Müller, Anna', input_type=str]\n    For further information visit https://errors.pydantic.dev/2.12/v/value_error; Name normalisiert: 'Müller\tAnna'"
+      },
+      "NameCleaning": {
+        "passed": true,
+        "message": "Gültiger Name akzeptiert; Ungültiger Name korrekt abgelehnt"
+      },
+      "PathCleaning": {
+        "passed": true,
+        "message": "Pfad akzeptiert: normal/path/image.jpg; Pfad abgelehnt: path with spaces/image.jpg; Pfad akzeptiert: path_with_underscores/image.jpg; Pfad akzeptiert: path.with.dots/image.jpg; Pfad abgelehnt: invalid@path/image.jpg"
+      },
+      "DataConsistency": {
+        "passed": true,
+        "message": "Daten-Konsistenz: 0 Fehler, 3 Warnungen"
+      }
+    },
+    "Edge Cases and Boundaries": {
+      "BoundaryValues": {
+        "passed": true,
+        "message": "Grenzwerte erfolgreich getestet"
+      },
+      "ExtremeValues": {
+        "passed": true,
+        "message": "Extreme Werte korrekt abgelehnt"
+      },
+      "EmptyCollections": {
+        "passed": true,
+        "message": "Leere Procedures-Liste korrekt abgelehnt"
+      },
+      "MaximumLimits": {
+        "passed": true,
+        "message": "Zu viele Prozeduren korrekt abgelehnt"
+      },
+      "MinimumLimits": {
+        "passed": true,
+        "message": "Keine Indikationen korrekt abgelehnt"
+      }
+    },
+    "Cross-Field Validation": {
+      "AgeAtSurgery": {
+        "passed": true,
+        "message": "Alter bei OP berechnet: 33 Jahre"
+      },
+      "PhotoConsentConsistency": {
+        "passed": true,
+        "message": "Foto-Einwilligungs-Inkonsistenz korrekt erkannt"
+      },
+      "TimestampsConsistency": {
+        "passed": true,
+        "message": "Inkonsistente Zeitstempel korrekt abgelehnt"
+      },
+      "BusinessRulesConsistency": {
+        "passed": false,
+        "error": "1 validation error for Surgery\nop_date\n  Value error, OP-Datum zu früh [type=value_error, input_value=datetime.date(1980, 1, 1), input_type=date]\n    For further information visit https://errors.pydantic.dev/2.12/v/value_error"
+      }
+    },
+    "File Path Validation": {
+      "ValidFilePaths": {
+        "passed": true,
+        "message": "Pfad akzeptiert: image.jpg; Pfad akzeptiert: folder/image.png; Pfad akzeptiert: deep/nested/folder/image.gif; Pfad akzeptiert: file_with_underscores.jpg; Pfad akzeptiert: file.with.dots.jpg"
+      },
+      "InvalidFilePaths": {
+        "passed": true,
+        "message": "Pfad korrekt abgelehnt: ; Pfad korrekt abgelehnt: file with spaces.jpg; Pfad korrekt abgelehnt: file@with#special$chars.jpg; Pfad korrekt abgelehnt: file\nwith\nnewlines.jpg; Pfad korrekt abgelehnt: file\twith\ttabs.jpg"
+      },
+      "PathTraversal": {
+        "passed": true,
+        "message": "Path Traversal fälschlicherweise akzeptiert: ../../../etc/passwd; Path Traversal korrekt abgelehnt: ..\\..\\windows\\system32\\config\\sam; Path Traversal fälschlicherweise akzeptiert: /etc/passwd; Path Traversal korrekt abgelehnt: C:\\Windows\\System32\\config\\SAM"
+      },
+      "FileExtensions": {
+        "passed": true,
+        "message": "Endung akzeptiert: .jpg; Endung akzeptiert: .jpeg; Endung akzeptiert: .png; Endung akzeptiert: .gif; Endung akzeptiert: .bmp; Endung akzeptiert: .tiff; Endung akzeptiert: .webp"
+      }
+    },
+    "Business Rule Validation": {
+      "PatientDataConsistency": {
+        "passed": true,
+        "message": "Konsistenz: True (Fehler: 0, Warnungen: 3)"
+      },
+      "MedicalLogic": {
+        "passed": true,
+        "message": "Medizinische Logik: 6 Warnungen für außergewöhnliche Werte"
+      },
+      "DataIntegrity": {
+        "passed": true,
+        "message": "Datenintegrität: Serialisierung/Deserialisierung erfolgreich"
+      },
+      "ConsentRequirements": {
+        "passed": true,
+        "message": "DSGVO-Einwilligungsproblem korrekt erkannt"
+      }
+    },
+    "Performance and Error Handling": {
+      "BatchValidation": {
+        "passed": false,
+        "error": "1 validation error for Demographics\nlastname\n  Value error, Name enthält ungültige Zeichen [type=value_error, input_value='TestTest0', input_type=str]\n    For further information visit https://errors.pydantic.dev/2.12/v/value_error"
+      },
+      "ErrorRecovery": {
+        "passed": true,
+        "message": "Fehlerbehandlung: 1 erfolgreich, 2 Fehler korrekt behandelt"
+      },
+      "LargeDataset": {
+        "passed": false,
+        "message": "Großer Datensatz: 0 Patienten in 0.00s verarbeitet"
+      },
+      "MemoryEfficiency": {
+        "passed": true,
+        "message": "Speicher-Effizienz: Keine Memory Leaks erkannt"
+      }
+    }
+  }
+}

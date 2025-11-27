@@ -1,0 +1,794 @@
+2025-11-06 20:56:26,834 - __main__ - INFO - Optimierte Testumgebung vorbereitet
+2025-11-06 20:56:26,835 - __main__ - INFO - === Thread-sicheres Patient-Management Test-Framework gestartet ===
+2025-11-06 20:56:26,835 - __main__ - INFO - Führe Test aus: test_patient_creation
+2025-11-06 20:56:26,835 - __main__ - ERROR - Fehler beim Erstellen des Test-Patienten PT_0001_2878ef6a: type object 'Gender' has no attribute 'F'
+2025-11-06 20:56:26,835 - __main__ - ERROR - Patient Creation fehlgeschlagen: type object 'Gender' has no attribute 'F'
+2025-11-06 20:56:26,935 - __main__ - INFO - Führe Test aus: test_batch_patient_creation
+2025-11-06 20:56:26,936 - __main__ - ERROR - Fehler beim Erstellen des Test-Patienten batch_pt_000: type object 'Gender' has no attribute 'F'
+2025-11-06 20:56:26,937 - __main__ - ERROR - Fehler beim Erstellen des Test-Patienten batch_pt_001: type object 'Gender' has no attribute 'F'
+2025-11-06 20:56:26,937 - __main__ - ERROR - Fehler beim Erstellen des Test-Patienten batch_pt_002: type object 'Gender' has no attribute 'F'
+2025-11-06 20:56:26,937 - __main__ - ERROR - Fehler beim Erstellen des Test-Patienten batch_pt_003: type object 'Gender' has no attribute 'F'
+2025-11-06 20:56:26,938 - __main__ - ERROR - Fehler beim Erstellen des Test-Patienten batch_pt_004: type object 'Gender' has no attribute 'F'
+2025-11-06 20:56:26,938 - __main__ - WARNING - Batch-Patient-Erstellung fehlgeschlagen: type object 'Gender' has no attribute 'F'
+2025-11-06 20:56:26,946 - __main__ - ERROR - Fehler beim Erstellen des Test-Patienten batch_pt_005: type object 'Gender' has no attribute 'F'
+2025-11-06 20:56:26,948 - __main__ - ERROR - Fehler beim Erstellen des Test-Patienten batch_pt_006: type object 'Gender' has no attribute 'F'
+2025-11-06 20:56:26,950 - __main__ - ERROR - Fehler beim Erstellen des Test-Patienten batch_pt_007: type object 'Gender' has no attribute 'F'
+2025-11-06 20:56:26,953 - __main__ - ERROR - Fehler beim Erstellen des Test-Patienten batch_pt_008: type object 'Gender' has no attribute 'F'
+2025-11-06 20:56:26,955 - __main__ - WARNING - Batch-Patient-Erstellung fehlgeschlagen: type object 'Gender' has no attribute 'F'
+2025-11-06 20:56:26,955 - __main__ - ERROR - Fehler beim Erstellen des Test-Patienten batch_pt_009: type object 'Gender' has no attribute 'F'
+2025-11-06 20:56:26,958 - __main__ - ERROR - Fehler beim Erstellen des Test-Patienten batch_pt_010: type object 'Gender' has no attribute 'F'
+2025-11-06 20:56:26,960 - __main__ - ERROR - Fehler beim Erstellen des Test-Patienten batch_pt_011: type object 'Gender' has no attribute 'F'
+2025-11-06 20:56:26,977 - __main__ - ERROR - Fehler beim Erstellen des Test-Patienten batch_pt_012: type object 'Gender' has no attribute 'F'
+2025-11-06 20:56:26,979 - __main__ - WARNING - Batch-Patient-Erstellung fehlgeschlagen: type object 'Gender' has no attribute 'F'
+2025-11-06 20:56:26,981 - __main__ - ERROR - Fehler beim Erstellen des Test-Patienten batch_pt_013: type object 'Gender' has no attribute 'F'
+2025-11-06 20:56:26,984 - __main__ - ERROR - Fehler beim Erstellen des Test-Patienten batch_pt_014: type object 'Gender' has no attribute 'F'
+2025-11-06 20:56:26,984 - __main__ - ERROR - Fehler beim Erstellen des Test-Patienten batch_pt_015: type object 'Gender' has no attribute 'F'
+2025-11-06 20:56:26,987 - __main__ - ERROR - Fehler beim Erstellen des Test-Patienten batch_pt_016: type object 'Gender' has no attribute 'F'
+2025-11-06 20:56:26,989 - __main__ - WARNING - Batch-Patient-Erstellung fehlgeschlagen: type object 'Gender' has no attribute 'F'
+2025-11-06 20:56:26,992 - __main__ - ERROR - Fehler beim Erstellen des Test-Patienten batch_pt_017: type object 'Gender' has no attribute 'F'
+2025-11-06 20:56:26,994 - __main__ - ERROR - Fehler beim Erstellen des Test-Patienten batch_pt_018: type object 'Gender' has no attribute 'F'
+2025-11-06 20:56:26,997 - __main__ - ERROR - Fehler beim Erstellen des Test-Patienten batch_pt_019: type object 'Gender' has no attribute 'F'
+2025-11-06 20:56:26,999 - __main__ - ERROR - Fehler beim Erstellen des Test-Patienten batch_pt_020: type object 'Gender' has no attribute 'F'
+2025-11-06 20:56:26,999 - __main__ - WARNING - Batch-Patient-Erstellung fehlgeschlagen: type object 'Gender' has no attribute 'F'
+2025-11-06 20:56:27,002 - __main__ - ERROR - Fehler beim Erstellen des Test-Patienten batch_pt_021: type object 'Gender' has no attribute 'F'
+2025-11-06 20:56:27,021 - __main__ - ERROR - Fehler beim Erstellen des Test-Patienten batch_pt_022: type object 'Gender' has no attribute 'F'
+2025-11-06 20:56:27,026 - __main__ - ERROR - Fehler beim Erstellen des Test-Patienten batch_pt_023: type object 'Gender' has no attribute 'F'
+2025-11-06 20:56:27,029 - __main__ - ERROR - Fehler beim Erstellen des Test-Patienten batch_pt_024: type object 'Gender' has no attribute 'F'
+2025-11-06 20:56:27,031 - __main__ - WARNING - Batch-Patient-Erstellung fehlgeschlagen: type object 'Gender' has no attribute 'F'
+2025-11-06 20:56:27,038 - __main__ - WARNING - Batch-Patient-Erstellung fehlgeschlagen: type object 'Gender' has no attribute 'F'
+2025-11-06 20:56:27,040 - __main__ - WARNING - Batch-Patient-Erstellung fehlgeschlagen: type object 'Gender' has no attribute 'F'
+2025-11-06 20:56:27,042 - __main__ - WARNING - Batch-Patient-Erstellung fehlgeschlagen: type object 'Gender' has no attribute 'F'
+2025-11-06 20:56:27,044 - __main__ - WARNING - Batch-Patient-Erstellung fehlgeschlagen: type object 'Gender' has no attribute 'F'
+2025-11-06 20:56:27,047 - __main__ - WARNING - Batch-Patient-Erstellung fehlgeschlagen: type object 'Gender' has no attribute 'F'
+2025-11-06 20:56:27,047 - __main__ - WARNING - Batch-Patient-Erstellung fehlgeschlagen: type object 'Gender' has no attribute 'F'
+2025-11-06 20:56:27,047 - __main__ - WARNING - Batch-Patient-Erstellung fehlgeschlagen: type object 'Gender' has no attribute 'F'
+2025-11-06 20:56:27,047 - __main__ - WARNING - Batch-Patient-Erstellung fehlgeschlagen: type object 'Gender' has no attribute 'F'
+2025-11-06 20:56:27,047 - __main__ - WARNING - Batch-Patient-Erstellung fehlgeschlagen: type object 'Gender' has no attribute 'F'
+2025-11-06 20:56:27,047 - __main__ - WARNING - Batch-Patient-Erstellung fehlgeschlagen: type object 'Gender' has no attribute 'F'
+2025-11-06 20:56:27,047 - __main__ - WARNING - Batch-Patient-Erstellung fehlgeschlagen: type object 'Gender' has no attribute 'F'
+2025-11-06 20:56:27,047 - __main__ - WARNING - Batch-Patient-Erstellung fehlgeschlagen: type object 'Gender' has no attribute 'F'
+2025-11-06 20:56:27,049 - __main__ - WARNING - Batch-Patient-Erstellung fehlgeschlagen: type object 'Gender' has no attribute 'F'
+2025-11-06 20:56:27,051 - __main__ - WARNING - Batch-Patient-Erstellung fehlgeschlagen: type object 'Gender' has no attribute 'F'
+2025-11-06 20:56:27,058 - __main__ - WARNING - Batch-Patient-Erstellung fehlgeschlagen: type object 'Gender' has no attribute 'F'
+2025-11-06 20:56:27,060 - __main__ - WARNING - Batch-Patient-Erstellung fehlgeschlagen: type object 'Gender' has no attribute 'F'
+2025-11-06 20:56:27,062 - __main__ - WARNING - Batch-Patient-Erstellung fehlgeschlagen: type object 'Gender' has no attribute 'F'
+2025-11-06 20:56:27,065 - __main__ - WARNING - Batch-Patient-Erstellung fehlgeschlagen: type object 'Gender' has no attribute 'F'
+2025-11-06 20:56:27,065 - __main__ - WARNING - Batch-Patient-Erstellung fehlgeschlagen: type object 'Gender' has no attribute 'F'
+2025-11-06 20:56:27,065 - __main__ - ERROR - Batch Patient Creation fehlgeschlagen: Erwartet: 25 Patienten, erhalten: 0
+2025-11-06 20:56:27,167 - __main__ - INFO - Führe Test aus: test_crud_operations
+2025-11-06 20:56:27,167 - __main__ - ERROR - Fehler beim Erstellen des Test-Patienten PT_0002_eb7bf73e: type object 'Gender' has no attribute 'F'
+2025-11-06 20:56:27,168 - __main__ - ERROR - CRUD Operations fehlgeschlagen: type object 'Gender' has no attribute 'F'
+2025-11-06 20:56:27,268 - __main__ - INFO - Führe Test aus: test_search_functionality
+2025-11-06 20:56:27,268 - __main__ - ERROR - Search Functionality fehlgeschlagen: PatientManager.__init__() got an unexpected keyword argument 'patients_dir'
+2025-11-06 20:56:27,368 - __main__ - INFO - Führe Test aus: test_performance_stress
+2025-11-06 20:56:27,368 - __main__ - ERROR - Fehler beim Erstellen des Test-Patienten stress_00_00: type object 'Gender' has no attribute 'F'
+2025-11-06 20:56:27,368 - __main__ - ERROR - Fehler beim Erstellen des Test-Patienten stress_01_00: type object 'Gender' has no attribute 'F'
+2025-11-06 20:56:27,368 - __main__ - ERROR - Fehler beim Erstellen des Test-Patienten stress_02_00: type object 'Gender' has no attribute 'F'
+2025-11-06 20:56:27,369 - __main__ - ERROR - Fehler beim Erstellen des Test-Patienten stress_03_00: type object 'Gender' has no attribute 'F'
+2025-11-06 20:56:27,372 - __main__ - ERROR - Stress-Operation 0 fehlgeschlagen: type object 'Gender' has no attribute 'F'
+2025-11-06 20:56:27,374 - __main__ - ERROR - Stress-Operation 1 fehlgeschlagen: type object 'Gender' has no attribute 'F'
+2025-11-06 20:56:27,376 - __main__ - ERROR - Stress-Operation 2 fehlgeschlagen: type object 'Gender' has no attribute 'F'
+2025-11-06 20:56:27,379 - __main__ - ERROR - Stress-Operation 3 fehlgeschlagen: type object 'Gender' has no attribute 'F'
+2025-11-06 20:56:27,382 - __main__ - ERROR - Fehler beim Erstellen des Test-Patienten stress_04_00: type object 'Gender' has no attribute 'F'
+2025-11-06 20:56:27,385 - __main__ - ERROR - Fehler beim Erstellen des Test-Patienten stress_05_00: type object 'Gender' has no attribute 'F'
+2025-11-06 20:56:27,385 - __main__ - ERROR - Fehler beim Erstellen des Test-Patienten stress_06_00: type object 'Gender' has no attribute 'F'
+2025-11-06 20:56:27,387 - __main__ - ERROR - Fehler beim Erstellen des Test-Patienten stress_07_00: type object 'Gender' has no attribute 'F'
+2025-11-06 20:56:27,390 - __main__ - ERROR - Stress-Operation 4 fehlgeschlagen: type object 'Gender' has no attribute 'F'
+2025-11-06 20:56:27,392 - __main__ - ERROR - Stress-Operation 5 fehlgeschlagen: type object 'Gender' has no attribute 'F'
+2025-11-06 20:56:27,395 - __main__ - ERROR - Stress-Operation 6 fehlgeschlagen: type object 'Gender' has no attribute 'F'
+2025-11-06 20:56:27,398 - __main__ - ERROR - Stress-Operation 7 fehlgeschlagen: type object 'Gender' has no attribute 'F'
+2025-11-06 20:56:27,400 - __main__ - ERROR - Fehler beim Erstellen des Test-Patienten stress_08_00: type object 'Gender' has no attribute 'F'
+2025-11-06 20:56:27,400 - __main__ - ERROR - Fehler beim Erstellen des Test-Patienten stress_09_00: type object 'Gender' has no attribute 'F'
+2025-11-06 20:56:27,403 - __main__ - ERROR - Fehler beim Erstellen des Test-Patienten stress_10_00: type object 'Gender' has no attribute 'F'
+2025-11-06 20:56:27,406 - __main__ - ERROR - Fehler beim Erstellen des Test-Patienten stress_11_00: type object 'Gender' has no attribute 'F'
+2025-11-06 20:56:27,408 - __main__ - ERROR - Stress-Operation 8 fehlgeschlagen: type object 'Gender' has no attribute 'F'
+2025-11-06 20:56:27,412 - __main__ - ERROR - Stress-Operation 9 fehlgeschlagen: type object 'Gender' has no attribute 'F'
+2025-11-06 20:56:27,415 - __main__ - ERROR - Stress-Operation 10 fehlgeschlagen: type object 'Gender' has no attribute 'F'
+2025-11-06 20:56:27,418 - __main__ - ERROR - Stress-Operation 11 fehlgeschlagen: type object 'Gender' has no attribute 'F'
+2025-11-06 20:56:27,420 - __main__ - ERROR - Fehler beim Erstellen des Test-Patienten stress_12_00: type object 'Gender' has no attribute 'F'
+2025-11-06 20:56:27,423 - __main__ - ERROR - Fehler beim Erstellen des Test-Patienten stress_13_00: type object 'Gender' has no attribute 'F'
+2025-11-06 20:56:27,428 - __main__ - ERROR - Fehler beim Erstellen des Test-Patienten stress_14_00: type object 'Gender' has no attribute 'F'
+2025-11-06 20:56:27,430 - __main__ - ERROR - Fehler beim Erstellen des Test-Patienten stress_15_00: type object 'Gender' has no attribute 'F'
+2025-11-06 20:56:27,430 - __main__ - ERROR - Stress-Operation 12 fehlgeschlagen: type object 'Gender' has no attribute 'F'
+2025-11-06 20:56:27,432 - __main__ - ERROR - Stress-Operation 13 fehlgeschlagen: type object 'Gender' has no attribute 'F'
+2025-11-06 20:56:27,435 - __main__ - ERROR - Stress-Operation 14 fehlgeschlagen: type object 'Gender' has no attribute 'F'
+2025-11-06 20:56:27,437 - __main__ - ERROR - Stress-Operation 15 fehlgeschlagen: type object 'Gender' has no attribute 'F'
+2025-11-06 20:56:27,439 - __main__ - ERROR - Fehler beim Erstellen des Test-Patienten stress_16_00: type object 'Gender' has no attribute 'F'
+2025-11-06 20:56:27,442 - __main__ - ERROR - Fehler beim Erstellen des Test-Patienten stress_17_00: type object 'Gender' has no attribute 'F'
+2025-11-06 20:56:27,449 - __main__ - ERROR - Fehler beim Erstellen des Test-Patienten stress_18_00: type object 'Gender' has no attribute 'F'
+2025-11-06 20:56:27,449 - __main__ - ERROR - Fehler beim Erstellen des Test-Patienten stress_19_00: type object 'Gender' has no attribute 'F'
+2025-11-06 20:56:27,451 - __main__ - ERROR - Stress-Operation 16 fehlgeschlagen: type object 'Gender' has no attribute 'F'
+2025-11-06 20:56:27,453 - __main__ - ERROR - Stress-Operation 17 fehlgeschlagen: type object 'Gender' has no attribute 'F'
+2025-11-06 20:56:27,455 - __main__ - ERROR - Stress-Operation 18 fehlgeschlagen: type object 'Gender' has no attribute 'F'
+2025-11-06 20:56:27,457 - __main__ - ERROR - Stress-Operation 19 fehlgeschlagen: type object 'Gender' has no attribute 'F'
+2025-11-06 20:56:27,465 - __main__ - ERROR - Performance Stress Test fehlgeschlagen: Zu viele Stress-Test-Fehler: 0/20
+2025-11-06 20:56:27,567 - __main__ - INFO - === Test-Framework beendet: 0/5 Tests erfolgreich ===
+2025-11-06 20:56:27,567 - __main__ - INFO - Gesamtdauer: 732.46ms
+2025-11-06 20:56:27,567 - __main__ - INFO - Performance-Metriken:
+2025-11-06 20:56:27,567 - __main__ - INFO -   create_test_patient: 8.03ms ✗
+2025-11-06 20:57:03,411 - __main__ - INFO - Optimierte Testumgebung vorbereitet
+2025-11-06 20:57:03,411 - __main__ - INFO - === Thread-sicheres Patient-Management Test-Framework gestartet ===
+2025-11-06 20:57:03,411 - __main__ - INFO - Führe Test aus: test_patient_creation
+2025-11-06 20:57:03,411 - __main__ - ERROR - Fehler beim Erstellen des Test-Patienten PT_0001_8d9f10b9: 2 validation errors for Demographics
+lastname
+  Field required [type=missing, input_value={'first_name': 'TestPatie...ent.creation@test.com'}}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.12/v/missing
+firstname
+  Field required [type=missing, input_value={'first_name': 'TestPatie...ent.creation@test.com'}}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.12/v/missing
+2025-11-06 20:57:03,411 - __main__ - ERROR - Patient Creation fehlgeschlagen: 2 validation errors for Demographics
+lastname
+  Field required [type=missing, input_value={'first_name': 'TestPatie...ent.creation@test.com'}}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.12/v/missing
+firstname
+  Field required [type=missing, input_value={'first_name': 'TestPatie...ent.creation@test.com'}}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.12/v/missing
+2025-11-06 20:57:03,511 - __main__ - INFO - Führe Test aus: test_batch_patient_creation
+2025-11-06 20:57:03,512 - __main__ - ERROR - Fehler beim Erstellen des Test-Patienten batch_pt_000: 2 validation errors for Demographics
+lastname
+  Field required [type=missing, input_value={'first_name': 'Beta', 'l...eta.patient1@test.com'}}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.12/v/missing
+firstname
+  Field required [type=missing, input_value={'first_name': 'Beta', 'l...eta.patient1@test.com'}}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.12/v/missing
+2025-11-06 20:57:03,513 - __main__ - ERROR - Fehler beim Erstellen des Test-Patienten batch_pt_001: 2 validation errors for Demographics
+lastname
+  Field required [type=missing, input_value={'first_name': 'Gamma', '...mma.patient1@test.com'}}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.12/v/missing
+firstname
+  Field required [type=missing, input_value={'first_name': 'Gamma', '...mma.patient1@test.com'}}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.12/v/missing
+2025-11-06 20:57:03,513 - __main__ - ERROR - Fehler beim Erstellen des Test-Patienten batch_pt_002: 2 validation errors for Demographics
+lastname
+  Field required [type=missing, input_value={'first_name': 'Delta', '...lta.patient1@test.com'}}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.12/v/missing
+firstname
+  Field required [type=missing, input_value={'first_name': 'Delta', '...lta.patient1@test.com'}}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.12/v/missing
+2025-11-06 20:57:03,513 - __main__ - ERROR - Fehler beim Erstellen des Test-Patienten batch_pt_003: 2 validation errors for Demographics
+lastname
+  Field required [type=missing, input_value={'first_name': 'Epsilon',...lon.patient1@test.com'}}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.12/v/missing
+firstname
+  Field required [type=missing, input_value={'first_name': 'Epsilon',...lon.patient1@test.com'}}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.12/v/missing
+2025-11-06 20:57:03,514 - __main__ - ERROR - Fehler beim Erstellen des Test-Patienten batch_pt_004: 2 validation errors for Demographics
+lastname
+  Field required [type=missing, input_value={'first_name': 'Zeta', 'l...eta.patient1@test.com'}}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.12/v/missing
+firstname
+  Field required [type=missing, input_value={'first_name': 'Zeta', 'l...eta.patient1@test.com'}}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.12/v/missing
+2025-11-06 20:57:03,514 - __main__ - WARNING - Batch-Patient-Erstellung fehlgeschlagen: 2 validation errors for Demographics
+lastname
+  Field required [type=missing, input_value={'first_name': 'Beta', 'l...eta.patient1@test.com'}}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.12/v/missing
+firstname
+  Field required [type=missing, input_value={'first_name': 'Beta', 'l...eta.patient1@test.com'}}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.12/v/missing
+2025-11-06 20:57:03,517 - __main__ - ERROR - Fehler beim Erstellen des Test-Patienten batch_pt_005: 2 validation errors for Demographics
+lastname
+  Field required [type=missing, input_value={'first_name': 'Eta', 'la...eta.patient1@test.com'}}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.12/v/missing
+firstname
+  Field required [type=missing, input_value={'first_name': 'Eta', 'la...eta.patient1@test.com'}}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.12/v/missing
+2025-11-06 20:57:03,520 - __main__ - ERROR - Fehler beim Erstellen des Test-Patienten batch_pt_006: 2 validation errors for Demographics
+lastname
+  Field required [type=missing, input_value={'first_name': 'Theta', '...eta.patient1@test.com'}}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.12/v/missing
+firstname
+  Field required [type=missing, input_value={'first_name': 'Theta', '...eta.patient1@test.com'}}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.12/v/missing
+2025-11-06 20:57:03,523 - __main__ - ERROR - Fehler beim Erstellen des Test-Patienten batch_pt_007: 2 validation errors for Demographics
+lastname
+  Field required [type=missing, input_value={'first_name': 'Iota', 'l...ota.patient1@test.com'}}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.12/v/missing
+firstname
+  Field required [type=missing, input_value={'first_name': 'Iota', 'l...ota.patient1@test.com'}}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.12/v/missing
+2025-11-06 20:57:03,526 - __main__ - ERROR - Fehler beim Erstellen des Test-Patienten batch_pt_008: 2 validation errors for Demographics
+lastname
+  Field required [type=missing, input_value={'first_name': 'Kappa', '...ppa.patient1@test.com'}}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.12/v/missing
+firstname
+  Field required [type=missing, input_value={'first_name': 'Kappa', '...ppa.patient1@test.com'}}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.12/v/missing
+2025-11-06 20:57:03,530 - __main__ - WARNING - Batch-Patient-Erstellung fehlgeschlagen: 2 validation errors for Demographics
+lastname
+  Field required [type=missing, input_value={'first_name': 'Gamma', '...mma.patient1@test.com'}}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.12/v/missing
+firstname
+  Field required [type=missing, input_value={'first_name': 'Gamma', '...mma.patient1@test.com'}}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.12/v/missing
+2025-11-06 20:57:03,530 - __main__ - ERROR - Fehler beim Erstellen des Test-Patienten batch_pt_009: 2 validation errors for Demographics
+lastname
+  Field required [type=missing, input_value={'first_name': 'Lambda', ...bda.patient1@test.com'}}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.12/v/missing
+firstname
+  Field required [type=missing, input_value={'first_name': 'Lambda', ...bda.patient1@test.com'}}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.12/v/missing
+2025-11-06 20:57:03,533 - __main__ - ERROR - Fehler beim Erstellen des Test-Patienten batch_pt_010: 2 validation errors for Demographics
+lastname
+  Field required [type=missing, input_value={'first_name': 'Mu', 'las...'mu.patient1@test.com'}}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.12/v/missing
+firstname
+  Field required [type=missing, input_value={'first_name': 'Mu', 'las...'mu.patient1@test.com'}}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.12/v/missing
+2025-11-06 20:57:03,538 - __main__ - ERROR - Fehler beim Erstellen des Test-Patienten batch_pt_011: 2 validation errors for Demographics
+lastname
+  Field required [type=missing, input_value={'first_name': 'Nu', 'las...'nu.patient1@test.com'}}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.12/v/missing
+firstname
+  Field required [type=missing, input_value={'first_name': 'Nu', 'las...'nu.patient1@test.com'}}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.12/v/missing
+2025-11-06 20:57:03,541 - __main__ - ERROR - Fehler beim Erstellen des Test-Patienten batch_pt_012: 2 validation errors for Demographics
+lastname
+  Field required [type=missing, input_value={'first_name': 'Xi', 'las...'xi.patient1@test.com'}}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.12/v/missing
+firstname
+  Field required [type=missing, input_value={'first_name': 'Xi', 'las...'xi.patient1@test.com'}}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.12/v/missing
+2025-11-06 20:57:03,544 - __main__ - WARNING - Batch-Patient-Erstellung fehlgeschlagen: 2 validation errors for Demographics
+lastname
+  Field required [type=missing, input_value={'first_name': 'Delta', '...lta.patient1@test.com'}}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.12/v/missing
+firstname
+  Field required [type=missing, input_value={'first_name': 'Delta', '...lta.patient1@test.com'}}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.12/v/missing
+2025-11-06 20:57:03,544 - __main__ - ERROR - Fehler beim Erstellen des Test-Patienten batch_pt_013: 2 validation errors for Demographics
+lastname
+  Field required [type=missing, input_value={'first_name': 'Omicron',...ron.patient1@test.com'}}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.12/v/missing
+firstname
+  Field required [type=missing, input_value={'first_name': 'Omicron',...ron.patient1@test.com'}}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.12/v/missing
+2025-11-06 20:57:03,547 - __main__ - ERROR - Fehler beim Erstellen des Test-Patienten batch_pt_014: 2 validation errors for Demographics
+lastname
+  Field required [type=missing, input_value={'first_name': 'Pi', 'las...'pi.patient1@test.com'}}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.12/v/missing
+firstname
+  Field required [type=missing, input_value={'first_name': 'Pi', 'las...'pi.patient1@test.com'}}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.12/v/missing
+2025-11-06 20:57:03,550 - __main__ - ERROR - Fehler beim Erstellen des Test-Patienten batch_pt_015: 2 validation errors for Demographics
+lastname
+  Field required [type=missing, input_value={'first_name': 'Rho', 'la...rho.patient1@test.com'}}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.12/v/missing
+firstname
+  Field required [type=missing, input_value={'first_name': 'Rho', 'la...rho.patient1@test.com'}}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.12/v/missing
+2025-11-06 20:57:03,552 - __main__ - ERROR - Fehler beim Erstellen des Test-Patienten batch_pt_016: 2 validation errors for Demographics
+lastname
+  Field required [type=missing, input_value={'first_name': 'Sigma', '...gma.patient1@test.com'}}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.12/v/missing
+firstname
+  Field required [type=missing, input_value={'first_name': 'Sigma', '...gma.patient1@test.com'}}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.12/v/missing
+2025-11-06 20:57:03,556 - __main__ - WARNING - Batch-Patient-Erstellung fehlgeschlagen: 2 validation errors for Demographics
+lastname
+  Field required [type=missing, input_value={'first_name': 'Epsilon',...lon.patient1@test.com'}}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.12/v/missing
+firstname
+  Field required [type=missing, input_value={'first_name': 'Epsilon',...lon.patient1@test.com'}}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.12/v/missing
+2025-11-06 20:57:03,559 - __main__ - ERROR - Fehler beim Erstellen des Test-Patienten batch_pt_017: 2 validation errors for Demographics
+lastname
+  Field required [type=missing, input_value={'first_name': 'Tau', 'la...tau.patient1@test.com'}}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.12/v/missing
+firstname
+  Field required [type=missing, input_value={'first_name': 'Tau', 'la...tau.patient1@test.com'}}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.12/v/missing
+2025-11-06 20:57:03,559 - __main__ - ERROR - Fehler beim Erstellen des Test-Patienten batch_pt_018: 2 validation errors for Demographics
+lastname
+  Field required [type=missing, input_value={'first_name': 'Upsilon',...lon.patient1@test.com'}}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.12/v/missing
+firstname
+  Field required [type=missing, input_value={'first_name': 'Upsilon',...lon.patient1@test.com'}}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.12/v/missing
+2025-11-06 20:57:03,563 - __main__ - ERROR - Fehler beim Erstellen des Test-Patienten batch_pt_019: 2 validation errors for Demographics
+lastname
+  Field required [type=missing, input_value={'first_name': 'Phi', 'la...phi.patient1@test.com'}}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.12/v/missing
+firstname
+  Field required [type=missing, input_value={'first_name': 'Phi', 'la...phi.patient1@test.com'}}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.12/v/missing
+2025-11-06 20:57:03,566 - __main__ - ERROR - Fehler beim Erstellen des Test-Patienten batch_pt_020: 2 validation errors for Demographics
+lastname
+  Field required [type=missing, input_value={'first_name': 'Chi', 'la...chi.patient1@test.com'}}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.12/v/missing
+firstname
+  Field required [type=missing, input_value={'first_name': 'Chi', 'la...chi.patient1@test.com'}}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.12/v/missing
+2025-11-06 20:57:03,569 - __main__ - WARNING - Batch-Patient-Erstellung fehlgeschlagen: 2 validation errors for Demographics
+lastname
+  Field required [type=missing, input_value={'first_name': 'Zeta', 'l...eta.patient1@test.com'}}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.12/v/missing
+firstname
+  Field required [type=missing, input_value={'first_name': 'Zeta', 'l...eta.patient1@test.com'}}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.12/v/missing
+2025-11-06 20:57:03,572 - __main__ - ERROR - Fehler beim Erstellen des Test-Patienten batch_pt_021: 2 validation errors for Demographics
+lastname
+  Field required [type=missing, input_value={'first_name': 'Psi', 'la...psi.patient1@test.com'}}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.12/v/missing
+firstname
+  Field required [type=missing, input_value={'first_name': 'Psi', 'la...psi.patient1@test.com'}}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.12/v/missing
+2025-11-06 20:57:03,576 - __main__ - ERROR - Fehler beim Erstellen des Test-Patienten batch_pt_022: 2 validation errors for Demographics
+lastname
+  Field required [type=missing, input_value={'first_name': 'Omega', '...ega.patient1@test.com'}}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.12/v/missing
+firstname
+  Field required [type=missing, input_value={'first_name': 'Omega', '...ega.patient1@test.com'}}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.12/v/missing
+2025-11-06 20:57:03,579 - __main__ - ERROR - Fehler beim Erstellen des Test-Patienten batch_pt_023: 2 validation errors for Demographics
+lastname
+  Field required [type=missing, input_value={'first_name': 'TestName2...e25.patient1@test.com'}}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.12/v/missing
+firstname
+  Field required [type=missing, input_value={'first_name': 'TestName2...e25.patient1@test.com'}}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.12/v/missing
+2025-11-06 20:57:03,579 - __main__ - ERROR - Fehler beim Erstellen des Test-Patienten batch_pt_024: 2 validation errors for Demographics
+lastname
+  Field required [type=missing, input_value={'first_name': 'TestName2...e26.patient1@test.com'}}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.12/v/missing
+firstname
+  Field required [type=missing, input_value={'first_name': 'TestName2...e26.patient1@test.com'}}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.12/v/missing
+2025-11-06 20:57:03,581 - __main__ - WARNING - Batch-Patient-Erstellung fehlgeschlagen: 2 validation errors for Demographics
+lastname
+  Field required [type=missing, input_value={'first_name': 'Eta', 'la...eta.patient1@test.com'}}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.12/v/missing
+firstname
+  Field required [type=missing, input_value={'first_name': 'Eta', 'la...eta.patient1@test.com'}}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.12/v/missing
+2025-11-06 20:57:03,597 - __main__ - WARNING - Batch-Patient-Erstellung fehlgeschlagen: 2 validation errors for Demographics
+lastname
+  Field required [type=missing, input_value={'first_name': 'Theta', '...eta.patient1@test.com'}}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.12/v/missing
+firstname
+  Field required [type=missing, input_value={'first_name': 'Theta', '...eta.patient1@test.com'}}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.12/v/missing
+2025-11-06 20:57:03,597 - __main__ - WARNING - Batch-Patient-Erstellung fehlgeschlagen: 2 validation errors for Demographics
+lastname
+  Field required [type=missing, input_value={'first_name': 'Iota', 'l...ota.patient1@test.com'}}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.12/v/missing
+firstname
+  Field required [type=missing, input_value={'first_name': 'Iota', 'l...ota.patient1@test.com'}}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.12/v/missing
+2025-11-06 20:57:03,612 - __main__ - WARNING - Batch-Patient-Erstellung fehlgeschlagen: 2 validation errors for Demographics
+lastname
+  Field required [type=missing, input_value={'first_name': 'Kappa', '...ppa.patient1@test.com'}}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.12/v/missing
+firstname
+  Field required [type=missing, input_value={'first_name': 'Kappa', '...ppa.patient1@test.com'}}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.12/v/missing
+2025-11-06 20:57:03,615 - __main__ - WARNING - Batch-Patient-Erstellung fehlgeschlagen: 2 validation errors for Demographics
+lastname
+  Field required [type=missing, input_value={'first_name': 'Lambda', ...bda.patient1@test.com'}}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.12/v/missing
+firstname
+  Field required [type=missing, input_value={'first_name': 'Lambda', ...bda.patient1@test.com'}}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.12/v/missing
+2025-11-06 20:57:03,618 - __main__ - WARNING - Batch-Patient-Erstellung fehlgeschlagen: 2 validation errors for Demographics
+lastname
+  Field required [type=missing, input_value={'first_name': 'Mu', 'las...'mu.patient1@test.com'}}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.12/v/missing
+firstname
+  Field required [type=missing, input_value={'first_name': 'Mu', 'las...'mu.patient1@test.com'}}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.12/v/missing
+2025-11-06 20:57:03,627 - __main__ - WARNING - Batch-Patient-Erstellung fehlgeschlagen: 2 validation errors for Demographics
+lastname
+  Field required [type=missing, input_value={'first_name': 'Nu', 'las...'nu.patient1@test.com'}}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.12/v/missing
+firstname
+  Field required [type=missing, input_value={'first_name': 'Nu', 'las...'nu.patient1@test.com'}}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.12/v/missing
+2025-11-06 20:57:03,630 - __main__ - WARNING - Batch-Patient-Erstellung fehlgeschlagen: 2 validation errors for Demographics
+lastname
+  Field required [type=missing, input_value={'first_name': 'Xi', 'las...'xi.patient1@test.com'}}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.12/v/missing
+firstname
+  Field required [type=missing, input_value={'first_name': 'Xi', 'las...'xi.patient1@test.com'}}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.12/v/missing
+2025-11-06 20:57:03,633 - __main__ - WARNING - Batch-Patient-Erstellung fehlgeschlagen: 2 validation errors for Demographics
+lastname
+  Field required [type=missing, input_value={'first_name': 'Omicron',...ron.patient1@test.com'}}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.12/v/missing
+firstname
+  Field required [type=missing, input_value={'first_name': 'Omicron',...ron.patient1@test.com'}}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.12/v/missing
+2025-11-06 20:57:03,633 - __main__ - WARNING - Batch-Patient-Erstellung fehlgeschlagen: 2 validation errors for Demographics
+lastname
+  Field required [type=missing, input_value={'first_name': 'Pi', 'las...'pi.patient1@test.com'}}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.12/v/missing
+firstname
+  Field required [type=missing, input_value={'first_name': 'Pi', 'las...'pi.patient1@test.com'}}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.12/v/missing
+2025-11-06 20:57:03,633 - __main__ - WARNING - Batch-Patient-Erstellung fehlgeschlagen: 2 validation errors for Demographics
+lastname
+  Field required [type=missing, input_value={'first_name': 'Rho', 'la...rho.patient1@test.com'}}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.12/v/missing
+firstname
+  Field required [type=missing, input_value={'first_name': 'Rho', 'la...rho.patient1@test.com'}}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.12/v/missing
+2025-11-06 20:57:03,633 - __main__ - WARNING - Batch-Patient-Erstellung fehlgeschlagen: 2 validation errors for Demographics
+lastname
+  Field required [type=missing, input_value={'first_name': 'Sigma', '...gma.patient1@test.com'}}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.12/v/missing
+firstname
+  Field required [type=missing, input_value={'first_name': 'Sigma', '...gma.patient1@test.com'}}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.12/v/missing
+2025-11-06 20:57:03,633 - __main__ - WARNING - Batch-Patient-Erstellung fehlgeschlagen: 2 validation errors for Demographics
+lastname
+  Field required [type=missing, input_value={'first_name': 'Tau', 'la...tau.patient1@test.com'}}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.12/v/missing
+firstname
+  Field required [type=missing, input_value={'first_name': 'Tau', 'la...tau.patient1@test.com'}}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.12/v/missing
+2025-11-06 20:57:03,633 - __main__ - WARNING - Batch-Patient-Erstellung fehlgeschlagen: 2 validation errors for Demographics
+lastname
+  Field required [type=missing, input_value={'first_name': 'Upsilon',...lon.patient1@test.com'}}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.12/v/missing
+firstname
+  Field required [type=missing, input_value={'first_name': 'Upsilon',...lon.patient1@test.com'}}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.12/v/missing
+2025-11-06 20:57:03,636 - __main__ - WARNING - Batch-Patient-Erstellung fehlgeschlagen: 2 validation errors for Demographics
+lastname
+  Field required [type=missing, input_value={'first_name': 'Phi', 'la...phi.patient1@test.com'}}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.12/v/missing
+firstname
+  Field required [type=missing, input_value={'first_name': 'Phi', 'la...phi.patient1@test.com'}}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.12/v/missing
+2025-11-06 20:57:03,638 - __main__ - WARNING - Batch-Patient-Erstellung fehlgeschlagen: 2 validation errors for Demographics
+lastname
+  Field required [type=missing, input_value={'first_name': 'Chi', 'la...chi.patient1@test.com'}}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.12/v/missing
+firstname
+  Field required [type=missing, input_value={'first_name': 'Chi', 'la...chi.patient1@test.com'}}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.12/v/missing
+2025-11-06 20:57:03,645 - __main__ - WARNING - Batch-Patient-Erstellung fehlgeschlagen: 2 validation errors for Demographics
+lastname
+  Field required [type=missing, input_value={'first_name': 'Psi', 'la...psi.patient1@test.com'}}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.12/v/missing
+firstname
+  Field required [type=missing, input_value={'first_name': 'Psi', 'la...psi.patient1@test.com'}}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.12/v/missing
+2025-11-06 20:57:03,649 - __main__ - WARNING - Batch-Patient-Erstellung fehlgeschlagen: 2 validation errors for Demographics
+lastname
+  Field required [type=missing, input_value={'first_name': 'Omega', '...ega.patient1@test.com'}}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.12/v/missing
+firstname
+  Field required [type=missing, input_value={'first_name': 'Omega', '...ega.patient1@test.com'}}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.12/v/missing
+2025-11-06 20:57:03,652 - __main__ - WARNING - Batch-Patient-Erstellung fehlgeschlagen: 2 validation errors for Demographics
+lastname
+  Field required [type=missing, input_value={'first_name': 'TestName2...e25.patient1@test.com'}}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.12/v/missing
+firstname
+  Field required [type=missing, input_value={'first_name': 'TestName2...e25.patient1@test.com'}}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.12/v/missing
+2025-11-06 20:57:03,655 - __main__ - WARNING - Batch-Patient-Erstellung fehlgeschlagen: 2 validation errors for Demographics
+lastname
+  Field required [type=missing, input_value={'first_name': 'TestName2...e26.patient1@test.com'}}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.12/v/missing
+firstname
+  Field required [type=missing, input_value={'first_name': 'TestName2...e26.patient1@test.com'}}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.12/v/missing
+2025-11-06 20:57:03,655 - __main__ - ERROR - Batch Patient Creation fehlgeschlagen: Erwartet: 25 Patienten, erhalten: 0
+2025-11-06 20:57:03,758 - __main__ - INFO - Führe Test aus: test_crud_operations
+2025-11-06 20:57:03,758 - __main__ - ERROR - Fehler beim Erstellen des Test-Patienten PT_0002_b143a615: 2 validation errors for Demographics
+lastname
+  Field required [type=missing, input_value={'first_name': 'TestName2...e27.patient2@test.com'}}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.12/v/missing
+firstname
+  Field required [type=missing, input_value={'first_name': 'TestName2...e27.patient2@test.com'}}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.12/v/missing
+2025-11-06 20:57:03,758 - __main__ - ERROR - CRUD Operations fehlgeschlagen: 2 validation errors for Demographics
+lastname
+  Field required [type=missing, input_value={'first_name': 'TestName2...e27.patient2@test.com'}}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.12/v/missing
+firstname
+  Field required [type=missing, input_value={'first_name': 'TestName2...e27.patient2@test.com'}}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.12/v/missing
+2025-11-06 20:57:03,862 - __main__ - INFO - Führe Test aus: test_search_functionality
+2025-11-06 20:57:03,868 - core.patients.patient_manager - INFO - PatientManager initialisiert
+2025-11-06 20:57:03,868 - __main__ - ERROR - Fehler beim Erstellen des Test-Patienten search_pt_000: 2 validation errors for Demographics
+lastname
+  Field required [type=missing, input_value={'first_name': 'TestName2...e28.patient2@test.com'}}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.12/v/missing
+firstname
+  Field required [type=missing, input_value={'first_name': 'TestName2...e28.patient2@test.com'}}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.12/v/missing
+2025-11-06 20:57:03,868 - __main__ - ERROR - Search Functionality fehlgeschlagen: 2 validation errors for Demographics
+lastname
+  Field required [type=missing, input_value={'first_name': 'TestName2...e28.patient2@test.com'}}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.12/v/missing
+firstname
+  Field required [type=missing, input_value={'first_name': 'TestName2...e28.patient2@test.com'}}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.12/v/missing
+2025-11-06 20:57:03,971 - __main__ - INFO - Führe Test aus: test_performance_stress
+2025-11-06 20:57:03,972 - __main__ - ERROR - Fehler beim Erstellen des Test-Patienten stress_00_00: 2 validation errors for Demographics
+lastname
+  Field required [type=missing, input_value={'first_name': 'TestName2...e29.patient2@test.com'}}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.12/v/missing
+firstname
+  Field required [type=missing, input_value={'first_name': 'TestName2...e29.patient2@test.com'}}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.12/v/missing
+2025-11-06 20:57:03,972 - __main__ - ERROR - Fehler beim Erstellen des Test-Patienten stress_01_00: 2 validation errors for Demographics
+lastname
+  Field required [type=missing, input_value={'first_name': 'TestName3...e30.patient2@test.com'}}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.12/v/missing
+firstname
+  Field required [type=missing, input_value={'first_name': 'TestName3...e30.patient2@test.com'}}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.12/v/missing
+2025-11-06 20:57:03,972 - __main__ - ERROR - Fehler beim Erstellen des Test-Patienten stress_02_00: 2 validation errors for Demographics
+lastname
+  Field required [type=missing, input_value={'first_name': 'TestName3...e31.patient2@test.com'}}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.12/v/missing
+firstname
+  Field required [type=missing, input_value={'first_name': 'TestName3...e31.patient2@test.com'}}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.12/v/missing
+2025-11-06 20:57:03,972 - __main__ - ERROR - Fehler beim Erstellen des Test-Patienten stress_03_00: 2 validation errors for Demographics
+lastname
+  Field required [type=missing, input_value={'first_name': 'TestName3...e32.patient2@test.com'}}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.12/v/missing
+firstname
+  Field required [type=missing, input_value={'first_name': 'TestName3...e32.patient2@test.com'}}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.12/v/missing
+2025-11-06 20:57:03,975 - __main__ - ERROR - Stress-Operation 0 fehlgeschlagen: 2 validation errors for Demographics
+lastname
+  Field required [type=missing, input_value={'first_name': 'TestName2...e29.patient2@test.com'}}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.12/v/missing
+firstname
+  Field required [type=missing, input_value={'first_name': 'TestName2...e29.patient2@test.com'}}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.12/v/missing
+2025-11-06 20:57:03,978 - __main__ - ERROR - Stress-Operation 1 fehlgeschlagen: 2 validation errors for Demographics
+lastname
+  Field required [type=missing, input_value={'first_name': 'TestName3...e30.patient2@test.com'}}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.12/v/missing
+firstname
+  Field required [type=missing, input_value={'first_name': 'TestName3...e30.patient2@test.com'}}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.12/v/missing
+2025-11-06 20:57:03,981 - __main__ - ERROR - Stress-Operation 2 fehlgeschlagen: 2 validation errors for Demographics
+lastname
+  Field required [type=missing, input_value={'first_name': 'TestName3...e31.patient2@test.com'}}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.12/v/missing
+firstname
+  Field required [type=missing, input_value={'first_name': 'TestName3...e31.patient2@test.com'}}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.12/v/missing
+2025-11-06 20:57:03,984 - __main__ - ERROR - Stress-Operation 3 fehlgeschlagen: 2 validation errors for Demographics
+lastname
+  Field required [type=missing, input_value={'first_name': 'TestName3...e32.patient2@test.com'}}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.12/v/missing
+firstname
+  Field required [type=missing, input_value={'first_name': 'TestName3...e32.patient2@test.com'}}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.12/v/missing
+2025-11-06 20:57:03,987 - __main__ - ERROR - Fehler beim Erstellen des Test-Patienten stress_04_00: 2 validation errors for Demographics
+lastname
+  Field required [type=missing, input_value={'first_name': 'TestName3...e33.patient2@test.com'}}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.12/v/missing
+firstname
+  Field required [type=missing, input_value={'first_name': 'TestName3...e33.patient2@test.com'}}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.12/v/missing
+2025-11-06 20:57:03,988 - __main__ - ERROR - Fehler beim Erstellen des Test-Patienten stress_05_00: 2 validation errors for Demographics
+lastname
+  Field required [type=missing, input_value={'first_name': 'TestName3...e34.patient2@test.com'}}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.12/v/missing
+firstname
+  Field required [type=missing, input_value={'first_name': 'TestName3...e34.patient2@test.com'}}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.12/v/missing
+2025-11-06 20:57:03,991 - __main__ - ERROR - Fehler beim Erstellen des Test-Patienten stress_06_00: 2 validation errors for Demographics
+lastname
+  Field required [type=missing, input_value={'first_name': 'TestName3...e35.patient2@test.com'}}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.12/v/missing
+firstname
+  Field required [type=missing, input_value={'first_name': 'TestName3...e35.patient2@test.com'}}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.12/v/missing
+2025-11-06 20:57:03,994 - __main__ - ERROR - Fehler beim Erstellen des Test-Patienten stress_07_00: 2 validation errors for Demographics
+lastname
+  Field required [type=missing, input_value={'first_name': 'TestName3...e36.patient2@test.com'}}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.12/v/missing
+firstname
+  Field required [type=missing, input_value={'first_name': 'TestName3...e36.patient2@test.com'}}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.12/v/missing
+2025-11-06 20:57:03,997 - __main__ - ERROR - Stress-Operation 4 fehlgeschlagen: 2 validation errors for Demographics
+lastname
+  Field required [type=missing, input_value={'first_name': 'TestName3...e33.patient2@test.com'}}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.12/v/missing
+firstname
+  Field required [type=missing, input_value={'first_name': 'TestName3...e33.patient2@test.com'}}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.12/v/missing
+2025-11-06 20:57:03,997 - __main__ - ERROR - Stress-Operation 5 fehlgeschlagen: 2 validation errors for Demographics
+lastname
+  Field required [type=missing, input_value={'first_name': 'TestName3...e34.patient2@test.com'}}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.12/v/missing
+firstname
+  Field required [type=missing, input_value={'first_name': 'TestName3...e34.patient2@test.com'}}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.12/v/missing
+2025-11-06 20:57:03,998 - __main__ - ERROR - Stress-Operation 6 fehlgeschlagen: 2 validation errors for Demographics
+lastname
+  Field required [type=missing, input_value={'first_name': 'TestName3...e35.patient2@test.com'}}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.12/v/missing
+firstname
+  Field required [type=missing, input_value={'first_name': 'TestName3...e35.patient2@test.com'}}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.12/v/missing
+2025-11-06 20:57:03,998 - __main__ - ERROR - Stress-Operation 7 fehlgeschlagen: 2 validation errors for Demographics
+lastname
+  Field required [type=missing, input_value={'first_name': 'TestName3...e36.patient2@test.com'}}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.12/v/missing
+firstname
+  Field required [type=missing, input_value={'first_name': 'TestName3...e36.patient2@test.com'}}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.12/v/missing
+2025-11-06 20:57:03,998 - __main__ - ERROR - Fehler beim Erstellen des Test-Patienten stress_08_00: 2 validation errors for Demographics
+lastname
+  Field required [type=missing, input_value={'first_name': 'TestName3...e37.patient2@test.com'}}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.12/v/missing
+firstname
+  Field required [type=missing, input_value={'first_name': 'TestName3...e37.patient2@test.com'}}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.12/v/missing
+2025-11-06 20:57:03,998 - __main__ - ERROR - Fehler beim Erstellen des Test-Patienten stress_09_00: 2 validation errors for Demographics
+lastname
+  Field required [type=missing, input_value={'first_name': 'TestName3...e38.patient2@test.com'}}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.12/v/missing
+firstname
+  Field required [type=missing, input_value={'first_name': 'TestName3...e38.patient2@test.com'}}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.12/v/missing
+2025-11-06 20:57:03,998 - __main__ - ERROR - Fehler beim Erstellen des Test-Patienten stress_10_00: 2 validation errors for Demographics
+lastname
+  Field required [type=missing, input_value={'first_name': 'TestName3...e39.patient2@test.com'}}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.12/v/missing
+firstname
+  Field required [type=missing, input_value={'first_name': 'TestName3...e39.patient2@test.com'}}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.12/v/missing
+2025-11-06 20:57:03,998 - __main__ - ERROR - Fehler beim Erstellen des Test-Patienten stress_11_00: 2 validation errors for Demographics
+lastname
+  Field required [type=missing, input_value={'first_name': 'TestName4...e40.patient2@test.com'}}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.12/v/missing
+firstname
+  Field required [type=missing, input_value={'first_name': 'TestName4...e40.patient2@test.com'}}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.12/v/missing
+2025-11-06 20:57:03,998 - __main__ - ERROR - Stress-Operation 8 fehlgeschlagen: 2 validation errors for Demographics
+lastname
+  Field required [type=missing, input_value={'first_name': 'TestName3...e37.patient2@test.com'}}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.12/v/missing
+firstname
+  Field required [type=missing, input_value={'first_name': 'TestName3...e37.patient2@test.com'}}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.12/v/missing
+2025-11-06 20:57:03,998 - __main__ - ERROR - Stress-Operation 9 fehlgeschlagen: 2 validation errors for Demographics
+lastname
+  Field required [type=missing, input_value={'first_name': 'TestName3...e38.patient2@test.com'}}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.12/v/missing
+firstname
+  Field required [type=missing, input_value={'first_name': 'TestName3...e38.patient2@test.com'}}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.12/v/missing
+2025-11-06 20:57:03,998 - __main__ - ERROR - Stress-Operation 10 fehlgeschlagen: 2 validation errors for Demographics
+lastname
+  Field required [type=missing, input_value={'first_name': 'TestName3...e39.patient2@test.com'}}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.12/v/missing
+firstname
+  Field required [type=missing, input_value={'first_name': 'TestName3...e39.patient2@test.com'}}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.12/v/missing
+2025-11-06 20:57:03,999 - __main__ - ERROR - Stress-Operation 11 fehlgeschlagen: 2 validation errors for Demographics
+lastname
+  Field required [type=missing, input_value={'first_name': 'TestName4...e40.patient2@test.com'}}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.12/v/missing
+firstname
+  Field required [type=missing, input_value={'first_name': 'TestName4...e40.patient2@test.com'}}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.12/v/missing
+2025-11-06 20:57:03,999 - __main__ - ERROR - Fehler beim Erstellen des Test-Patienten stress_12_00: 2 validation errors for Demographics
+lastname
+  Field required [type=missing, input_value={'first_name': 'TestName4...e41.patient2@test.com'}}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.12/v/missing
+firstname
+  Field required [type=missing, input_value={'first_name': 'TestName4...e41.patient2@test.com'}}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.12/v/missing
+2025-11-06 20:57:03,999 - __main__ - ERROR - Fehler beim Erstellen des Test-Patienten stress_13_00: 2 validation errors for Demographics
+lastname
+  Field required [type=missing, input_value={'first_name': 'TestName4...e42.patient2@test.com'}}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.12/v/missing
+firstname
+  Field required [type=missing, input_value={'first_name': 'TestName4...e42.patient2@test.com'}}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.12/v/missing
+2025-11-06 20:57:03,999 - __main__ - ERROR - Fehler beim Erstellen des Test-Patienten stress_14_00: 2 validation errors for Demographics
+lastname
+  Field required [type=missing, input_value={'first_name': 'TestName4...e43.patient2@test.com'}}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.12/v/missing
+firstname
+  Field required [type=missing, input_value={'first_name': 'TestName4...e43.patient2@test.com'}}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.12/v/missing
+2025-11-06 20:57:03,999 - __main__ - ERROR - Fehler beim Erstellen des Test-Patienten stress_15_00: 2 validation errors for Demographics
+lastname
+  Field required [type=missing, input_value={'first_name': 'TestName4...e44.patient2@test.com'}}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.12/v/missing
+firstname
+  Field required [type=missing, input_value={'first_name': 'TestName4...e44.patient2@test.com'}}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.12/v/missing
+2025-11-06 20:57:03,999 - __main__ - ERROR - Stress-Operation 12 fehlgeschlagen: 2 validation errors for Demographics
+lastname
+  Field required [type=missing, input_value={'first_name': 'TestName4...e41.patient2@test.com'}}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.12/v/missing
+firstname
+  Field required [type=missing, input_value={'first_name': 'TestName4...e41.patient2@test.com'}}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.12/v/missing
+2025-11-06 20:57:03,999 - __main__ - ERROR - Stress-Operation 13 fehlgeschlagen: 2 validation errors for Demographics
+lastname
+  Field required [type=missing, input_value={'first_name': 'TestName4...e42.patient2@test.com'}}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.12/v/missing
+firstname
+  Field required [type=missing, input_value={'first_name': 'TestName4...e42.patient2@test.com'}}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.12/v/missing
+2025-11-06 20:57:03,999 - __main__ - ERROR - Stress-Operation 14 fehlgeschlagen: 2 validation errors for Demographics
+lastname
+  Field required [type=missing, input_value={'first_name': 'TestName4...e43.patient2@test.com'}}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.12/v/missing
+firstname
+  Field required [type=missing, input_value={'first_name': 'TestName4...e43.patient2@test.com'}}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.12/v/missing
+2025-11-06 20:57:03,999 - __main__ - ERROR - Stress-Operation 15 fehlgeschlagen: 2 validation errors for Demographics
+lastname
+  Field required [type=missing, input_value={'first_name': 'TestName4...e44.patient2@test.com'}}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.12/v/missing
+firstname
+  Field required [type=missing, input_value={'first_name': 'TestName4...e44.patient2@test.com'}}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.12/v/missing
+2025-11-06 20:57:03,999 - __main__ - ERROR - Fehler beim Erstellen des Test-Patienten stress_16_00: 2 validation errors for Demographics
+lastname
+  Field required [type=missing, input_value={'first_name': 'TestName4...e45.patient2@test.com'}}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.12/v/missing
+firstname
+  Field required [type=missing, input_value={'first_name': 'TestName4...e45.patient2@test.com'}}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.12/v/missing
+2025-11-06 20:57:03,999 - __main__ - ERROR - Fehler beim Erstellen des Test-Patienten stress_17_00: 2 validation errors for Demographics
+lastname
+  Field required [type=missing, input_value={'first_name': 'TestName4...e46.patient2@test.com'}}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.12/v/missing
+firstname
+  Field required [type=missing, input_value={'first_name': 'TestName4...e46.patient2@test.com'}}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.12/v/missing
+2025-11-06 20:57:04,000 - __main__ - ERROR - Fehler beim Erstellen des Test-Patienten stress_18_00: 2 validation errors for Demographics
+lastname
+  Field required [type=missing, input_value={'first_name': 'TestName4...e47.patient2@test.com'}}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.12/v/missing
+firstname
+  Field required [type=missing, input_value={'first_name': 'TestName4...e47.patient2@test.com'}}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.12/v/missing
+2025-11-06 20:57:04,000 - __main__ - ERROR - Fehler beim Erstellen des Test-Patienten stress_19_00: 2 validation errors for Demographics
+lastname
+  Field required [type=missing, input_value={'first_name': 'TestName4...e48.patient2@test.com'}}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.12/v/missing
+firstname
+  Field required [type=missing, input_value={'first_name': 'TestName4...e48.patient2@test.com'}}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.12/v/missing
+2025-11-06 20:57:04,000 - __main__ - ERROR - Stress-Operation 16 fehlgeschlagen: 2 validation errors for Demographics
+lastname
+  Field required [type=missing, input_value={'first_name': 'TestName4...e45.patient2@test.com'}}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.12/v/missing
+firstname
+  Field required [type=missing, input_value={'first_name': 'TestName4...e45.patient2@test.com'}}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.12/v/missing
+2025-11-06 20:57:04,000 - __main__ - ERROR - Stress-Operation 17 fehlgeschlagen: 2 validation errors for Demographics
+lastname
+  Field required [type=missing, input_value={'first_name': 'TestName4...e46.patient2@test.com'}}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.12/v/missing
+firstname
+  Field required [type=missing, input_value={'first_name': 'TestName4...e46.patient2@test.com'}}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.12/v/missing
+2025-11-06 20:57:04,000 - __main__ - ERROR - Stress-Operation 18 fehlgeschlagen: 2 validation errors for Demographics
+lastname
+  Field required [type=missing, input_value={'first_name': 'TestName4...e47.patient2@test.com'}}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.12/v/missing
+firstname
+  Field required [type=missing, input_value={'first_name': 'TestName4...e47.patient2@test.com'}}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.12/v/missing
+2025-11-06 20:57:04,000 - __main__ - ERROR - Stress-Operation 19 fehlgeschlagen: 2 validation errors for Demographics
+lastname
+  Field required [type=missing, input_value={'first_name': 'TestName4...e48.patient2@test.com'}}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.12/v/missing
+firstname
+  Field required [type=missing, input_value={'first_name': 'TestName4...e48.patient2@test.com'}}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.12/v/missing
+2025-11-06 20:57:04,000 - __main__ - ERROR - Performance Stress Test fehlgeschlagen: Zu viele Stress-Test-Fehler: 0/20
+2025-11-06 20:57:04,104 - __main__ - INFO - === Test-Framework beendet: 0/5 Tests erfolgreich ===
+2025-11-06 20:57:04,104 - __main__ - INFO - Gesamtdauer: 692.94ms
+2025-11-06 20:57:04,104 - __main__ - INFO - Performance-Metriken:
+2025-11-06 20:57:04,104 - __main__ - INFO -   create_test_patient: 0.29ms ✗

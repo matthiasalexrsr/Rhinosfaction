@@ -1,0 +1,472 @@
+{
+  "os_path_vs_pathlib": {
+    "test_name": "os.path vs pathlib usage validation",
+    "status": "PASSED",
+    "issues": [],
+    "recommendations": [
+      "Verwende pathlib.Path für neue Implementierungen",
+      "Migriere schrittweise von os.path zu pathlib",
+      "Nutze absolute Pfade für bessere Klarheit",
+      "Prüfe Pfad-Existenz vor Operationen",
+      "Vermeide hardcodierte Pfad-Separatoren",
+      "Verwende joinpath() statt string concatenation"
+    ],
+    "usage_analysis": {
+      "os_path_count": 100,
+      "pathlib_count": 39,
+      "mixed_usage": [
+        "/workspace/advanced_security_tests.py",
+        "/workspace/authentication_security_tests.py",
+        "/workspace/complete_function_test.py",
+        "/workspace/component_integration_tests.py",
+        "/workspace/comprehensive_function_test.py",
+        "/workspace/comprehensive_function_test_fixed.py",
+        "/workspace/conftest_pytest.py",
+        "/workspace/csv_import_validation_test.py",
+        "/workspace/datenvisualisierung_charts_test.py",
+        "/workspace/detailed_import_tests.py",
+        "/workspace/export_import_vollständige_tests.py",
+        "/workspace/export_import_vollständige_tests_v2.py",
+        "/workspace/file_io_operations_test.py",
+        "/workspace/final_function_test.py",
+        "/workspace/final_import_verification.py",
+        "/workspace/finale_datenvalidierung_verbesserungen.py",
+        "/workspace/gui_analysis_test.py",
+        "/workspace/gui_code_analysis.py",
+        "/workspace/gui_comprehensive_test.py",
+        "/workspace/import_structure_validation.py",
+        "/workspace/main_window_integration_tests.py",
+        "/workspace/manual_accessibility_tests.py",
+        "/workspace/msvcrt_integration_test.py",
+        "/workspace/penetration_test_suite.py"
+      ],
+      "files_analyzed": [
+        {
+          "file": "/workspace/advanced_features_comprehensive_test.py",
+          "os_path_usage": 0,
+          "pathlib_usage": 1
+        },
+        {
+          "file": "/workspace/advanced_features_quick_test.py",
+          "os_path_usage": 0,
+          "pathlib_usage": 1
+        },
+        {
+          "file": "/workspace/advanced_security_tests.py",
+          "os_path_usage": 1,
+          "pathlib_usage": 1
+        },
+        {
+          "file": "/workspace/authentication_security_tests.py",
+          "os_path_usage": 1,
+          "pathlib_usage": 1
+        },
+        {
+          "file": "/workspace/complete_function_test.py",
+          "os_path_usage": 2,
+          "pathlib_usage": 1
+        },
+        {
+          "file": "/workspace/component_integration_tests.py",
+          "os_path_usage": 1,
+          "pathlib_usage": 1
+        },
+        {
+          "file": "/workspace/comprehensive_function_test.py",
+          "os_path_usage": 4,
+          "pathlib_usage": 1
+        },
+        {
+          "file": "/workspace/comprehensive_function_test_fixed.py",
+          "os_path_usage": 4,
+          "pathlib_usage": 1
+        },
+        {
+          "file": "/workspace/conftest_pytest.py",
+          "os_path_usage": 1,
+          "pathlib_usage": 1
+        },
+        {
+          "file": "/workspace/create_icon.py",
+          "os_path_usage": 2,
+          "pathlib_usage": 0
+        },
+        {
+          "file": "/workspace/csv_import_validation_test.py",
+          "os_path_usage": 1,
+          "pathlib_usage": 1
+        },
+        {
+          "file": "/workspace/datenvisualisierung_charts_test.py",
+          "os_path_usage": 1,
+          "pathlib_usage": 1
+        },
+        {
+          "file": "/workspace/demo_template_system.py",
+          "os_path_usage": 0,
+          "pathlib_usage": 1
+        },
+        {
+          "file": "/workspace/detailed_import_tests.py",
+          "os_path_usage": 1,
+          "pathlib_usage": 1
+        },
+        {
+          "file": "/workspace/detailed_ui_analysis.py",
+          "os_path_usage": 0,
+          "pathlib_usage": 1
+        },
+        {
+          "file": "/workspace/end_to_end_workflow_tests.py",
+          "os_path_usage": 0,
+          "pathlib_usage": 1
+        },
+        {
+          "file": "/workspace/export_import_vollständige_tests.py",
+          "os_path_usage": 1,
+          "pathlib_usage": 1
+        },
+        {
+          "file": "/workspace/export_import_vollständige_tests_v2.py",
+          "os_path_usage": 1,
+          "pathlib_usage": 1
+        },
+        {
+          "file": "/workspace/file_io_operations_test.py",
+          "os_path_usage": 2,
+          "pathlib_usage": 1
+        },
+        {
+          "file": "/workspace/final_function_test.py",
+          "os_path_usage": 4,
+          "pathlib_usage": 1
+        },
+        {
+          "file": "/workspace/final_import_verification.py",
+          "os_path_usage": 1,
+          "pathlib_usage": 1
+        },
+        {
+          "file": "/workspace/finale_datenvalidierung_verbesserungen.py",
+          "os_path_usage": 1,
+          "pathlib_usage": 1
+        },
+        {
+          "file": "/workspace/formular_eingabevalidierung_test.py",
+          "os_path_usage": 3,
+          "pathlib_usage": 0
+        },
+        {
+          "file": "/workspace/formular_eingabevalidierung_test_simplified.py",
+          "os_path_usage": 1,
+          "pathlib_usage": 0
+        },
+        {
+          "file": "/workspace/gui_analysis_test.py",
+          "os_path_usage": 1,
+          "pathlib_usage": 1
+        },
+        {
+          "file": "/workspace/gui_code_analysis.py",
+          "os_path_usage": 1,
+          "pathlib_usage": 1
+        },
+        {
+          "file": "/workspace/gui_comprehensive_test.py",
+          "os_path_usage": 1,
+          "pathlib_usage": 1
+        },
+        {
+          "file": "/workspace/import_structure_validation.py",
+          "os_path_usage": 1,
+          "pathlib_usage": 1
+        },
+        {
+          "file": "/workspace/improved_end_to_end_tests.py",
+          "os_path_usage": 0,
+          "pathlib_usage": 1
+        },
+        {
+          "file": "/workspace/main_window_integration_tests.py",
+          "os_path_usage": 1,
+          "pathlib_usage": 1
+        },
+        {
+          "file": "/workspace/manual_accessibility_tests.py",
+          "os_path_usage": 1,
+          "pathlib_usage": 1
+        },
+        {
+          "file": "/workspace/manual_gui_test_helper.py",
+          "os_path_usage": 2,
+          "pathlib_usage": 0
+        },
+        {
+          "file": "/workspace/matplotlib_integration_test.py",
+          "os_path_usage": 10,
+          "pathlib_usage": 0
+        },
+        {
+          "file": "/workspace/matplotlib_integration_test_robust.py",
+          "os_path_usage": 10,
+          "pathlib_usage": 0
+        },
+        {
+          "file": "/workspace/msvcrt_integration_test.py",
+          "os_path_usage": 2,
+          "pathlib_usage": 1
+        },
+        {
+          "file": "/workspace/pandas_integration_test.py",
+          "os_path_usage": 10,
+          "pathlib_usage": 0
+        },
+        {
+          "file": "/workspace/pandas_integration_test_final.py",
+          "os_path_usage": 10,
+          "pathlib_usage": 0
+        },
+        {
+          "file": "/workspace/pandas_integration_test_fixed.py",
+          "os_path_usage": 10,
+          "pathlib_usage": 0
+        },
+        {
+          "file": "/workspace/pandas_test_optimized.py",
+          "os_path_usage": 6,
+          "pathlib_usage": 0
+        },
+        {
+          "file": "/workspace/patient_management_comprehensive_test.py",
+          "os_path_usage": 0,
+          "pathlib_usage": 1
+        },
+        {
+          "file": "/workspace/patient_management_final_test.py",
+          "os_path_usage": 0,
+          "pathlib_usage": 1
+        },
+        {
+          "file": "/workspace/patient_management_fixed_test.py",
+          "os_path_usage": 0,
+          "pathlib_usage": 1
+        },
+        {
+          "file": "/workspace/patient_management_full_repair_test.py",
+          "os_path_usage": 0,
+          "pathlib_usage": 1
+        },
+        {
+          "file": "/workspace/patient_management_repair_test.py",
+          "os_path_usage": 0,
+          "pathlib_usage": 1
+        },
+        {
+          "file": "/workspace/patient_management_test_optimized.py",
+          "os_path_usage": 0,
+          "pathlib_usage": 1
+        },
+        {
+          "file": "/workspace/patient_management_working_example.py",
+          "os_path_usage": 0,
+          "pathlib_usage": 1
+        },
+        {
+          "file": "/workspace/penetration_test_suite.py",
+          "os_path_usage": 1,
+          "pathlib_usage": 1
+        },
+        {
+          "file": "/workspace/performance_monitoring_comprehensive_test.py",
+          "os_path_usage": 0,
+          "pathlib_usage": 1
+        },
+        {
+          "file": "/workspace/performance_monitoring_core_test.py",
+          "os_path_usage": 0,
+          "pathlib_usage": 1
+        }
+      ]
+    }
+  },
+  "path_separators": {
+    "test_name": "path separators",
+    "status": "PASSED",
+    "issues": [],
+    "tests_performed": [
+      "OK: file.txt",
+      "OK: test\\folder\\file2.txt",
+      "OK: file3.txt",
+      "Normalize back_to_forward: OK",
+      "Normalize double_separator: OK",
+      "Normalize trailing_separator: OK",
+      "Normalize current_dir: OK",
+      "Normalize parent_dir: OK"
+    ]
+  },
+  "long_path_support": {
+    "test_name": "long path support",
+    "status": "SKIPPED",
+    "issues": [
+      "Long-Path-Test nur auf Windows relevant"
+    ],
+    "path_lengths_tested": [],
+    "max_path_length": 4096
+  },
+  "unc_path_handling": {
+    "test_name": "UNC path handling",
+    "status": "PASSED",
+    "issues": [
+      "UNC parts broken for '\\\\server\\share\\folder\\file.txt'",
+      "UNC parts broken for '\\\\server\\share'",
+      "UNC parts broken for '\\\\127.0.0.1\\share\\file.txt'",
+      "UNC识别错误 '\\\\localhost\\C$\\folder': True != False",
+      "UNC parts broken for '\\\\localhost\\C$\\folder'"
+    ],
+    "unc_paths_tested": [
+      "UNC识别 '\\\\server\\share\\folder\\file.txt': OK",
+      "UNC识别 '\\\\server\\share': OK",
+      "UNC识别 '\\\\127.0.0.1\\share\\file.txt': OK",
+      "UNC识别 'C:\\local\\path': OK",
+      "UNC path operations: OK"
+    ]
+  },
+  "case_insensitive_filenames": {
+    "test_name": "case insensitive filenames",
+    "status": "PASSED",
+    "issues": [
+      "File not found with case variation: TESTFILE.TXT"
+    ],
+    "case_tests_performed": [
+      "Created: TestFile.TXT",
+      "Created: testfile.txt",
+      "Created: TESTFILE.txt",
+      "Created: TestFile.txt",
+      "Case access OK: testfile.txt",
+      "Case access OK: TestFile.txt",
+      "Case access OK: TestFile.TXT",
+      "Case dir OK: TestDir",
+      "Case dir OK: testdir",
+      "Case dir OK: TESTDIR"
+    ]
+  },
+  "reserved_characters": {
+    "test_name": "Windows reserved characters",
+    "status": "WARNING",
+    "issues": [
+      "UNEXPECTED: Created file with reserved character '<': test<file.txt",
+      "UNEXPECTED: Created file with reserved character '>': test>file.txt",
+      "UNEXPECTED: Created file with reserved character ':': test:file.txt",
+      "UNEXPECTED: Created file with reserved character '\"': test\"file.txt",
+      "UNEXPECTED: Created file with reserved character '\\': test\\file.txt",
+      "UNEXPECTED: Created file with reserved character '|': test|file.txt",
+      "UNEXPECTED: Created file with reserved character '?': test?file.txt",
+      "UNEXPECTED: Created file with reserved character '*': test*file.txt",
+      "WARNING: Created file with special name: CON",
+      "WARNING: Created file with special name: PRN",
+      "WARNING: Created file with special name: AUX",
+      "WARNING: Created file with special name: NUL",
+      "WARNING: Created file with special name: COM1"
+    ],
+    "reserved_chars_tested": [
+      "Reserved char '/': BLOCKED (expected)",
+      "Special name with ext 'CON.txt': OK",
+      "Special name with ext 'PRN.txt': OK",
+      "Special name with ext 'AUX.txt': OK",
+      "Special name with ext 'NUL.txt': OK",
+      "Special name with ext 'COM1.txt': OK",
+      "Valid name: normal_file.txt",
+      "Invalid name: file<with>invalid:chars.txt -> Contains reserved character: <, Contains reserved character: >, Contains reserved character: :",
+      "Invalid name: file/with/slashes.txt -> Contains reserved character: /",
+      "Invalid name: file|with|pipes.txt -> Contains reserved character: |",
+      "Invalid name: CON.txt -> Special device name: CON",
+      "Valid name: file with spaces.txt",
+      "Valid name: file_with_underscores.txt"
+    ],
+    "illegal_chars": [
+      "<",
+      ">",
+      ":",
+      "\"",
+      "/",
+      "\\",
+      "|",
+      "?",
+      "*"
+    ],
+    "special_names": [
+      "CON",
+      "PRN",
+      "AUX",
+      "NUL",
+      "COM1",
+      "COM2",
+      "COM3",
+      "COM4",
+      "COM5",
+      "COM6",
+      "COM7",
+      "COM8",
+      "COM9",
+      "LPT1",
+      "LPT2",
+      "LPT3",
+      "LPT4",
+      "LPT5",
+      "LPT6",
+      "LPT7",
+      "LPT8",
+      "LPT9"
+    ]
+  },
+  "temp_directory_management": {
+    "test_name": "temp directory management",
+    "status": "PASSED",
+    "issues": [],
+    "temp_dir_tests": [
+      "System temp: /tmp",
+      "System temp accessible: OK",
+      "TemporaryDirectory: OK",
+      "File in temp dir: OK",
+      "Auto-cleanup: OK",
+      "gettempdir: OK",
+      "gettempprefix: OK",
+      "gettempdirb: OK",
+      "mktemp: OK",
+      "Manual temp: OK",
+      "Named temp: OK",
+      "Spooled temp: OK"
+    ]
+  },
+  "drive_letters_network_drives": {
+    "test_name": "drive letters and network drives",
+    "status": "SKIPPED",
+    "issues": [
+      "Drive letter test nur auf Windows relevant"
+    ],
+    "drive_tests": [],
+    "platform": "Linux"
+  },
+  "summary": {
+    "total_tests": 7,
+    "passed_tests": 5,
+    "failed_tests": 0,
+    "warning_tests": 1,
+    "success_rate": "71.4%",
+    "test_duration": "1.19 Sekunden",
+    "platform": {
+      "system": "Linux",
+      "version": "#1 SMP Fri Dec 13 16:56:53 CST 2024",
+      "architecture": [
+        "64bit",
+        "ELF"
+      ],
+      "processor": "",
+      "python_version": "3.12.5",
+      "is_windows": false,
+      "max_path_length": 4096
+    },
+    "timestamp": "2025-11-07T07:04:38.200771",
+    "overall_status": "PASSED"
+  }
+}

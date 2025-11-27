@@ -1,0 +1,72 @@
+2025-11-06 20:16:51,602 - __main__ - INFO - Starte umfassende Patient-Management-Tests
+2025-11-06 20:16:51,602 - __main__ - INFO - Führe test_create_patient_basic aus...
+2025-11-06 20:16:51,602 - __main__ - INFO - Starte Test: test_create_patient_basic
+2025-11-06 20:16:51,605 - core.patients.patient_manager - INFO - PatientManager initialisiert
+2025-11-06 20:16:51,612 - __main__ - WARNING - ✗ test_create_patient_basic fehlgeschlagen: 1 validation error for Patient
+folder_slug
+  Field required [type=missing, input_value={'consents': Consents(pho...': 'Test-Patient basic'}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.12/v/missing
+2025-11-06 20:16:51,613 - __main__ - INFO - Führe test_create_patient_validation_errors aus...
+2025-11-06 20:16:51,616 - __main__ - INFO - Starte Test: test_create_patient_validation_errors
+2025-11-06 20:16:51,622 - core.patients.patient_manager - INFO - PatientManager initialisiert
+2025-11-06 20:16:51,625 - __main__ - WARNING - ✗ test_create_patient_validation_errors fehlgeschlagen: 1 validation error for Demographics
+firstname
+  String should have at least 1 character [type=string_too_short, input_value='', input_type=str]
+    For further information visit https://errors.pydantic.dev/2.12/v/string_too_short
+2025-11-06 20:16:51,628 - __main__ - INFO - Führe test_duplicate_patient_creation aus...
+2025-11-06 20:16:51,632 - __main__ - INFO - Starte Test: test_duplicate_patient_creation
+2025-11-06 20:16:51,635 - core.patients.patient_manager - INFO - PatientManager initialisiert
+2025-11-06 20:16:51,639 - __main__ - WARNING - ✗ test_duplicate_patient_creation fehlgeschlagen: 1 validation error for Patient
+folder_slug
+  Field required [type=missing, input_value={'consents': Consents(pho...Test-Patient dup_first'}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.12/v/missing
+2025-11-06 20:16:51,641 - __main__ - INFO - Führe test_update_patient aus...
+2025-11-06 20:16:51,641 - __main__ - INFO - Starte Test: test_update_patient
+2025-11-06 20:16:51,642 - core.patients.patient_manager - INFO - PatientManager initialisiert
+2025-11-06 20:16:51,645 - __main__ - WARNING - ✗ test_update_patient fehlgeschlagen: 1 validation error for Patient
+folder_slug
+  Field required [type=missing, input_value={'consents': Consents(pho...es': 'Test-Patient upd'}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.12/v/missing
+2025-11-06 20:16:51,646 - __main__ - INFO - Führe test_search_patients aus...
+2025-11-06 20:16:51,650 - __main__ - INFO - Starte Test: test_search_patients
+2025-11-06 20:16:51,653 - core.patients.patient_manager - INFO - PatientManager initialisiert
+2025-11-06 20:16:51,655 - __main__ - WARNING - ✗ test_search_patients fehlgeschlagen: 1 validation error for Patient
+folder_slug
+  Field required [type=missing, input_value={'consents': Consents(pho...st-Patient search_male'}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.12/v/missing
+2025-11-06 20:16:51,657 - __main__ - INFO - Führe test_delete_patient aus...
+2025-11-06 20:16:51,657 - __main__ - INFO - Starte Test: test_delete_patient
+2025-11-06 20:16:51,658 - core.patients.patient_manager - INFO - PatientManager initialisiert
+2025-11-06 20:16:51,661 - __main__ - WARNING - ✗ test_delete_patient fehlgeschlagen: 1 validation error for Patient
+folder_slug
+  Field required [type=missing, input_value={'consents': Consents(pho...es': 'Test-Patient del'}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.12/v/missing
+2025-11-06 20:16:51,663 - __main__ - INFO - Führe test_edge_cases aus...
+2025-11-06 20:16:51,667 - __main__ - INFO - Starte Test: test_edge_cases
+2025-11-06 20:16:51,670 - core.patients.patient_manager - INFO - PatientManager initialisiert
+2025-11-06 20:16:51,672 - __main__ - WARNING - ✗ test_edge_cases fehlgeschlagen: Unbekannter Fehler
+2025-11-06 20:16:51,675 - __main__ - INFO - Führe test_performance_crud_operations aus...
+2025-11-06 20:16:51,675 - __main__ - INFO - Starte Test: test_performance_crud_operations
+2025-11-06 20:16:51,676 - core.patients.patient_manager - INFO - PatientManager initialisiert
+2025-11-06 20:16:51,678 - __main__ - WARNING - ✗ test_performance_crud_operations fehlgeschlagen: 1 validation error for Patient
+folder_slug
+  Field required [type=missing, input_value={'consents': Consents(pho...st-Patient perf_create'}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.12/v/missing
+2025-11-06 20:16:51,680 - __main__ - INFO - Führe test_mass_operations aus...
+2025-11-06 20:16:51,682 - __main__ - INFO - Starte Test: test_mass_operations
+2025-11-06 20:16:51,692 - core.patients.patient_manager - INFO - PatientManager initialisiert
+2025-11-06 20:16:51,693 - __main__ - WARNING - ✗ test_mass_operations fehlgeschlagen: 1 validation error for Patient
+folder_slug
+  Field required [type=missing, input_value={'consents': Consents(pho...st-Patient mass_female'}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.12/v/missing
+================================================================================
+PATIENT-MANAGEMENT-SYSTEM TEST
+================================================================================
+
+================================================================================
+TEST-ZUSAMMENFASSUNG
+================================================================================
+Gesamte Tests: 9
+Erfolgreich: 0
+Fehlgeschlagen: 9
+Erfolgsrate: 0.0%

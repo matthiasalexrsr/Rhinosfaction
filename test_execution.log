@@ -1,0 +1,642 @@
+2025-11-06 20:11:06,793 - __main__ - INFO - Starte umfassende Patient-Management-Tests
+2025-11-06 20:11:06,793 - __main__ - INFO - Führe test_create_patient_basic aus...
+2025-11-06 20:11:06,793 - __main__ - INFO - Starte Test: test_create_patient_basic
+2025-11-06 20:11:07,093 - core.registry.excel_registry - INFO - Leere Excel-Registry erstellt
+2025-11-06 20:11:07,093 - core.patients.patient_manager - INFO - PatientManager initialisiert
+2025-11-06 20:11:07,095 - __main__ - WARNING - ✗ test_create_patient_basic fehlgeschlagen: 1 validation error for Demographics
+firstname
+  Value error, Name enthält ungültige Zeichen [type=value_error, input_value='Patient_001', input_type=str]
+    For further information visit https://errors.pydantic.dev/2.12/v/value_error
+2025-11-06 20:11:07,095 - __main__ - INFO - Führe test_create_patient_validation_errors aus...
+2025-11-06 20:11:07,095 - __main__ - INFO - Starte Test: test_create_patient_validation_errors
+2025-11-06 20:11:07,096 - core.patients.patient_manager - INFO - PatientManager initialisiert
+2025-11-06 20:11:07,099 - __main__ - WARNING - ✗ test_create_patient_validation_errors fehlgeschlagen: 2 validation errors for Demographics
+lastname
+  String should have at least 1 character [type=string_too_short, input_value='', input_type=str]
+    For further information visit https://errors.pydantic.dev/2.12/v/string_too_short
+firstname
+  Value error, Name enthält ungültige Zeichen [type=value_error, input_value='Patient_val_0', input_type=str]
+    For further information visit https://errors.pydantic.dev/2.12/v/value_error
+2025-11-06 20:11:07,101 - __main__ - INFO - Führe test_duplicate_patient_creation aus...
+2025-11-06 20:11:07,103 - __main__ - INFO - Starte Test: test_duplicate_patient_creation
+2025-11-06 20:11:07,106 - core.patients.patient_manager - INFO - PatientManager initialisiert
+2025-11-06 20:11:07,109 - __main__ - WARNING - ✗ test_duplicate_patient_creation fehlgeschlagen: 1 validation error for Surgery
+technique
+  Input should be 'Offen' or 'Geschlossen' [type=enum, input_value=<AnesthesiaType.GENERAL: 'Vollnarkose'>, input_type=AnesthesiaType]
+    For further information visit https://errors.pydantic.dev/2.12/v/enum
+2025-11-06 20:11:07,110 - __main__ - INFO - Führe test_update_patient aus...
+2025-11-06 20:11:07,110 - __main__ - INFO - Starte Test: test_update_patient
+2025-11-06 20:11:07,111 - core.patients.patient_manager - INFO - PatientManager initialisiert
+2025-11-06 20:11:07,114 - __main__ - WARNING - ✗ test_update_patient fehlgeschlagen: 1 validation error for Demographics
+firstname
+  Value error, Name enthält ungültige Zeichen [type=value_error, input_value='Patient_upd_001', input_type=str]
+    For further information visit https://errors.pydantic.dev/2.12/v/value_error
+2025-11-06 20:11:07,116 - __main__ - INFO - Führe test_search_patients aus...
+2025-11-06 20:11:07,118 - __main__ - INFO - Starte Test: test_search_patients
+2025-11-06 20:11:07,122 - core.patients.patient_manager - INFO - PatientManager initialisiert
+2025-11-06 20:11:07,124 - __main__ - WARNING - ✗ test_search_patients fehlgeschlagen: 1 validation error for Demographics
+firstname
+  Value error, Name enthält ungültige Zeichen [type=value_error, input_value='Patient_search_001', input_type=str]
+    For further information visit https://errors.pydantic.dev/2.12/v/value_error
+2025-11-06 20:11:07,126 - __main__ - INFO - Führe test_delete_patient aus...
+2025-11-06 20:11:07,126 - __main__ - INFO - Starte Test: test_delete_patient
+2025-11-06 20:11:07,126 - core.patients.patient_manager - INFO - PatientManager initialisiert
+2025-11-06 20:11:07,129 - __main__ - WARNING - ✗ test_delete_patient fehlgeschlagen: 1 validation error for Demographics
+firstname
+  Value error, Name enthält ungültige Zeichen [type=value_error, input_value='Patient_del_001', input_type=str]
+    For further information visit https://errors.pydantic.dev/2.12/v/value_error
+2025-11-06 20:11:07,131 - __main__ - INFO - Führe test_edge_cases aus...
+2025-11-06 20:11:07,133 - __main__ - INFO - Starte Test: test_edge_cases
+2025-11-06 20:11:07,136 - core.patients.patient_manager - INFO - PatientManager initialisiert
+2025-11-06 20:11:07,136 - __main__ - WARNING - ✗ test_edge_cases fehlgeschlagen: Unbekannter Fehler
+2025-11-06 20:11:07,136 - __main__ - INFO - Führe test_performance_crud_operations aus...
+2025-11-06 20:11:07,136 - __main__ - INFO - Starte Test: test_performance_crud_operations
+2025-11-06 20:11:07,137 - core.patients.patient_manager - INFO - PatientManager initialisiert
+2025-11-06 20:11:07,137 - __main__ - WARNING - ✗ test_performance_crud_operations fehlgeschlagen: 1 validation error for Demographics
+firstname
+  Value error, Name enthält ungültige Zeichen [type=value_error, input_value='Patient_perf_create_0', input_type=str]
+    For further information visit https://errors.pydantic.dev/2.12/v/value_error
+2025-11-06 20:11:07,138 - __main__ - INFO - Führe test_mass_operations aus...
+2025-11-06 20:11:07,138 - __main__ - INFO - Starte Test: test_mass_operations
+2025-11-06 20:11:07,141 - core.patients.patient_manager - INFO - PatientManager initialisiert
+2025-11-06 20:11:07,141 - __main__ - WARNING - ✗ test_mass_operations fehlgeschlagen: 1 validation error for Demographics
+firstname
+  Value error, Name enthält ungültige Zeichen [type=value_error, input_value='Patient_mass_00', input_type=str]
+    For further information visit https://errors.pydantic.dev/2.12/v/value_error
+2025-11-06 20:12:47,823 - __main__ - INFO - Starte umfassende Patient-Management-Tests
+2025-11-06 20:12:47,824 - __main__ - INFO - Führe test_create_patient_basic aus...
+2025-11-06 20:12:47,824 - __main__ - INFO - Starte Test: test_create_patient_basic
+2025-11-06 20:12:47,827 - core.patients.patient_manager - INFO - PatientManager initialisiert
+2025-11-06 20:12:47,830 - __main__ - WARNING - ✗ test_create_patient_basic fehlgeschlagen: 1 validation error for Demographics
+firstname
+  Value error, Name enthält ungültige Zeichen [type=value_error, input_value='Patient001', input_type=str]
+    For further information visit https://errors.pydantic.dev/2.12/v/value_error
+2025-11-06 20:12:47,831 - __main__ - INFO - Führe test_create_patient_validation_errors aus...
+2025-11-06 20:12:47,835 - __main__ - INFO - Starte Test: test_create_patient_validation_errors
+2025-11-06 20:12:47,836 - core.patients.patient_manager - INFO - PatientManager initialisiert
+2025-11-06 20:12:47,838 - __main__ - WARNING - ✗ test_create_patient_validation_errors fehlgeschlagen: 1 validation error for Demographics
+firstname
+  String should have at least 1 character [type=string_too_short, input_value='', input_type=str]
+    For further information visit https://errors.pydantic.dev/2.12/v/string_too_short
+2025-11-06 20:12:47,840 - __main__ - INFO - Führe test_duplicate_patient_creation aus...
+2025-11-06 20:12:47,843 - __main__ - INFO - Starte Test: test_duplicate_patient_creation
+2025-11-06 20:12:47,844 - core.patients.patient_manager - INFO - PatientManager initialisiert
+2025-11-06 20:12:47,846 - __main__ - WARNING - ✗ test_duplicate_patient_creation fehlgeschlagen: 1 validation error for Patient
+folder_slug
+  Input should be a valid string [type=string_type, input_value=None, input_type=NoneType]
+    For further information visit https://errors.pydantic.dev/2.12/v/string_type
+2025-11-06 20:12:47,849 - __main__ - INFO - Führe test_update_patient aus...
+2025-11-06 20:12:47,852 - __main__ - INFO - Starte Test: test_update_patient
+2025-11-06 20:12:47,855 - core.patients.patient_manager - INFO - PatientManager initialisiert
+2025-11-06 20:12:47,857 - __main__ - WARNING - ✗ test_update_patient fehlgeschlagen: 1 validation error for Demographics
+firstname
+  Value error, Name enthält ungültige Zeichen [type=value_error, input_value='Patientupd001', input_type=str]
+    For further information visit https://errors.pydantic.dev/2.12/v/value_error
+2025-11-06 20:12:47,859 - __main__ - INFO - Führe test_search_patients aus...
+2025-11-06 20:12:47,859 - __main__ - INFO - Starte Test: test_search_patients
+2025-11-06 20:12:47,860 - core.patients.patient_manager - INFO - PatientManager initialisiert
+2025-11-06 20:12:47,876 - __main__ - WARNING - ✗ test_search_patients fehlgeschlagen: 1 validation error for Demographics
+firstname
+  Value error, Name enthält ungültige Zeichen [type=value_error, input_value='Patientsearch_001', input_type=str]
+    For further information visit https://errors.pydantic.dev/2.12/v/value_error
+2025-11-06 20:12:47,878 - __main__ - INFO - Führe test_delete_patient aus...
+2025-11-06 20:12:47,880 - __main__ - INFO - Starte Test: test_delete_patient
+2025-11-06 20:12:47,884 - core.patients.patient_manager - INFO - PatientManager initialisiert
+2025-11-06 20:12:47,885 - __main__ - WARNING - ✗ test_delete_patient fehlgeschlagen: 1 validation error for Demographics
+firstname
+  Value error, Name enthält ungültige Zeichen [type=value_error, input_value='Patientdel_001', input_type=str]
+    For further information visit https://errors.pydantic.dev/2.12/v/value_error
+2025-11-06 20:12:47,887 - __main__ - INFO - Führe test_edge_cases aus...
+2025-11-06 20:12:47,887 - __main__ - INFO - Starte Test: test_edge_cases
+2025-11-06 20:12:47,888 - core.patients.patient_manager - INFO - PatientManager initialisiert
+2025-11-06 20:12:47,889 - __main__ - WARNING - ✗ test_edge_cases fehlgeschlagen: Unbekannter Fehler
+2025-11-06 20:12:47,892 - __main__ - INFO - Führe test_performance_crud_operations aus...
+2025-11-06 20:12:47,894 - __main__ - INFO - Starte Test: test_performance_crud_operations
+2025-11-06 20:12:47,898 - core.patients.patient_manager - INFO - PatientManager initialisiert
+2025-11-06 20:12:47,899 - __main__ - WARNING - ✗ test_performance_crud_operations fehlgeschlagen: 1 validation error for Demographics
+firstname
+  Value error, Name enthält ungültige Zeichen [type=value_error, input_value='Patientperf_create0', input_type=str]
+    For further information visit https://errors.pydantic.dev/2.12/v/value_error
+2025-11-06 20:12:47,901 - __main__ - INFO - Führe test_mass_operations aus...
+2025-11-06 20:12:47,901 - __main__ - INFO - Starte Test: test_mass_operations
+2025-11-06 20:12:47,902 - core.patients.patient_manager - INFO - PatientManager initialisiert
+2025-11-06 20:12:47,904 - __main__ - WARNING - ✗ test_mass_operations fehlgeschlagen: 1 validation error for Demographics
+firstname
+  Value error, Name enthält ungültige Zeichen [type=value_error, input_value='Patientmass00', input_type=str]
+    For further information visit https://errors.pydantic.dev/2.12/v/value_error
+2025-11-06 20:14:31,404 - __main__ - INFO - Starte umfassende Patient-Management-Tests
+2025-11-06 20:14:31,404 - __main__ - INFO - Führe test_create_patient_basic aus...
+2025-11-06 20:14:31,404 - __main__ - INFO - Starte Test: test_create_patient_basic
+2025-11-06 20:14:31,408 - core.patients.patient_manager - INFO - PatientManager initialisiert
+2025-11-06 20:14:31,410 - __main__ - WARNING - ✗ test_create_patient_basic fehlgeschlagen: 1 validation error for Demographics
+firstname
+  Value error, Name enthält ungültige Zeichen [type=value_error, input_value='Patient1', input_type=str]
+    For further information visit https://errors.pydantic.dev/2.12/v/value_error
+2025-11-06 20:14:31,411 - __main__ - INFO - Führe test_create_patient_validation_errors aus...
+2025-11-06 20:14:31,414 - __main__ - INFO - Starte Test: test_create_patient_validation_errors
+2025-11-06 20:14:31,418 - core.patients.patient_manager - INFO - PatientManager initialisiert
+2025-11-06 20:14:31,421 - __main__ - WARNING - ✗ test_create_patient_validation_errors fehlgeschlagen: 1 validation error for Demographics
+firstname
+  String should have at least 1 character [type=string_too_short, input_value='', input_type=str]
+    For further information visit https://errors.pydantic.dev/2.12/v/string_too_short
+2025-11-06 20:14:31,423 - __main__ - INFO - Führe test_duplicate_patient_creation aus...
+2025-11-06 20:14:31,423 - __main__ - INFO - Starte Test: test_duplicate_patient_creation
+2025-11-06 20:14:31,423 - core.patients.patient_manager - INFO - PatientManager initialisiert
+2025-11-06 20:14:31,426 - __main__ - WARNING - ✗ test_duplicate_patient_creation fehlgeschlagen: 1 validation error for Patient
+folder_slug
+  Input should be a valid string [type=string_type, input_value=None, input_type=NoneType]
+    For further information visit https://errors.pydantic.dev/2.12/v/string_type
+2025-11-06 20:14:31,429 - __main__ - INFO - Führe test_update_patient aus...
+2025-11-06 20:14:31,431 - __main__ - INFO - Starte Test: test_update_patient
+2025-11-06 20:14:31,436 - core.patients.patient_manager - INFO - PatientManager initialisiert
+2025-11-06 20:14:31,437 - __main__ - WARNING - ✗ test_update_patient fehlgeschlagen: 1 validation error for Demographics
+firstname
+  Value error, Name enthält ungültige Zeichen [type=value_error, input_value='Patient4', input_type=str]
+    For further information visit https://errors.pydantic.dev/2.12/v/value_error
+2025-11-06 20:14:31,439 - __main__ - INFO - Führe test_search_patients aus...
+2025-11-06 20:14:31,441 - __main__ - INFO - Starte Test: test_search_patients
+2025-11-06 20:14:31,447 - core.patients.patient_manager - INFO - PatientManager initialisiert
+2025-11-06 20:14:31,447 - __main__ - WARNING - ✗ test_search_patients fehlgeschlagen: 1 validation error for Demographics
+firstname
+  Value error, Name enthält ungültige Zeichen [type=value_error, input_value='Patient5', input_type=str]
+    For further information visit https://errors.pydantic.dev/2.12/v/value_error
+2025-11-06 20:14:31,452 - __main__ - INFO - Führe test_delete_patient aus...
+2025-11-06 20:14:31,454 - __main__ - INFO - Starte Test: test_delete_patient
+2025-11-06 20:14:31,458 - core.patients.patient_manager - INFO - PatientManager initialisiert
+2025-11-06 20:14:31,462 - __main__ - WARNING - ✗ test_delete_patient fehlgeschlagen: 1 validation error for Demographics
+firstname
+  Value error, Name enthält ungültige Zeichen [type=value_error, input_value='Patient6', input_type=str]
+    For further information visit https://errors.pydantic.dev/2.12/v/value_error
+2025-11-06 20:14:31,464 - __main__ - INFO - Führe test_edge_cases aus...
+2025-11-06 20:14:31,464 - __main__ - INFO - Starte Test: test_edge_cases
+2025-11-06 20:14:31,465 - core.patients.patient_manager - INFO - PatientManager initialisiert
+2025-11-06 20:14:31,467 - __main__ - WARNING - ✗ test_edge_cases fehlgeschlagen: Unbekannter Fehler
+2025-11-06 20:14:31,470 - __main__ - INFO - Führe test_performance_crud_operations aus...
+2025-11-06 20:14:31,473 - __main__ - INFO - Starte Test: test_performance_crud_operations
+2025-11-06 20:14:31,477 - core.patients.patient_manager - INFO - PatientManager initialisiert
+2025-11-06 20:14:31,480 - __main__ - WARNING - ✗ test_performance_crud_operations fehlgeschlagen: 1 validation error for Demographics
+firstname
+  Value error, Name enthält ungültige Zeichen [type=value_error, input_value='Patient10', input_type=str]
+    For further information visit https://errors.pydantic.dev/2.12/v/value_error
+2025-11-06 20:14:31,483 - __main__ - INFO - Führe test_mass_operations aus...
+2025-11-06 20:14:31,486 - __main__ - INFO - Starte Test: test_mass_operations
+2025-11-06 20:14:31,491 - core.patients.patient_manager - INFO - PatientManager initialisiert
+2025-11-06 20:14:31,494 - __main__ - WARNING - ✗ test_mass_operations fehlgeschlagen: 1 validation error for Demographics
+firstname
+  Value error, Name enthält ungültige Zeichen [type=value_error, input_value='Patient11', input_type=str]
+    For further information visit https://errors.pydantic.dev/2.12/v/value_error
+2025-11-06 20:16:11,783 - __main__ - INFO - Starte umfassende Patient-Management-Tests
+2025-11-06 20:16:11,783 - __main__ - INFO - Führe test_create_patient_basic aus...
+2025-11-06 20:16:11,783 - __main__ - INFO - Starte Test: test_create_patient_basic
+2025-11-06 20:16:11,785 - core.patients.patient_manager - INFO - PatientManager initialisiert
+2025-11-06 20:16:11,788 - __main__ - WARNING - ✗ test_create_patient_basic fehlgeschlagen: 1 validation error for Patient
+folder_slug
+  Input should be a valid string [type=string_type, input_value=None, input_type=NoneType]
+    For further information visit https://errors.pydantic.dev/2.12/v/string_type
+2025-11-06 20:16:11,789 - __main__ - INFO - Führe test_create_patient_validation_errors aus...
+2025-11-06 20:16:11,790 - __main__ - INFO - Starte Test: test_create_patient_validation_errors
+2025-11-06 20:16:11,790 - core.patients.patient_manager - INFO - PatientManager initialisiert
+2025-11-06 20:16:11,791 - __main__ - WARNING - ✗ test_create_patient_validation_errors fehlgeschlagen: 1 validation error for Demographics
+firstname
+  String should have at least 1 character [type=string_too_short, input_value='', input_type=str]
+    For further information visit https://errors.pydantic.dev/2.12/v/string_too_short
+2025-11-06 20:16:11,791 - __main__ - INFO - Führe test_duplicate_patient_creation aus...
+2025-11-06 20:16:11,791 - __main__ - INFO - Starte Test: test_duplicate_patient_creation
+2025-11-06 20:16:11,792 - core.patients.patient_manager - INFO - PatientManager initialisiert
+2025-11-06 20:16:11,792 - __main__ - WARNING - ✗ test_duplicate_patient_creation fehlgeschlagen: 1 validation error for Patient
+folder_slug
+  Input should be a valid string [type=string_type, input_value=None, input_type=NoneType]
+    For further information visit https://errors.pydantic.dev/2.12/v/string_type
+2025-11-06 20:16:11,792 - __main__ - INFO - Führe test_update_patient aus...
+2025-11-06 20:16:11,792 - __main__ - INFO - Starte Test: test_update_patient
+2025-11-06 20:16:11,793 - core.patients.patient_manager - INFO - PatientManager initialisiert
+2025-11-06 20:16:11,795 - __main__ - WARNING - ✗ test_update_patient fehlgeschlagen: 1 validation error for Patient
+folder_slug
+  Input should be a valid string [type=string_type, input_value=None, input_type=NoneType]
+    For further information visit https://errors.pydantic.dev/2.12/v/string_type
+2025-11-06 20:16:11,797 - __main__ - INFO - Führe test_search_patients aus...
+2025-11-06 20:16:11,800 - __main__ - INFO - Starte Test: test_search_patients
+2025-11-06 20:16:11,801 - core.patients.patient_manager - INFO - PatientManager initialisiert
+2025-11-06 20:16:11,803 - __main__ - WARNING - ✗ test_search_patients fehlgeschlagen: 1 validation error for Patient
+folder_slug
+  Input should be a valid string [type=string_type, input_value=None, input_type=NoneType]
+    For further information visit https://errors.pydantic.dev/2.12/v/string_type
+2025-11-06 20:16:11,805 - __main__ - INFO - Führe test_delete_patient aus...
+2025-11-06 20:16:11,808 - __main__ - INFO - Starte Test: test_delete_patient
+2025-11-06 20:16:11,811 - core.patients.patient_manager - INFO - PatientManager initialisiert
+2025-11-06 20:16:11,813 - __main__ - WARNING - ✗ test_delete_patient fehlgeschlagen: 1 validation error for Patient
+folder_slug
+  Input should be a valid string [type=string_type, input_value=None, input_type=NoneType]
+    For further information visit https://errors.pydantic.dev/2.12/v/string_type
+2025-11-06 20:16:11,817 - __main__ - INFO - Führe test_edge_cases aus...
+2025-11-06 20:16:11,817 - __main__ - INFO - Starte Test: test_edge_cases
+2025-11-06 20:16:11,818 - core.patients.patient_manager - INFO - PatientManager initialisiert
+2025-11-06 20:16:11,820 - __main__ - WARNING - ✗ test_edge_cases fehlgeschlagen: Unbekannter Fehler
+2025-11-06 20:16:11,823 - __main__ - INFO - Führe test_performance_crud_operations aus...
+2025-11-06 20:16:11,825 - __main__ - INFO - Starte Test: test_performance_crud_operations
+2025-11-06 20:16:11,829 - core.patients.patient_manager - INFO - PatientManager initialisiert
+2025-11-06 20:16:11,831 - __main__ - WARNING - ✗ test_performance_crud_operations fehlgeschlagen: 1 validation error for Patient
+folder_slug
+  Input should be a valid string [type=string_type, input_value=None, input_type=NoneType]
+    For further information visit https://errors.pydantic.dev/2.12/v/string_type
+2025-11-06 20:16:11,834 - __main__ - INFO - Führe test_mass_operations aus...
+2025-11-06 20:16:11,834 - __main__ - INFO - Starte Test: test_mass_operations
+2025-11-06 20:16:11,835 - core.patients.patient_manager - INFO - PatientManager initialisiert
+2025-11-06 20:16:11,837 - __main__ - WARNING - ✗ test_mass_operations fehlgeschlagen: 1 validation error for Patient
+folder_slug
+  Input should be a valid string [type=string_type, input_value=None, input_type=NoneType]
+    For further information visit https://errors.pydantic.dev/2.12/v/string_type
+2025-11-06 20:16:51,602 - __main__ - INFO - Starte umfassende Patient-Management-Tests
+2025-11-06 20:16:51,602 - __main__ - INFO - Führe test_create_patient_basic aus...
+2025-11-06 20:16:51,602 - __main__ - INFO - Starte Test: test_create_patient_basic
+2025-11-06 20:16:51,605 - core.patients.patient_manager - INFO - PatientManager initialisiert
+2025-11-06 20:16:51,612 - __main__ - WARNING - ✗ test_create_patient_basic fehlgeschlagen: 1 validation error for Patient
+folder_slug
+  Field required [type=missing, input_value={'consents': Consents(pho...': 'Test-Patient basic'}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.12/v/missing
+2025-11-06 20:16:51,613 - __main__ - INFO - Führe test_create_patient_validation_errors aus...
+2025-11-06 20:16:51,616 - __main__ - INFO - Starte Test: test_create_patient_validation_errors
+2025-11-06 20:16:51,622 - core.patients.patient_manager - INFO - PatientManager initialisiert
+2025-11-06 20:16:51,625 - __main__ - WARNING - ✗ test_create_patient_validation_errors fehlgeschlagen: 1 validation error for Demographics
+firstname
+  String should have at least 1 character [type=string_too_short, input_value='', input_type=str]
+    For further information visit https://errors.pydantic.dev/2.12/v/string_too_short
+2025-11-06 20:16:51,628 - __main__ - INFO - Führe test_duplicate_patient_creation aus...
+2025-11-06 20:16:51,632 - __main__ - INFO - Starte Test: test_duplicate_patient_creation
+2025-11-06 20:16:51,635 - core.patients.patient_manager - INFO - PatientManager initialisiert
+2025-11-06 20:16:51,639 - __main__ - WARNING - ✗ test_duplicate_patient_creation fehlgeschlagen: 1 validation error for Patient
+folder_slug
+  Field required [type=missing, input_value={'consents': Consents(pho...Test-Patient dup_first'}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.12/v/missing
+2025-11-06 20:16:51,641 - __main__ - INFO - Führe test_update_patient aus...
+2025-11-06 20:16:51,641 - __main__ - INFO - Starte Test: test_update_patient
+2025-11-06 20:16:51,642 - core.patients.patient_manager - INFO - PatientManager initialisiert
+2025-11-06 20:16:51,645 - __main__ - WARNING - ✗ test_update_patient fehlgeschlagen: 1 validation error for Patient
+folder_slug
+  Field required [type=missing, input_value={'consents': Consents(pho...es': 'Test-Patient upd'}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.12/v/missing
+2025-11-06 20:16:51,646 - __main__ - INFO - Führe test_search_patients aus...
+2025-11-06 20:16:51,650 - __main__ - INFO - Starte Test: test_search_patients
+2025-11-06 20:16:51,653 - core.patients.patient_manager - INFO - PatientManager initialisiert
+2025-11-06 20:16:51,655 - __main__ - WARNING - ✗ test_search_patients fehlgeschlagen: 1 validation error for Patient
+folder_slug
+  Field required [type=missing, input_value={'consents': Consents(pho...st-Patient search_male'}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.12/v/missing
+2025-11-06 20:16:51,657 - __main__ - INFO - Führe test_delete_patient aus...
+2025-11-06 20:16:51,657 - __main__ - INFO - Starte Test: test_delete_patient
+2025-11-06 20:16:51,658 - core.patients.patient_manager - INFO - PatientManager initialisiert
+2025-11-06 20:16:51,661 - __main__ - WARNING - ✗ test_delete_patient fehlgeschlagen: 1 validation error for Patient
+folder_slug
+  Field required [type=missing, input_value={'consents': Consents(pho...es': 'Test-Patient del'}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.12/v/missing
+2025-11-06 20:16:51,663 - __main__ - INFO - Führe test_edge_cases aus...
+2025-11-06 20:16:51,667 - __main__ - INFO - Starte Test: test_edge_cases
+2025-11-06 20:16:51,670 - core.patients.patient_manager - INFO - PatientManager initialisiert
+2025-11-06 20:16:51,672 - __main__ - WARNING - ✗ test_edge_cases fehlgeschlagen: Unbekannter Fehler
+2025-11-06 20:16:51,675 - __main__ - INFO - Führe test_performance_crud_operations aus...
+2025-11-06 20:16:51,675 - __main__ - INFO - Starte Test: test_performance_crud_operations
+2025-11-06 20:16:51,676 - core.patients.patient_manager - INFO - PatientManager initialisiert
+2025-11-06 20:16:51,678 - __main__ - WARNING - ✗ test_performance_crud_operations fehlgeschlagen: 1 validation error for Patient
+folder_slug
+  Field required [type=missing, input_value={'consents': Consents(pho...st-Patient perf_create'}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.12/v/missing
+2025-11-06 20:16:51,680 - __main__ - INFO - Führe test_mass_operations aus...
+2025-11-06 20:16:51,682 - __main__ - INFO - Starte Test: test_mass_operations
+2025-11-06 20:16:51,692 - core.patients.patient_manager - INFO - PatientManager initialisiert
+2025-11-06 20:16:51,693 - __main__ - WARNING - ✗ test_mass_operations fehlgeschlagen: 1 validation error for Patient
+folder_slug
+  Field required [type=missing, input_value={'consents': Consents(pho...st-Patient mass_female'}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.12/v/missing
+2025-11-06 20:20:41,425 - __main__ - INFO - Starte umfassende Patient-Management-Tests
+2025-11-06 20:20:41,425 - __main__ - INFO - Führe test_create_patient_basic aus...
+2025-11-06 20:20:41,425 - __main__ - INFO - Starte Test: test_create_patient_basic
+2025-11-06 20:20:41,427 - core.patients.patient_manager - INFO - PatientManager initialisiert
+2025-11-06 20:20:41,428 - __main__ - WARNING - ✗ test_create_patient_basic fehlgeschlagen: 1 validation error for Patient
+folder_slug
+  Field required [type=missing, input_value={'consents': Consents(pho...': 'Test-Patient basic'}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.12/v/missing
+2025-11-06 20:20:41,432 - __main__ - INFO - Führe test_create_patient_validation_errors aus...
+2025-11-06 20:20:41,435 - __main__ - INFO - Starte Test: test_create_patient_validation_errors
+2025-11-06 20:20:41,441 - core.patients.patient_manager - INFO - PatientManager initialisiert
+2025-11-06 20:20:41,448 - __main__ - WARNING - ✗ test_create_patient_validation_errors fehlgeschlagen: 1 validation error for Demographics
+firstname
+  String should have at least 1 character [type=string_too_short, input_value='', input_type=str]
+    For further information visit https://errors.pydantic.dev/2.12/v/string_too_short
+2025-11-06 20:20:41,450 - __main__ - INFO - Führe test_duplicate_patient_creation aus...
+2025-11-06 20:20:41,454 - __main__ - INFO - Starte Test: test_duplicate_patient_creation
+2025-11-06 20:20:41,459 - core.patients.patient_manager - INFO - PatientManager initialisiert
+2025-11-06 20:20:41,461 - __main__ - WARNING - ✗ test_duplicate_patient_creation fehlgeschlagen: 1 validation error for Patient
+folder_slug
+  Field required [type=missing, input_value={'consents': Consents(pho...Test-Patient dup_first'}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.12/v/missing
+2025-11-06 20:20:41,464 - __main__ - INFO - Führe test_update_patient aus...
+2025-11-06 20:20:41,464 - __main__ - INFO - Starte Test: test_update_patient
+2025-11-06 20:20:41,465 - core.patients.patient_manager - INFO - PatientManager initialisiert
+2025-11-06 20:20:41,468 - __main__ - WARNING - ✗ test_update_patient fehlgeschlagen: 1 validation error for Patient
+folder_slug
+  Field required [type=missing, input_value={'consents': Consents(pho...es': 'Test-Patient upd'}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.12/v/missing
+2025-11-06 20:20:41,471 - __main__ - INFO - Führe test_search_patients aus...
+2025-11-06 20:20:41,474 - __main__ - INFO - Starte Test: test_search_patients
+2025-11-06 20:20:41,478 - core.patients.patient_manager - INFO - PatientManager initialisiert
+2025-11-06 20:20:41,481 - __main__ - WARNING - ✗ test_search_patients fehlgeschlagen: 1 validation error for Patient
+folder_slug
+  Field required [type=missing, input_value={'consents': Consents(pho...st-Patient search_male'}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.12/v/missing
+2025-11-06 20:20:41,484 - __main__ - INFO - Führe test_delete_patient aus...
+2025-11-06 20:20:41,484 - __main__ - INFO - Starte Test: test_delete_patient
+2025-11-06 20:20:41,485 - core.patients.patient_manager - INFO - PatientManager initialisiert
+2025-11-06 20:20:41,488 - __main__ - WARNING - ✗ test_delete_patient fehlgeschlagen: 1 validation error for Patient
+folder_slug
+  Field required [type=missing, input_value={'consents': Consents(pho...es': 'Test-Patient del'}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.12/v/missing
+2025-11-06 20:20:41,491 - __main__ - INFO - Führe test_edge_cases aus...
+2025-11-06 20:20:41,495 - __main__ - INFO - Starte Test: test_edge_cases
+2025-11-06 20:20:41,502 - core.patients.patient_manager - INFO - PatientManager initialisiert
+2025-11-06 20:20:41,502 - __main__ - WARNING - ✗ test_edge_cases fehlgeschlagen: Unbekannter Fehler
+2025-11-06 20:20:41,505 - __main__ - INFO - Führe test_performance_crud_operations aus...
+2025-11-06 20:20:41,509 - __main__ - INFO - Starte Test: test_performance_crud_operations
+2025-11-06 20:20:41,513 - core.patients.patient_manager - INFO - PatientManager initialisiert
+2025-11-06 20:20:41,516 - __main__ - WARNING - ✗ test_performance_crud_operations fehlgeschlagen: 1 validation error for Patient
+folder_slug
+  Field required [type=missing, input_value={'consents': Consents(pho...st-Patient perf_create'}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.12/v/missing
+2025-11-06 20:20:41,519 - __main__ - INFO - Führe test_mass_operations aus...
+2025-11-06 20:20:41,523 - __main__ - INFO - Starte Test: test_mass_operations
+2025-11-06 20:20:41,524 - core.patients.patient_manager - INFO - PatientManager initialisiert
+2025-11-06 20:20:41,527 - __main__ - WARNING - ✗ test_mass_operations fehlgeschlagen: 1 validation error for Patient
+folder_slug
+  Field required [type=missing, input_value={'consents': Consents(pho...st-Patient mass_female'}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.12/v/missing
+2025-11-06 20:23:32,116 - __main__ - INFO - Starte umfassende Patient-Management-Tests (Repariert)
+2025-11-06 20:23:32,116 - __main__ - INFO - Führe test_01_create_patient_basic aus...
+2025-11-06 20:23:32,116 - __main__ - INFO - Starte Test: test_01_create_patient_basic
+2025-11-06 20:23:32,120 - core.patients.patient_manager - INFO - PatientManager initialisiert
+2025-11-06 20:23:32,124 - __main__ - WARNING - ✗ test_01_create_patient_basic fehlgeschlagen: 1 validation error for Demographics
+firstname
+  Value error, Name enthält ungültige Zeichen [type=value_error, input_value='Patient1', input_type=str]
+    For further information visit https://errors.pydantic.dev/2.12/v/value_error
+2025-11-06 20:23:32,126 - __main__ - INFO - Führe test_02_create_patient_validation_errors aus...
+2025-11-06 20:23:32,130 - __main__ - INFO - Starte Test: test_02_create_patient_validation_errors
+2025-11-06 20:23:32,134 - core.patients.patient_manager - INFO - PatientManager initialisiert
+2025-11-06 20:23:32,136 - __main__ - WARNING - ✗ test_02_create_patient_validation_errors fehlgeschlagen: Unbekannter Fehler
+2025-11-06 20:23:32,141 - __main__ - INFO - Führe test_03_duplicate_patient_creation aus...
+2025-11-06 20:23:32,141 - __main__ - INFO - Starte Test: test_03_duplicate_patient_creation
+2025-11-06 20:23:32,141 - core.patients.patient_manager - INFO - PatientManager initialisiert
+2025-11-06 20:23:32,159 - core.patients.json_handler - INFO - Patient gespeichert: DupTest_First_Geb19900101__
+2025-11-06 20:23:32,345 - core.registry.excel_registry - INFO - Patient zu Registry hinzugefügt: DupTest_First_Geb19900101__
+2025-11-06 20:23:32,345 - core.patients.patient_manager - INFO - Patient erstellt: DupTest_First_Geb19900101__ (ID: 8007cda0-42b1-476b-b0cb-86d57e3e6cb5)
+2025-11-06 20:23:32,359 - core.patients.json_handler - INFO - Patient gespeichert: DupTest_Second_Geb19900101__
+2025-11-06 20:23:32,451 - core.registry.excel_registry - INFO - Patient zu Registry hinzugefügt: DupTest_Second_Geb19900101__
+2025-11-06 20:23:32,452 - core.patients.patient_manager - INFO - Patient erstellt: DupTest_Second_Geb19900101__ (ID: 7d04211a-876e-48c4-9947-8180321034a2)
+2025-11-06 20:23:32,452 - __main__ - INFO - ✓ test_03_duplicate_patient_creation erfolgreich
+2025-11-06 20:23:32,452 - __main__ - INFO - Führe test_04_update_patient aus...
+2025-11-06 20:23:32,452 - __main__ - INFO - Starte Test: test_04_update_patient
+2025-11-06 20:23:32,453 - core.patients.patient_manager - INFO - PatientManager initialisiert
+2025-11-06 20:23:32,453 - __main__ - WARNING - ✗ test_04_update_patient fehlgeschlagen: 1 validation error for Demographics
+firstname
+  Value error, Name enthält ungültige Zeichen [type=value_error, input_value='Patient9', input_type=str]
+    For further information visit https://errors.pydantic.dev/2.12/v/value_error
+2025-11-06 20:23:32,453 - __main__ - INFO - Führe test_05_search_patients aus...
+2025-11-06 20:23:32,453 - __main__ - INFO - Starte Test: test_05_search_patients
+2025-11-06 20:23:32,454 - core.patients.patient_manager - INFO - PatientManager initialisiert
+2025-11-06 20:23:32,457 - __main__ - WARNING - ✗ test_05_search_patients fehlgeschlagen: 1 validation error for Demographics
+firstname
+  Value error, Name enthält ungültige Zeichen [type=value_error, input_value='Patient10', input_type=str]
+    For further information visit https://errors.pydantic.dev/2.12/v/value_error
+2025-11-06 20:23:32,460 - __main__ - INFO - Führe test_06_delete_patient aus...
+2025-11-06 20:23:32,463 - __main__ - INFO - Starte Test: test_06_delete_patient
+2025-11-06 20:23:32,466 - core.patients.patient_manager - INFO - PatientManager initialisiert
+2025-11-06 20:23:32,468 - __main__ - WARNING - ✗ test_06_delete_patient fehlgeschlagen: 1 validation error for Demographics
+firstname
+  Value error, Name enthält ungültige Zeichen [type=value_error, input_value='Patient11', input_type=str]
+    For further information visit https://errors.pydantic.dev/2.12/v/value_error
+2025-11-06 20:23:32,471 - __main__ - INFO - Führe test_07_realistic_medical_scenarios aus...
+2025-11-06 20:23:32,471 - __main__ - INFO - Starte Test: test_07_realistic_medical_scenarios
+2025-11-06 20:23:32,471 - core.patients.patient_manager - INFO - PatientManager initialisiert
+2025-11-06 20:23:32,475 - __main__ - WARNING - ✗ test_07_realistic_medical_scenarios fehlgeschlagen: 1 validation error for Surgery
+complications_postop.1
+  Input should be 'Hämatom', 'Infektion', 'Synechien' or 'Revisionsbedarf' [type=enum, input_value='Asymmetrie', input_type=str]
+    For further information visit https://errors.pydantic.dev/2.12/v/enum
+2025-11-06 20:23:32,477 - __main__ - INFO - Führe test_08_batch_operations_performance aus...
+2025-11-06 20:23:32,482 - __main__ - INFO - Starte Test: test_08_batch_operations_performance
+2025-11-06 20:23:32,485 - core.patients.patient_manager - INFO - PatientManager initialisiert
+2025-11-06 20:23:32,489 - __main__ - WARNING - ✗ test_08_batch_operations_performance fehlgeschlagen: 1 validation error for Demographics
+firstname
+  Value error, Name enthält ungültige Zeichen [type=value_error, input_value='Patient15', input_type=str]
+    For further information visit https://errors.pydantic.dev/2.12/v/value_error
+2025-11-06 20:23:32,492 - __main__ - INFO - Führe test_09_error_handling aus...
+2025-11-06 20:23:32,495 - __main__ - INFO - Starte Test: test_09_error_handling
+2025-11-06 20:23:32,498 - core.patients.patient_manager - INFO - PatientManager initialisiert
+2025-11-06 20:23:32,524 - __main__ - INFO - ✓ test_09_error_handling erfolgreich
+2025-11-06 20:23:32,524 - __main__ - INFO - Führe test_10_data_consistency aus...
+2025-11-06 20:23:32,524 - __main__ - INFO - Starte Test: test_10_data_consistency
+2025-11-06 20:23:32,525 - core.patients.patient_manager - INFO - PatientManager initialisiert
+2025-11-06 20:23:32,529 - __main__ - WARNING - ✗ test_10_data_consistency fehlgeschlagen: 1 validation error for Surgery
+complications_postop.0
+  Input should be 'Hämatom', 'Infektion', 'Synechien' or 'Revisionsbedarf' [type=enum, input_value='Leichte Schwellung', input_type=str]
+    For further information visit https://errors.pydantic.dev/2.12/v/enum
+2025-11-06 20:26:22,516 - __main__ - INFO - Starte umfassende Patient-Management-Tests (Vollständig Repariert)
+2025-11-06 20:26:22,516 - __main__ - INFO - Führe test_01_create_patient_basic aus...
+2025-11-06 20:26:22,516 - __main__ - INFO - Starte Test: test_01_create_patient_basic
+2025-11-06 20:26:22,522 - core.patients.patient_manager - INFO - PatientManager initialisiert
+2025-11-06 20:26:22,539 - core.patients.json_handler - INFO - Patient gespeichert: Test_Alpha_Geb19900101__
+2025-11-06 20:26:22,696 - core.registry.excel_registry - INFO - Patient zu Registry hinzugefügt: Test_Alpha_Geb19900101__
+2025-11-06 20:26:22,696 - core.patients.patient_manager - INFO - Patient erstellt: Test_Alpha_Geb19900101__ (ID: 4464c1a6-e634-401f-b236-7d2ebeab08d0)
+2025-11-06 20:26:22,710 - core.patients.json_handler - INFO - Patient geladen: Test_Alpha_Geb19900101__
+2025-11-06 20:26:22,710 - __main__ - INFO - ✓ test_01_create_patient_basic erfolgreich
+2025-11-06 20:26:22,713 - __main__ - INFO - Führe test_02_create_patient_validation_errors aus...
+2025-11-06 20:26:22,717 - __main__ - INFO - Starte Test: test_02_create_patient_validation_errors
+2025-11-06 20:26:22,720 - core.patients.patient_manager - INFO - PatientManager initialisiert
+2025-11-06 20:26:22,722 - __main__ - WARNING - ✗ test_02_create_patient_validation_errors fehlgeschlagen: Unbekannter Fehler
+2025-11-06 20:26:22,725 - __main__ - INFO - Führe test_03_duplicate_patient_creation aus...
+2025-11-06 20:26:22,728 - __main__ - INFO - Starte Test: test_03_duplicate_patient_creation
+2025-11-06 20:26:22,728 - core.patients.patient_manager - INFO - PatientManager initialisiert
+2025-11-06 20:26:22,735 - __main__ - WARNING - ✗ test_03_duplicate_patient_creation fehlgeschlagen: Unbekannter Fehler
+2025-11-06 20:26:22,735 - __main__ - INFO - Führe test_04_update_patient aus...
+2025-11-06 20:26:22,735 - __main__ - INFO - Starte Test: test_04_update_patient
+2025-11-06 20:26:22,739 - core.patients.patient_manager - INFO - PatientManager initialisiert
+2025-11-06 20:26:22,754 - core.patients.json_handler - INFO - Patient gespeichert: Test_Iota_Geb19900101__
+2025-11-06 20:26:22,809 - core.registry.excel_registry - INFO - Patient zu Registry hinzugefügt: Test_Iota_Geb19900101__
+2025-11-06 20:26:22,809 - core.patients.patient_manager - INFO - Patient erstellt: Test_Iota_Geb19900101__ (ID: a55c12d0-56f6-4b2b-bfaf-77c6b9c065bf)
+2025-11-06 20:26:22,822 - core.patients.json_handler - INFO - Patient geladen: Test_Iota_Geb19900101__
+2025-11-06 20:26:22,832 - core.patients.json_handler - INFO - Patient geladen: Test_Iota_Geb19900101__
+2025-11-06 20:26:22,839 - core.patients.json_handler - INFO - Patient gespeichert: Test_Iota_Geb19900101__
+2025-11-06 20:26:22,896 - core.registry.excel_registry - INFO - Patient in Registry aktualisiert: Test_Iota_Geb19900101__
+2025-11-06 20:26:22,896 - core.patients.patient_manager - INFO - Patient aktualisiert: Test_Iota_Geb19900101__ (ID: a55c12d0-56f6-4b2b-bfaf-77c6b9c065bf)
+2025-11-06 20:26:22,909 - core.patients.json_handler - INFO - Patient geladen: Test_Iota_Geb19900101__
+2025-11-06 20:26:22,909 - __main__ - INFO - ✓ test_04_update_patient erfolgreich
+2025-11-06 20:26:22,914 - __main__ - INFO - Führe test_05_search_patients aus...
+2025-11-06 20:26:22,917 - __main__ - INFO - Starte Test: test_05_search_patients
+2025-11-06 20:26:22,921 - core.patients.patient_manager - INFO - PatientManager initialisiert
+2025-11-06 20:26:22,936 - core.patients.json_handler - INFO - Patient gespeichert: Test_Kappa_Geb19900101__
+2025-11-06 20:26:23,000 - core.registry.excel_registry - INFO - Patient zu Registry hinzugefügt: Test_Kappa_Geb19900101__
+2025-11-06 20:26:23,000 - core.patients.patient_manager - INFO - Patient erstellt: Test_Kappa_Geb19900101__ (ID: 244cd917-bd6f-40b4-96d9-24effc2b75e8)
+2025-11-06 20:26:23,012 - core.patients.json_handler - INFO - Patient gespeichert: Test_Lambda_Geb19900101__
+2025-11-06 20:26:23,052 - core.registry.excel_registry - INFO - Patient zu Registry hinzugefügt: Test_Lambda_Geb19900101__
+2025-11-06 20:26:23,052 - core.patients.patient_manager - INFO - Patient erstellt: Test_Lambda_Geb19900101__ (ID: 78eee4e6-b924-466d-bf57-ed96a11d3cd8)
+2025-11-06 20:26:23,073 - core.patients.json_handler - INFO - Patient gespeichert: Test_Mu_Geb19900101__
+2025-11-06 20:26:23,114 - core.registry.excel_registry - INFO - Patient zu Registry hinzugefügt: Test_Mu_Geb19900101__
+2025-11-06 20:26:23,115 - core.patients.patient_manager - INFO - Patient erstellt: Test_Mu_Geb19900101__ (ID: 10471360-1302-4f07-b398-94c17cca95c4)
+2025-11-06 20:26:23,128 - core.patients.json_handler - INFO - Patient gespeichert: Test_Nu_Geb19900101__
+2025-11-06 20:26:23,182 - core.registry.excel_registry - INFO - Patient zu Registry hinzugefügt: Test_Nu_Geb19900101__
+2025-11-06 20:26:23,182 - core.patients.patient_manager - INFO - Patient erstellt: Test_Nu_Geb19900101__ (ID: 43407f71-2c5c-4deb-afee-798b0a499190)
+2025-11-06 20:26:23,228 - __main__ - WARNING - ✗ test_05_search_patients fehlgeschlagen: Unbekannter Fehler
+2025-11-06 20:26:23,229 - __main__ - INFO - Führe test_06_delete_patient aus...
+2025-11-06 20:26:23,229 - __main__ - INFO - Starte Test: test_06_delete_patient
+2025-11-06 20:26:23,230 - core.patients.patient_manager - INFO - PatientManager initialisiert
+2025-11-06 20:26:23,245 - core.patients.json_handler - INFO - Patient gespeichert: Test_Xi_Geb19900101__
+2025-11-06 20:26:23,319 - core.registry.excel_registry - INFO - Patient zu Registry hinzugefügt: Test_Xi_Geb19900101__
+2025-11-06 20:26:23,319 - core.patients.patient_manager - INFO - Patient erstellt: Test_Xi_Geb19900101__ (ID: c0887359-25b9-4c80-9a5b-df4d240bed42)
+2025-11-06 20:26:23,333 - core.patients.json_handler - INFO - Patient geladen: Test_Xi_Geb19900101__
+2025-11-06 20:26:23,345 - core.patients.json_handler - INFO - Patient geladen: Test_Xi_Geb19900101__
+2025-11-06 20:26:23,397 - core.registry.excel_registry - INFO - Patient aus Registry entfernt: c0887359-25b9-4c80-9a5b-df4d240bed42
+2025-11-06 20:26:23,401 - core.patients.json_handler - INFO - Patient gelöscht: Test_Xi_Geb19900101__
+2025-11-06 20:26:23,401 - core.patients.patient_manager - INFO - Patient gelöscht: Test_Xi_Geb19900101__ (ID: c0887359-25b9-4c80-9a5b-df4d240bed42)
+2025-11-06 20:26:23,414 - __main__ - INFO - ✓ test_06_delete_patient erfolgreich
+2025-11-06 20:26:23,414 - __main__ - INFO - Führe test_07_realistic_medical_scenarios aus...
+2025-11-06 20:26:23,414 - __main__ - INFO - Starte Test: test_07_realistic_medical_scenarios
+2025-11-06 20:26:23,415 - core.patients.patient_manager - INFO - PatientManager initialisiert
+2025-11-06 20:26:23,433 - core.patients.json_handler - INFO - Patient gespeichert: Schmidt_Anna_Geb19950515__
+2025-11-06 20:26:23,479 - core.registry.excel_registry - INFO - Patient zu Registry hinzugefügt: Schmidt_Anna_Geb19950515__
+2025-11-06 20:26:23,479 - core.patients.patient_manager - INFO - Patient erstellt: Schmidt_Anna_Geb19950515__ (ID: 5229cdf8-1d45-4ea2-a83b-cc53500a25ab)
+2025-11-06 20:26:23,490 - core.patients.json_handler - INFO - Patient gespeichert: Mustermann_Max_Geb19750820__
+2025-11-06 20:26:23,557 - core.registry.excel_registry - INFO - Patient zu Registry hinzugefügt: Mustermann_Max_Geb19750820__
+2025-11-06 20:26:23,557 - core.patients.patient_manager - INFO - Patient erstellt: Mustermann_Max_Geb19750820__ (ID: 8c3f2fd4-3530-49a3-9f8e-817118f9cd58)
+2025-11-06 20:26:23,569 - core.patients.json_handler - INFO - Patient gespeichert: Fischer_Elena_Geb19881203__
+2025-11-06 20:26:23,627 - core.registry.excel_registry - INFO - Patient zu Registry hinzugefügt: Fischer_Elena_Geb19881203__
+2025-11-06 20:26:23,627 - core.patients.patient_manager - INFO - Patient erstellt: Fischer_Elena_Geb19881203__ (ID: e6956fce-91dc-4696-b650-3f87c703b0ce)
+2025-11-06 20:26:23,639 - core.patients.json_handler - INFO - Patient gespeichert: Weber_Tom_Geb19920912__
+2025-11-06 20:26:23,704 - core.registry.excel_registry - INFO - Patient zu Registry hinzugefügt: Weber_Tom_Geb19920912__
+2025-11-06 20:26:23,704 - core.patients.patient_manager - INFO - Patient erstellt: Weber_Tom_Geb19920912__ (ID: da834f5e-47bf-4066-ab77-65287c8c74b0)
+2025-11-06 20:26:23,718 - core.patients.json_handler - INFO - Patient gespeichert: Müller_Sarah_Geb19900328__
+2025-11-06 20:26:23,780 - core.registry.excel_registry - INFO - Patient zu Registry hinzugefügt: Müller_Sarah_Geb19900328__
+2025-11-06 20:26:23,781 - core.patients.patient_manager - INFO - Patient erstellt: Müller_Sarah_Geb19900328__ (ID: 6e64d507-2116-4c59-b4cc-8f2278bec23f)
+2025-11-06 20:26:23,793 - core.patients.json_handler - INFO - Patient gespeichert: Kovacs_Denis_Geb19850714__
+2025-11-06 20:26:23,855 - core.registry.excel_registry - INFO - Patient zu Registry hinzugefügt: Kovacs_Denis_Geb19850714__
+2025-11-06 20:26:23,855 - core.patients.patient_manager - INFO - Patient erstellt: Kovacs_Denis_Geb19850714__ (ID: a2dca8de-110e-4b14-8542-6c3db0bdfa43)
+2025-11-06 20:26:23,869 - core.patients.json_handler - INFO - Patient gespeichert: Hoffmann_Julia_Geb19931108__
+2025-11-06 20:26:23,950 - core.registry.excel_registry - INFO - Patient zu Registry hinzugefügt: Hoffmann_Julia_Geb19931108__
+2025-11-06 20:26:23,950 - core.patients.patient_manager - INFO - Patient erstellt: Hoffmann_Julia_Geb19931108__ (ID: f1b6c1d7-b727-413b-9ab8-22d0db123c0a)
+2025-11-06 20:26:23,962 - core.patients.json_handler - INFO - Patient gespeichert: Schneider_Michael_Geb19800219__
+2025-11-06 20:26:24,005 - core.registry.excel_registry - INFO - Patient zu Registry hinzugefügt: Schneider_Michael_Geb19800219__
+2025-11-06 20:26:24,005 - core.patients.patient_manager - INFO - Patient erstellt: Schneider_Michael_Geb19800219__ (ID: e8c901b3-cfa3-4d68-a946-d833b65f228c)
+2025-11-06 20:26:24,019 - core.patients.json_handler - INFO - Patient gespeichert: Wang_Lisa_Geb19870126__
+2025-11-06 20:26:24,097 - core.registry.excel_registry - INFO - Patient zu Registry hinzugefügt: Wang_Lisa_Geb19870126__
+2025-11-06 20:26:24,098 - core.patients.patient_manager - INFO - Patient erstellt: Wang_Lisa_Geb19870126__ (ID: 2fbfacb5-e2ef-4e46-af8d-4d6983c41656)
+2025-11-06 20:26:24,120 - core.patients.json_handler - INFO - Patient gespeichert: König_Alexander_Geb19910611__
+2025-11-06 20:26:24,180 - core.registry.excel_registry - INFO - Patient zu Registry hinzugefügt: König_Alexander_Geb19910611__
+2025-11-06 20:26:24,180 - core.patients.patient_manager - INFO - Patient erstellt: König_Alexander_Geb19910611__ (ID: 6c0bf844-5f82-413f-971a-b4605eeb4bf6)
+2025-11-06 20:26:24,180 - __main__ - INFO - ✓ test_07_realistic_medical_scenarios erfolgreich
+2025-11-06 20:26:24,180 - __main__ - INFO - Führe test_08_batch_operations_performance aus...
+2025-11-06 20:26:24,180 - __main__ - INFO - Starte Test: test_08_batch_operations_performance
+2025-11-06 20:26:24,182 - core.patients.patient_manager - INFO - PatientManager initialisiert
+2025-11-06 20:26:24,186 - __main__ - WARNING - ✗ test_08_batch_operations_performance fehlgeschlagen: name 'name_counter' is not defined
+2025-11-06 20:26:24,191 - __main__ - INFO - Führe test_09_error_handling aus...
+2025-11-06 20:26:24,195 - __main__ - INFO - Starte Test: test_09_error_handling
+2025-11-06 20:26:24,201 - core.patients.patient_manager - INFO - PatientManager initialisiert
+2025-11-06 20:26:24,233 - __main__ - INFO - ✓ test_09_error_handling erfolgreich
+2025-11-06 20:26:24,233 - __main__ - INFO - Führe test_10_data_consistency aus...
+2025-11-06 20:26:24,233 - __main__ - INFO - Starte Test: test_10_data_consistency
+2025-11-06 20:26:24,234 - core.patients.patient_manager - INFO - PatientManager initialisiert
+2025-11-06 20:26:24,237 - __main__ - WARNING - ✗ test_10_data_consistency fehlgeschlagen: name 'name_counter' is not defined
+2025-11-06 21:02:52,241 - __main__ - INFO - Starte umfassende Patient-Management-Tests (Vollständig Repariert)
+2025-11-06 21:02:52,241 - __main__ - INFO - Führe test_01_create_patient_basic aus...
+2025-11-06 21:02:52,241 - __main__ - INFO - Starte Test: test_01_create_patient_basic
+2025-11-06 21:02:52,245 - core.patients.patient_manager - INFO - PatientManager initialisiert
+2025-11-06 21:02:52,252 - __main__ - WARNING - ✗ test_01_create_patient_basic fehlgeschlagen: Unbekannter Fehler
+2025-11-06 21:02:52,252 - __main__ - INFO - Führe test_02_create_patient_validation_errors aus...
+2025-11-06 21:02:52,253 - __main__ - INFO - Starte Test: test_02_create_patient_validation_errors
+2025-11-06 21:02:52,258 - core.patients.patient_manager - INFO - PatientManager initialisiert
+2025-11-06 21:02:52,259 - __main__ - WARNING - ✗ test_02_create_patient_validation_errors fehlgeschlagen: Unbekannter Fehler
+2025-11-06 21:02:52,261 - __main__ - INFO - Führe test_03_duplicate_patient_creation aus...
+2025-11-06 21:02:52,264 - __main__ - INFO - Starte Test: test_03_duplicate_patient_creation
+2025-11-06 21:02:52,272 - core.patients.patient_manager - INFO - PatientManager initialisiert
+2025-11-06 21:02:52,278 - __main__ - WARNING - ✗ test_03_duplicate_patient_creation fehlgeschlagen: Unbekannter Fehler
+2025-11-06 21:02:52,278 - __main__ - INFO - Führe test_04_update_patient aus...
+2025-11-06 21:02:52,278 - __main__ - INFO - Starte Test: test_04_update_patient
+2025-11-06 21:02:52,279 - core.patients.patient_manager - INFO - PatientManager initialisiert
+2025-11-06 21:02:52,283 - __main__ - WARNING - ✗ test_04_update_patient fehlgeschlagen: Patient creation failed
+2025-11-06 21:02:52,283 - __main__ - INFO - Führe test_05_search_patients aus...
+2025-11-06 21:02:52,287 - __main__ - INFO - Starte Test: test_05_search_patients
+2025-11-06 21:02:52,290 - core.patients.patient_manager - INFO - PatientManager initialisiert
+2025-11-06 21:02:52,438 - __main__ - WARNING - ✗ test_05_search_patients fehlgeschlagen: Unbekannter Fehler
+2025-11-06 21:02:52,439 - __main__ - INFO - Führe test_06_delete_patient aus...
+2025-11-06 21:02:52,439 - __main__ - INFO - Starte Test: test_06_delete_patient
+2025-11-06 21:02:52,440 - core.patients.patient_manager - INFO - PatientManager initialisiert
+2025-11-06 21:02:52,461 - core.performance_optimizer - ERROR - Fehler bei atomarer Schreiboperation: name 'os' is not defined
+2025-11-06 21:02:52,461 - core.patients.json_handler - ERROR - Atomare Schreiboperation fehlgeschlagen: name 'os' is not defined
+2025-11-06 21:02:52,461 - __main__ - WARNING - ✗ test_06_delete_patient fehlgeschlagen: Patient creation failed
+2025-11-06 21:02:52,464 - __main__ - INFO - Führe test_07_realistic_medical_scenarios aus...
+2025-11-06 21:02:52,471 - __main__ - INFO - Starte Test: test_07_realistic_medical_scenarios
+2025-11-06 21:02:52,475 - core.patients.patient_manager - INFO - PatientManager initialisiert
+2025-11-06 21:02:52,499 - __main__ - WARNING - ✗ test_07_realistic_medical_scenarios fehlgeschlagen: Unbekannter Fehler
+2025-11-06 21:02:52,500 - __main__ - INFO - Führe test_08_batch_operations_performance aus...
+2025-11-06 21:02:52,500 - __main__ - INFO - Starte Test: test_08_batch_operations_performance
+2025-11-06 21:02:52,501 - core.patients.patient_manager - INFO - PatientManager initialisiert
+2025-11-06 21:02:52,505 - __main__ - WARNING - ✗ test_08_batch_operations_performance fehlgeschlagen: 1 validation error for Demographics
+firstname
+  Value error, Name enthält ungültige Zeichen [type=value_error, input_value='Test25', input_type=str]
+    For further information visit https://errors.pydantic.dev/2.12/v/value_error
+2025-11-06 21:02:52,506 - __main__ - INFO - Führe test_09_error_handling aus...
+2025-11-06 21:02:52,509 - __main__ - INFO - Starte Test: test_09_error_handling
+2025-11-06 21:02:52,513 - core.patients.patient_manager - INFO - PatientManager initialisiert
+2025-11-06 21:02:52,543 - __main__ - INFO - ✓ test_09_error_handling erfolgreich
+2025-11-06 21:02:52,543 - __main__ - INFO - Führe test_10_data_consistency aus...
+2025-11-06 21:02:52,543 - __main__ - INFO - Starte Test: test_10_data_consistency
+2025-11-06 21:02:52,544 - core.patients.patient_manager - INFO - PatientManager initialisiert
+2025-11-06 21:02:52,563 - core.performance_optimizer - ERROR - Fehler bei atomarer Schreiboperation: name 'os' is not defined
+2025-11-06 21:02:52,563 - core.patients.json_handler - ERROR - Atomare Schreiboperation fehlgeschlagen: name 'os' is not defined
+2025-11-06 21:02:52,564 - __main__ - WARNING - ✗ test_10_data_consistency fehlgeschlagen: Failed to create patient for consistency test
+2025-11-06 21:03:19,523 - __main__ - INFO - Starte umfassende Patient-Management-Tests (Vollständig Repariert)
+2025-11-06 21:03:19,523 - __main__ - INFO - Führe test_01_create_patient_basic aus...
+2025-11-06 21:03:19,523 - __main__ - INFO - Starte Test: test_01_create_patient_basic
+2025-11-06 21:03:19,525 - core.patients.patient_manager - INFO - PatientManager initialisiert
+2025-11-06 21:03:19,530 - __main__ - WARNING - ✗ test_01_create_patient_basic fehlgeschlagen: Unbekannter Fehler
+2025-11-06 21:03:19,530 - __main__ - INFO - Führe test_02_create_patient_validation_errors aus...
+2025-11-06 21:03:19,530 - __main__ - INFO - Starte Test: test_02_create_patient_validation_errors
+2025-11-06 21:03:19,535 - core.patients.patient_manager - INFO - PatientManager initialisiert
+2025-11-06 21:03:19,536 - __main__ - WARNING - ✗ test_02_create_patient_validation_errors fehlgeschlagen: Unbekannter Fehler
+2025-11-06 21:03:19,538 - __main__ - INFO - Führe test_03_duplicate_patient_creation aus...
+2025-11-06 21:03:19,540 - __main__ - INFO - Starte Test: test_03_duplicate_patient_creation
+2025-11-06 21:03:19,544 - core.patients.patient_manager - INFO - PatientManager initialisiert
+2025-11-06 21:03:19,547 - __main__ - WARNING - ✗ test_03_duplicate_patient_creation fehlgeschlagen: Unbekannter Fehler
+2025-11-06 21:03:19,548 - __main__ - INFO - Führe test_04_update_patient aus...
+2025-11-06 21:03:19,577 - __main__ - INFO - Starte Test: test_04_update_patient
+2025-11-06 21:03:19,580 - core.patients.patient_manager - INFO - PatientManager initialisiert
+2025-11-06 21:03:19,583 - __main__ - WARNING - ✗ test_04_update_patient fehlgeschlagen: Patient creation failed
+2025-11-06 21:03:19,585 - __main__ - INFO - Führe test_05_search_patients aus...
+2025-11-06 21:03:19,587 - __main__ - INFO - Starte Test: test_05_search_patients
+2025-11-06 21:03:19,588 - core.patients.patient_manager - INFO - PatientManager initialisiert
+2025-11-06 21:03:19,734 - __main__ - WARNING - ✗ test_05_search_patients fehlgeschlagen: Unbekannter Fehler
+2025-11-06 21:03:19,734 - __main__ - INFO - Führe test_06_delete_patient aus...
+2025-11-06 21:03:19,734 - __main__ - INFO - Starte Test: test_06_delete_patient
+2025-11-06 21:03:19,736 - core.patients.patient_manager - INFO - PatientManager initialisiert
+2025-11-06 21:03:19,748 - core.patients.json_handler - ERROR - Fehler beim Speichern von Patient Test_Xi_Geb19900101__: 'PatientJSONHandler' object has no attribute '_update_patient_cache'
+2025-11-06 21:03:19,748 - __main__ - WARNING - ✗ test_06_delete_patient fehlgeschlagen: Patient creation failed
+2025-11-06 21:03:19,748 - __main__ - INFO - Führe test_07_realistic_medical_scenarios aus...
+2025-11-06 21:03:19,748 - __main__ - INFO - Starte Test: test_07_realistic_medical_scenarios
+2025-11-06 21:03:19,750 - core.patients.patient_manager - INFO - PatientManager initialisiert
+2025-11-06 21:03:19,755 - __main__ - WARNING - ✗ test_07_realistic_medical_scenarios fehlgeschlagen: Unbekannter Fehler
+2025-11-06 21:03:19,755 - __main__ - INFO - Führe test_08_batch_operations_performance aus...
+2025-11-06 21:03:19,755 - __main__ - INFO - Starte Test: test_08_batch_operations_performance
+2025-11-06 21:03:19,759 - core.patients.patient_manager - INFO - PatientManager initialisiert
+2025-11-06 21:03:19,776 - core.patients.json_handler - ERROR - Fehler beim Speichern von Patient Test_Beta_Geb19900101__: 'PatientJSONHandler' object has no attribute '_update_patient_cache'
+2025-11-06 21:03:19,792 - core.patients.json_handler - ERROR - Fehler beim Speichern von Patient Test_Gamma_Geb19900101__: 'PatientJSONHandler' object has no attribute '_update_patient_cache'
+2025-11-06 21:03:19,809 - core.patients.json_handler - ERROR - Fehler beim Speichern von Patient Test_Delta_Geb19900101__: 'PatientJSONHandler' object has no attribute '_update_patient_cache'
+2025-11-06 21:03:19,825 - core.patients.json_handler - ERROR - Fehler beim Speichern von Patient Test_Epsilon_Geb19900101__: 'PatientJSONHandler' object has no attribute '_update_patient_cache'
+2025-11-06 21:03:19,840 - core.patients.json_handler - ERROR - Fehler beim Speichern von Patient Test_Zeta_Geb19900101__: 'PatientJSONHandler' object has no attribute '_update_patient_cache'
+2025-11-06 21:03:19,857 - core.patients.json_handler - ERROR - Fehler beim Speichern von Patient Test_Eta_Geb19900101__: 'PatientJSONHandler' object has no attribute '_update_patient_cache'
+2025-11-06 21:03:19,874 - core.patients.json_handler - ERROR - Fehler beim Speichern von Patient Test_Theta_Geb19900101__: 'PatientJSONHandler' object has no attribute '_update_patient_cache'
+2025-11-06 21:03:19,897 - core.patients.json_handler - ERROR - Fehler beim Speichern von Patient Test_Omicron_Geb19900101__: 'PatientJSONHandler' object has no attribute '_update_patient_cache'
+2025-11-06 21:03:19,926 - __main__ - WARNING - ✗ test_08_batch_operations_performance fehlgeschlagen: Unbekannter Fehler
+2025-11-06 21:03:19,926 - __main__ - INFO - Führe test_09_error_handling aus...
+2025-11-06 21:03:19,926 - __main__ - INFO - Starte Test: test_09_error_handling
+2025-11-06 21:03:19,927 - core.patients.patient_manager - INFO - PatientManager initialisiert
+2025-11-06 21:03:19,979 - core.patients.json_handler - ERROR - Fehler beim Speichern von Patient Test_Rho_Geb19900101__: 'PatientJSONHandler' object has no attribute '_update_patient_cache'
+2025-11-06 21:03:19,979 - __main__ - INFO - ✓ test_09_error_handling erfolgreich
+2025-11-06 21:03:19,979 - __main__ - INFO - Führe test_10_data_consistency aus...
+2025-11-06 21:03:19,979 - __main__ - INFO - Starte Test: test_10_data_consistency
+2025-11-06 21:03:19,980 - core.patients.patient_manager - INFO - PatientManager initialisiert
+2025-11-06 21:03:19,994 - core.patients.json_handler - ERROR - Fehler beim Speichern von Patient Test_Konsistenz_Geb19900315__: 'PatientJSONHandler' object has no attribute '_update_patient_cache'
+2025-11-06 21:03:19,994 - __main__ - WARNING - ✗ test_10_data_consistency fehlgeschlagen: Failed to create patient for consistency test

@@ -1,0 +1,30 @@
+2025-11-07 07:04:37,011 - INFO - === Windows-Pfad-Management Umfassender Test ===
+2025-11-07 07:04:37,011 - INFO - Plattform: Linux #1 SMP Fri Dec 13 16:56:53 CST 2024
+2025-11-07 07:04:37,011 - INFO - Python: 3.12.5
+2025-11-07 07:04:37,011 - INFO - Max Path Length: 4096
+2025-11-07 07:04:37,011 - INFO - Führe test_ospath_vs_pathlib_usage aus...
+2025-11-07 07:04:37,011 - INFO - === Test 1: os.path vs pathlib-Verwendung ===
+2025-11-07 07:04:38,161 - INFO - Test test_ospath_vs_pathlib_usage abgeschlossen: PASSED
+2025-11-07 07:04:38,162 - INFO - Führe test_path_separators aus...
+2025-11-07 07:04:38,162 - INFO - === Test 2: Pfad-Separatoren ===
+2025-11-07 07:04:38,162 - INFO - Test test_path_separators abgeschlossen: PASSED
+2025-11-07 07:04:38,164 - INFO - Führe test_long_path_support aus...
+2025-11-07 07:04:38,167 - INFO - === Test 3: Long-Path-Support ===
+2025-11-07 07:04:38,169 - INFO - Test test_long_path_support abgeschlossen: SKIPPED
+2025-11-07 07:04:38,171 - INFO - Führe test_unc_path_handling aus...
+2025-11-07 07:04:38,173 - INFO - === Test 4: UNC-Path-Handling ===
+2025-11-07 07:04:38,175 - INFO - Test test_unc_path_handling abgeschlossen: PASSED
+2025-11-07 07:04:38,177 - INFO - Führe test_case_insensitive_filenames aus...
+2025-11-07 07:04:38,179 - INFO - === Test 5: Case-Insensitive-File-Names ===
+2025-11-07 07:04:38,182 - INFO - Test test_case_insensitive_filenames abgeschlossen: PASSED
+2025-11-07 07:04:38,183 - INFO - Führe test_reserved_characters aus...
+2025-11-07 07:04:38,185 - INFO - === Test 6: Reserved-Characters ===
+2025-11-07 07:04:38,188 - INFO - Test test_reserved_characters abgeschlossen: WARNING
+2025-11-07 07:04:38,190 - INFO - Führe test_temp_directory_management aus...
+2025-11-07 07:04:38,192 - INFO - === Test 7: Temp-Directory-Management ===
+2025-11-07 07:04:38,195 - INFO - Test test_temp_directory_management abgeschlossen: PASSED
+2025-11-07 07:04:38,196 - INFO - Führe test_drive_letters_and_network_drives aus...
+2025-11-07 07:04:38,198 - INFO - === Test 8: Drive-Letter und Network-Drives ===
+2025-11-07 07:04:38,200 - INFO - Test test_drive_letters_and_network_drives abgeschlossen: SKIPPED
+2025-11-07 07:04:38,200 - INFO - === Alle Tests abgeschlossen ===
+2025-11-07 07:04:38,207 - INFO - Ergebnisse gespeichert in: windows_path_handling_results.json
