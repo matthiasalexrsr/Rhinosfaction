@@ -1,0 +1,43 @@
+{
+  "image_creation": {
+    "800x600": {
+      "size": "800x600",
+      "memory_increase_mb": 1.171875,
+      "file_size_mb": 0.023509979248046875
+    },
+    "1920x1080": {
+      "size": "1920x1080",
+      "memory_increase_mb": 7.80078125,
+      "file_size_mb": 0.05237293243408203
+    },
+    "3840x2160": {
+      "size": "3840x2160",
+      "memory_increase_mb": 31.51171875,
+      "file_size_mb": 0.14486122131347656
+    }
+  },
+  "thumbnail_generation": {
+    "800x600": {
+      "original_size": "800x600",
+      "memory_increase_mb": 5.1953125,
+      "thumbnails_created": 3
+    },
+    "1920x1080": {
+      "original_size": "1920x1080",
+      "memory_increase_mb": 20.390625,
+      "thumbnails_created": 3
+    },
+    "3840x2160": {
+      "original_size": "3840x2160",
+      "memory_increase_mb": 19.33203125,
+      "thumbnails_created": 3
+    }
+  },
+  "memory_cleanup": {},
+  "file_handle_management": {
+    "initial_open_files": 1,
+    "during_open_files": 1,
+    "final_open_files": 1,
+    "memory_increase_mb": 0.0
+  }
+}

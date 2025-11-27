@@ -1,0 +1,57 @@
+{
+  "thread_creation": {
+    "10": {
+      "thread_count": 10,
+      "successful_threads": 10,
+      "memory_per_thread_mb": 1.26015625,
+      "memory_cleanup_mb": 0.953125,
+      "threads_before": 1,
+      "threads_during": 1,
+      "threads_after": 1,
+      "memory_increase_mb": 12.6015625,
+      "memory_final_increase_mb": 11.6484375
+    },
+    "50": {
+      "thread_count": 50,
+      "successful_threads": 50,
+      "memory_per_thread_mb": 0.304375,
+      "memory_cleanup_mb": 0.921875,
+      "threads_before": 1,
+      "threads_during": 1,
+      "threads_after": 1,
+      "memory_increase_mb": 15.21875,
+      "memory_final_increase_mb": 14.296875
+    },
+    "100": {
+      "thread_count": 100,
+      "successful_threads": 100,
+      "memory_per_thread_mb": 0.153203125,
+      "memory_cleanup_mb": 0.0,
+      "threads_before": 1,
+      "threads_during": 1,
+      "threads_after": 1,
+      "memory_increase_mb": 15.3203125,
+      "memory_final_increase_mb": 15.3203125
+    },
+    "200": {
+      "thread_count": 200,
+      "successful_threads": 200,
+      "memory_per_thread_mb": 0.11109375,
+      "memory_cleanup_mb": 0.0,
+      "threads_before": 1,
+      "threads_during": 1,
+      "threads_after": 1,
+      "memory_increase_mb": 22.21875,
+      "memory_final_increase_mb": 22.21875
+    }
+  },
+  "concurrent_operations": {
+    "total_workers": 20,
+    "files_per_worker": 10,
+    "total_files_processed": 200,
+    "memory_increase_mb": -3.50390625,
+    "avg_files_per_worker": 10.0
+  },
+  "memory_cleanup": {},
+  "resource_leak_detection": {}
+}

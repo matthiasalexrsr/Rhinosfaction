@@ -1,0 +1,389 @@
+{
+  "analysis_timestamp": "2025-11-07T16:49:14.767692",
+  "analysis_duration_seconds": 20.306047677993774,
+  "system_info": {
+    "cpu_count": 24,
+    "memory_total_gb": 92.53288269042969,
+    "platform": "linux",
+    "python_version": "3.12.5 (main, Sep  5 2024, 00:16:34) [GCC 12.2.0]",
+    "available_memory_gb": 77.43808364868164
+  },
+  "final_memory_snapshot": {
+    "timestamp": 1762505354.7676446,
+    "rss_mb": 244.265625,
+    "vms_mb": 5278.515625,
+    "percent": 0.2577901417078989,
+    "available_mb": 79040.0859375,
+    "used_mb": 15713.5859375,
+    "gc_objects": 0,
+    "gc_collections": [
+      {
+        "collections": 345,
+        "collected": 390,
+        "uncollectable": 0
+      },
+      {
+        "collections": 27,
+        "collected": 11,
+        "uncollectable": 0
+      },
+      {
+        "collections": 72,
+        "collected": 11936,
+        "uncollectable": 0
+      }
+    ],
+    "open_files": 1,
+    "thread_count": 1,
+    "file_handles": 0
+  },
+  "total_memory_snapshots": 295,
+  "total_performance_metrics": 5,
+  "test_results": {
+    "memory_usage_patterns": {
+      "GUI_Initialization": {
+        "memory_increase_mb": 16.5546875,
+        "memory_percent": 22.10630640029211,
+        "final_memory_mb": 91.44140625
+      },
+      "Database_Connection": {
+        "error": "database is locked"
+      },
+      "Large_Data_Processing": {
+        "memory_increase_mb": 2.5078125,
+        "memory_percent": 3.348808095561004,
+        "final_memory_mb": 93.00390625
+      },
+      "File_Operations": {
+        "memory_increase_mb": 0.0,
+        "memory_percent": 0.0,
+        "final_memory_mb": 93.00390625
+      },
+      "Thread_Creation": {
+        "memory_increase_mb": 5.63671875,
+        "memory_percent": 7.526993897031975,
+        "final_memory_mb": 98.640625
+      }
+    },
+    "large_dataset_handling": {
+      "file_info": {
+        "size_mb": 0.37650394439697266,
+        "size_bytes": 394793,
+        "modified": "2025-11-07T06:55:20.528680"
+      },
+      "processing_metrics": [
+        {
+          "chunk_size": 100,
+          "total_processed": 5000,
+          "processing_time_s": 0.21649169921875,
+          "rows_per_second": 23095.573724274036,
+          "memory_increase_mb": -1.1875,
+          "memory_peak_increase_mb": 0.32421875,
+          "memory_efficiency": 15421.686746987953
+        },
+        {
+          "chunk_size": 500,
+          "total_processed": 5000,
+          "processing_time_s": 0.0886070728302002,
+          "rows_per_second": 56428.903927134765,
+          "memory_increase_mb": 0.89453125,
+          "memory_peak_increase_mb": 0.91015625,
+          "memory_efficiency": 5493.562231759656
+        },
+        {
+          "chunk_size": 1000,
+          "total_processed": 5000,
+          "processing_time_s": 0.0854494571685791,
+          "rows_per_second": 58514.122449435126,
+          "memory_increase_mb": 0.0,
+          "memory_peak_increase_mb": 0.015625,
+          "memory_efficiency": 320000.0
+        },
+        {
+          "chunk_size": 2000,
+          "total_processed": 5000,
+          "processing_time_s": 0.02487969398498535,
+          "rows_per_second": 200967.10204785678,
+          "memory_increase_mb": 0.0,
+          "memory_peak_increase_mb": 0.015625,
+          "memory_efficiency": 320000.0
+        }
+      ],
+      "memory_analysis": {
+        "initial_memory_mb": 96.671875,
+        "final_memory_mb": 96.37890625,
+        "total_increase_mb": -0.29296875,
+        "gc_objects": 0,
+        "available_memory_mb": 78999.37890625
+      },
+      "performance_data": []
+    },
+    "image_memory_management": {
+      "image_creation": {
+        "800x600": {
+          "size": "800x600",
+          "memory_increase_mb": 1.171875,
+          "file_size_mb": 0.023509979248046875
+        },
+        "1920x1080": {
+          "size": "1920x1080",
+          "memory_increase_mb": 7.80078125,
+          "file_size_mb": 0.05237293243408203
+        },
+        "3840x2160": {
+          "size": "3840x2160",
+          "memory_increase_mb": 31.51171875,
+          "file_size_mb": 0.14486122131347656
+        }
+      },
+      "thumbnail_generation": {
+        "800x600": {
+          "original_size": "800x600",
+          "memory_increase_mb": 5.1953125,
+          "thumbnails_created": 3
+        },
+        "1920x1080": {
+          "original_size": "1920x1080",
+          "memory_increase_mb": 20.390625,
+          "thumbnails_created": 3
+        },
+        "3840x2160": {
+          "original_size": "3840x2160",
+          "memory_increase_mb": 19.33203125,
+          "thumbnails_created": 3
+        }
+      },
+      "memory_cleanup": {},
+      "file_handle_management": {
+        "initial_open_files": 1,
+        "during_open_files": 1,
+        "final_open_files": 1,
+        "memory_increase_mb": 0.0
+      }
+    },
+    "database_connection_pooling": {
+      "connection_pool": {
+        "pool_size": 20,
+        "memory_per_connection_mb": 0.0,
+        "memory_after_cleanup_mb": 0.0,
+        "file_handles_before": 2,
+        "file_handles_during": 42,
+        "file_handles_after": 1,
+        "avg_query_time_ms": 2.917017936706543,
+        "max_query_time_ms": 4.031896591186523
+      },
+      "query_performance": {
+        "total_queries": 100,
+        "avg_time_ms": 2.917017936706543,
+        "max_time_ms": 4.031896591186523,
+        "min_time_ms": 2.660512924194336
+      },
+      "connection_cleanup": {},
+      "memory_leak_detection": {}
+    },
+    "thread_memory_management": {
+      "thread_creation": {
+        "10": {
+          "thread_count": 10,
+          "successful_threads": 10,
+          "memory_per_thread_mb": 1.26015625,
+          "memory_cleanup_mb": 0.953125,
+          "threads_before": 1,
+          "threads_during": 1,
+          "threads_after": 1,
+          "memory_increase_mb": 12.6015625,
+          "memory_final_increase_mb": 11.6484375
+        },
+        "50": {
+          "thread_count": 50,
+          "successful_threads": 50,
+          "memory_per_thread_mb": 0.304375,
+          "memory_cleanup_mb": 0.921875,
+          "threads_before": 1,
+          "threads_during": 1,
+          "threads_after": 1,
+          "memory_increase_mb": 15.21875,
+          "memory_final_increase_mb": 14.296875
+        },
+        "100": {
+          "thread_count": 100,
+          "successful_threads": 100,
+          "memory_per_thread_mb": 0.153203125,
+          "memory_cleanup_mb": 0.0,
+          "threads_before": 1,
+          "threads_during": 1,
+          "threads_after": 1,
+          "memory_increase_mb": 15.3203125,
+          "memory_final_increase_mb": 15.3203125
+        },
+        "200": {
+          "thread_count": 200,
+          "successful_threads": 200,
+          "memory_per_thread_mb": 0.11109375,
+          "memory_cleanup_mb": 0.0,
+          "threads_before": 1,
+          "threads_during": 1,
+          "threads_after": 1,
+          "memory_increase_mb": 22.21875,
+          "memory_final_increase_mb": 22.21875
+        }
+      },
+      "concurrent_operations": {
+        "total_workers": 20,
+        "files_per_worker": 10,
+        "total_files_processed": 200,
+        "memory_increase_mb": -3.50390625,
+        "avg_files_per_worker": 10.0
+      },
+      "memory_cleanup": {},
+      "resource_leak_detection": {}
+    },
+    "garbage_collection_performance": {
+      "gc_performance": {
+        "objects_created": 1000,
+        "objects_before_gc": 0,
+        "objects_after_gc": 0,
+        "objects_collected": 0,
+        "gc_time_ms": 136.63721084594727,
+        "memory_before_mb": 529.43359375,
+        "memory_after_mb": 529.43359375,
+        "memory_freed_mb": 0.0,
+        "memory_efficiency": 0.0
+      },
+      "memory_reclamation": {},
+      "generational_analysis": [
+        {
+          "generation": 0,
+          "collections_before": 340,
+          "collections_after": 345,
+          "collected_before": 390,
+          "collected_after": 390
+        },
+        {
+          "generation": 1,
+          "collections_before": 27,
+          "collections_after": 27,
+          "collected_before": 11,
+          "collected_after": 11
+        },
+        {
+          "generation": 2,
+          "collections_before": 15,
+          "collections_after": 16,
+          "collected_before": 8905,
+          "collected_after": 8905
+        }
+      ],
+      "automatic_gc": [
+        {
+          "test_run": 1,
+          "memory_before_mb": 547.99609375,
+          "memory_after_mb": 535.20703125,
+          "auto_freed_mb": 12.7890625
+        },
+        {
+          "test_run": 2,
+          "memory_before_mb": 548.09375,
+          "memory_after_mb": 536.2109375,
+          "auto_freed_mb": 11.8828125
+        },
+        {
+          "test_run": 3,
+          "memory_before_mb": 548.06640625,
+          "memory_after_mb": 537.2265625,
+          "auto_freed_mb": 10.83984375
+        },
+        {
+          "test_run": 4,
+          "memory_before_mb": 548.05078125,
+          "memory_after_mb": 538.2265625,
+          "auto_freed_mb": 9.82421875
+        },
+        {
+          "test_run": 5,
+          "memory_before_mb": 548.01953125,
+          "memory_after_mb": 540.234375,
+          "auto_freed_mb": 7.78515625
+        }
+      ]
+    },
+    "memory_leak_detection": {
+      "baseline_measurements": {
+        "memory_mb": 244.265625,
+        "objects": 0,
+        "available_memory_mb": 79030.60546875
+      },
+      "leak_detection": {
+        "total_cycles": 50,
+        "baseline_memory_mb": 244.265625,
+        "final_memory_mb": 244.265625,
+        "total_memory_increase_mb": 0.0,
+        "memory_increase_per_cycle_mb": 0.0,
+        "leak_threshold_mb": 1.0,
+        "potential_leak": false,
+        "memory_trends": [
+          {
+            "window_start": 0,
+            "window_end": 4,
+            "avg_memory_increase_mb": 0.0
+          },
+          {
+            "window_start": 5,
+            "window_end": 9,
+            "avg_memory_increase_mb": 0.0
+          },
+          {
+            "window_start": 10,
+            "window_end": 14,
+            "avg_memory_increase_mb": 0.0
+          },
+          {
+            "window_start": 15,
+            "window_end": 19,
+            "avg_memory_increase_mb": 0.0
+          },
+          {
+            "window_start": 20,
+            "window_end": 24,
+            "avg_memory_increase_mb": 0.0
+          },
+          {
+            "window_start": 25,
+            "window_end": 29,
+            "avg_memory_increase_mb": 0.0
+          },
+          {
+            "window_start": 30,
+            "window_end": 34,
+            "avg_memory_increase_mb": 0.0
+          },
+          {
+            "window_start": 35,
+            "window_end": 39,
+            "avg_memory_increase_mb": 0.0
+          },
+          {
+            "window_start": 40,
+            "window_end": 44,
+            "avg_memory_increase_mb": 0.0
+          },
+          {
+            "window_start": 45,
+            "window_end": 49,
+            "avg_memory_increase_mb": 0.0
+          }
+        ],
+        "max_memory_increase_mb": 0.0,
+        "min_memory_increase_mb": 0.0
+      },
+      "prevention_mechanisms": {},
+      "long_term_analysis": {},
+      "error": "cannot create weak reference to 'dict' object"
+    }
+  },
+  "memory_trend": {
+    "initial_memory_mb": 74.88671875,
+    "final_memory_mb": 244.265625,
+    "total_increase_mb": 169.37890625
+  }
+}

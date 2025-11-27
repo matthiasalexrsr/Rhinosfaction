@@ -1,0 +1,73 @@
+{
+  "baseline_measurements": {
+    "memory_mb": 244.265625,
+    "objects": 0,
+    "available_memory_mb": 79030.60546875
+  },
+  "leak_detection": {
+    "total_cycles": 50,
+    "baseline_memory_mb": 244.265625,
+    "final_memory_mb": 244.265625,
+    "total_memory_increase_mb": 0.0,
+    "memory_increase_per_cycle_mb": 0.0,
+    "leak_threshold_mb": 1.0,
+    "potential_leak": false,
+    "memory_trends": [
+      {
+        "window_start": 0,
+        "window_end": 4,
+        "avg_memory_increase_mb": 0.0
+      },
+      {
+        "window_start": 5,
+        "window_end": 9,
+        "avg_memory_increase_mb": 0.0
+      },
+      {
+        "window_start": 10,
+        "window_end": 14,
+        "avg_memory_increase_mb": 0.0
+      },
+      {
+        "window_start": 15,
+        "window_end": 19,
+        "avg_memory_increase_mb": 0.0
+      },
+      {
+        "window_start": 20,
+        "window_end": 24,
+        "avg_memory_increase_mb": 0.0
+      },
+      {
+        "window_start": 25,
+        "window_end": 29,
+        "avg_memory_increase_mb": 0.0
+      },
+      {
+        "window_start": 30,
+        "window_end": 34,
+        "avg_memory_increase_mb": 0.0
+      },
+      {
+        "window_start": 35,
+        "window_end": 39,
+        "avg_memory_increase_mb": 0.0
+      },
+      {
+        "window_start": 40,
+        "window_end": 44,
+        "avg_memory_increase_mb": 0.0
+      },
+      {
+        "window_start": 45,
+        "window_end": 49,
+        "avg_memory_increase_mb": 0.0
+      }
+    ],
+    "max_memory_increase_mb": 0.0,
+    "min_memory_increase_mb": 0.0
+  },
+  "prevention_mechanisms": {},
+  "long_term_analysis": {},
+  "error": "cannot create weak reference to 'dict' object"
+}

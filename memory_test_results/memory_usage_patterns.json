@@ -1,0 +1,25 @@
+{
+  "GUI_Initialization": {
+    "memory_increase_mb": 16.5546875,
+    "memory_percent": 22.10630640029211,
+    "final_memory_mb": 91.44140625
+  },
+  "Database_Connection": {
+    "error": "database is locked"
+  },
+  "Large_Data_Processing": {
+    "memory_increase_mb": 2.5078125,
+    "memory_percent": 3.348808095561004,
+    "final_memory_mb": 93.00390625
+  },
+  "File_Operations": {
+    "memory_increase_mb": 0.0,
+    "memory_percent": 0.0,
+    "final_memory_mb": 93.00390625
+  },
+  "Thread_Creation": {
+    "memory_increase_mb": 5.63671875,
+    "memory_percent": 7.526993897031975,
+    "final_memory_mb": 98.640625
+  }
+}

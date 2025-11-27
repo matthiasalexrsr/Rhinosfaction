@@ -1,0 +1,20 @@
+{
+  "connection_pool": {
+    "pool_size": 20,
+    "memory_per_connection_mb": 0.0,
+    "memory_after_cleanup_mb": 0.0,
+    "file_handles_before": 2,
+    "file_handles_during": 42,
+    "file_handles_after": 1,
+    "avg_query_time_ms": 2.917017936706543,
+    "max_query_time_ms": 4.031896591186523
+  },
+  "query_performance": {
+    "total_queries": 100,
+    "avg_time_ms": 2.917017936706543,
+    "max_time_ms": 4.031896591186523,
+    "min_time_ms": 2.660512924194336
+  },
+  "connection_cleanup": {},
+  "memory_leak_detection": {}
+}
