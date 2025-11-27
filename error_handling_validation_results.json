@@ -1,0 +1,572 @@
+{
+  "timestamp": "2025-11-07T16:50:21.720640",
+  "tests": [
+    {
+      "name": "Network-Connectivity-Errors",
+      "timestamp": "2025-11-07T16:50:21.724924",
+      "tests": [
+        {
+          "name": "Connection Timeout",
+          "description": "Testet Timeout bei Netzwerkverbindungen",
+          "status": "FAIL",
+          "error_messages": [
+            "Erwarteter Timeout: 'method' object does not support the context manager protocol",
+            "Timeout nicht korrekt erkannt"
+          ]
+        },
+        {
+          "name": "DNS Resolution Failure",
+          "description": "Testet DNS-Auflösung Fehler",
+          "status": "PASS",
+          "error_messages": [
+            "Erwarteter DNS-Fehler: Name resolution failed"
+          ]
+        },
+        {
+          "name": "Connection Refused",
+          "description": "Testet Verbindung-Verweigerung",
+          "status": "FAIL",
+          "error_messages": [
+            "connect(): port must be 0-65535."
+          ]
+        },
+        {
+          "name": "SSL/TLS Errors",
+          "description": "Testet SSL-Zertifikat Fehler",
+          "status": "PASS",
+          "error_messages": [
+            "Erwarteter SSL-Fehler: SSL certificate error"
+          ]
+        },
+        {
+          "name": "Network Unreachable",
+          "description": "Testet Netzwerk-Unereichbarkeit",
+          "status": "PASS",
+          "error_messages": [
+            "Erwarteter Network Unreachable: Network is unreachable"
+          ]
+        }
+      ],
+      "passed": 3,
+      "failed": 2,
+      "status": "FAIL"
+    },
+    {
+      "name": "File-System-Errors",
+      "timestamp": "2025-11-07T16:50:21.734724",
+      "tests": [
+        {
+          "name": "File Not Found",
+          "description": "Testet Zugriff auf nicht existierende Datei",
+          "status": "PASS",
+          "error_messages": [
+            "Erwarteter FileNotFoundError: [Errno 2] No such file or directory: '/tmp/nonexistent_file_12345.txt'"
+          ]
+        },
+        {
+          "name": "Permission Denied",
+          "description": "Testet fehlende Dateiberechtigungen",
+          "status": "PASS",
+          "error_messages": [
+            "Erwarteter PermissionError: [Errno 13] Permission denied: '/tmp/tmpspntguy7'"
+          ]
+        },
+        {
+          "name": "Disk Full",
+          "description": "Testet vollen Speicherplatz",
+          "status": "PASS",
+          "error_messages": [
+            "Erwarteter Disk Full: [Errno 28] No space left on device"
+          ]
+        },
+        {
+          "name": "Path Too Long",
+          "description": "Testet zu lange Dateipfade",
+          "status": "PASS",
+          "error_messages": [
+            "Erwarteter Path Too Long: [Errno 36] File name too long: '/tmp/aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa.txt'"
+          ]
+        },
+        {
+          "name": "Directory Not Empty",
+          "description": "Testet Löschung nicht-leeres Verzeichnis",
+          "status": "PASS",
+          "error_messages": [
+            "Erwarteter Directory Not Empty: [Errno 39] Directory not empty: '/tmp/tmp4ovis8a1'"
+          ]
+        }
+      ],
+      "passed": 5,
+      "failed": 0,
+      "status": "PASS"
+    },
+    {
+      "name": "Database-Connection-Errors",
+      "timestamp": "2025-11-07T16:50:21.737052",
+      "tests": [
+        {
+          "name": "DB Connection Refused",
+          "description": "Testet Verbindung-Verweigerung zur Datenbank",
+          "status": "FAIL",
+          "error_messages": [
+            "DB-Verbindung unerwartet erfolgreich"
+          ]
+        },
+        {
+          "name": "DB Invalid Credentials",
+          "description": "Testet ungültige Datenbank-Anmeldedaten",
+          "status": "PASS",
+          "error_messages": [
+            "Erwarteter Auth-Fehler: authentication failed"
+          ]
+        },
+        {
+          "name": "DB Locked",
+          "description": "Testet gesperrte Datenbank",
+          "status": "PASS",
+          "error_messages": [
+            "Erwarteter Database Locked: database is locked"
+          ]
+        },
+        {
+          "name": "DB Query Timeout",
+          "description": "Testet Timeout bei Datenbankabfragen",
+          "status": "FAIL",
+          "error_messages": [
+            "Abfrage unerwartet schnell: 2.00s"
+          ]
+        }
+      ],
+      "passed": 2,
+      "failed": 2,
+      "status": "FAIL"
+    },
+    {
+      "name": "Data-Format-Errors",
+      "timestamp": "2025-11-07T16:50:23.738118",
+      "tests": [
+        {
+          "name": "Invalid JSON",
+          "description": "Testet ungültiges JSON-Format",
+          "status": "PASS",
+          "error_messages": [
+            "Erwarteter JSON-Fehler: Expecting value: line 1 column 25 (char 24)"
+          ]
+        },
+        {
+          "name": "Invalid CSV",
+          "description": "Testet ungültiges CSV-Format",
+          "status": "FAIL",
+          "error_messages": [
+            "Ungültiges CSV akzeptiert"
+          ]
+        },
+        {
+          "name": "Invalid Date",
+          "description": "Testet ungültiges Datumsformat",
+          "status": "PASS",
+          "error_messages": [
+            "Alle ungültigen Daten korrekt abgelehnt"
+          ]
+        },
+        {
+          "name": "Invalid Number",
+          "description": "Testet ungültiges Zahlenformat",
+          "status": "FAIL",
+          "error_messages": [
+            "2 ungültige Zahlen unerwartet akzeptiert"
+          ]
+        },
+        {
+          "name": "Invalid XML",
+          "description": "Testet ungültiges XML-Format",
+          "status": "PASS",
+          "error_messages": [
+            "Erwarteter XML-Fehler: mismatched tag: line 1, column 21"
+          ]
+        }
+      ],
+      "passed": 3,
+      "failed": 2,
+      "status": "FAIL"
+    },
+    {
+      "name": "Memory-Scenarios",
+      "timestamp": "2025-11-07T16:50:23.758088",
+      "tests": [
+        {
+          "name": "Memory Allocation Failure",
+          "description": "Testet Speicherzuteilungsausfälle",
+          "status": "FAIL",
+          "error_messages": [
+            "Memory Error nicht ausgelöst"
+          ]
+        },
+        {
+          "name": "Large Data Structures",
+          "description": "Testet große Datenstrukturen",
+          "status": "PASS",
+          "error_messages": [
+            "Speicherverbrauch: 9.28 MB"
+          ]
+        },
+        {
+          "name": "Memory Leak Simulation",
+          "description": "Testet Speicherleck-Simulation",
+          "status": "PASS",
+          "error_messages": [
+            "Memory Leak Test - Speicherverbrauch: 0.00 MB"
+          ]
+        },
+        {
+          "name": "Stack Overflow",
+          "description": "Testet Stack Overflow",
+          "status": "PASS",
+          "error_messages": [
+            "Erwarteter RecursionError: maximum recursion depth exceeded"
+          ]
+        }
+      ],
+      "passed": 3,
+      "failed": 1,
+      "status": "FAIL"
+    },
+    {
+      "name": "Threading-Errors",
+      "timestamp": "2025-11-07T16:50:24.160794",
+      "tests": [
+        {
+          "name": "Race Condition",
+          "description": "Testet Race Conditions in Multithreading",
+          "status": "PASS",
+          "error_messages": [
+            "Counter korrekt: 5000"
+          ]
+        },
+        {
+          "name": "Deadlock",
+          "description": "Testet Deadlock-Szenarien",
+          "status": "PASS",
+          "error_messages": [
+            "Deadlock erkannt (erwartetes Verhalten)"
+          ]
+        },
+        {
+          "name": "Thread Exception",
+          "description": "Testet Exception-Behandlung in Threads",
+          "status": "PASS",
+          "error_messages": [
+            "Exception korrekt abgefangen: Test exception in thread"
+          ]
+        },
+        {
+          "name": "Shared Resource Access",
+          "description": "Testet gemeinsamen Ressourcenzugriff",
+          "status": "PASS",
+          "error_messages": [
+            "Shared resource korrekt verwendet: 300 Zugriffe"
+          ]
+        }
+      ],
+      "passed": 4,
+      "failed": 0,
+      "status": "PASS"
+    },
+    {
+      "name": "Unicode-Encoding-Errors",
+      "timestamp": "2025-11-07T16:50:28.164359",
+      "tests": [
+        {
+          "name": "Invalid UTF-8",
+          "description": "Testet ungültige UTF-8 Kodierung",
+          "status": "PASS",
+          "error_messages": [
+            "Erwarteter UnicodeDecodeError: 'utf-8' codec can't decode byte 0x80 in position 0: invalid start byte"
+          ]
+        },
+        {
+          "name": "Encoding Mismatch",
+          "description": "Testet falsche Kodierung",
+          "status": "PASS",
+          "error_messages": [
+            "Mismatch erkannt: 'HÃ¤llÃ¶ WÃ¶rld! ð\\x9f\\x9a\\x80'"
+          ]
+        },
+        {
+          "name": "Malformed Unicode",
+          "description": "Testet fehlerhafte Unicode-Zeichen",
+          "status": "PASS",
+          "error_messages": [
+            "Malformed Unicode verarbeitet: 'HELLO\\x00\\x01\\x02WORLD'"
+          ]
+        },
+        {
+          "name": "Unicode in File Names",
+          "description": "Testet Unicode in Dateinamen",
+          "status": "PASS",
+          "error_messages": [
+            "Unicode-Dateiname erfolgreich: test_파일_файл_文件.txt"
+          ]
+        }
+      ],
+      "passed": 4,
+      "failed": 0,
+      "status": "PASS"
+    },
+    {
+      "name": "Windows-Specific-Errors",
+      "timestamp": "2025-11-07T16:50:28.166402",
+      "tests": [
+        {
+          "name": "Path Length Limitations",
+          "description": "Testet Windows Pfad-Längenbegrenzungen",
+          "status": "PASS",
+          "error_messages": [
+            "Test übersprungen - nicht auf Windows"
+          ]
+        },
+        {
+          "name": "Windows Permissions",
+          "description": "Testet Windows-Berechtigungsmodell",
+          "status": "PASS",
+          "error_messages": [
+            "Test übersprungen - nicht auf Windows"
+          ]
+        },
+        {
+          "name": "File Locking",
+          "description": "Testet Datei-Sperrung",
+          "status": "PASS",
+          "error_messages": [
+            "File locking test: "
+          ]
+        },
+        {
+          "name": "Registry Access",
+          "description": "Testet Windows Registry Zugriff",
+          "status": "PASS",
+          "error_messages": [
+            "Test übersprungen - nicht auf Windows"
+          ]
+        }
+      ],
+      "passed": 4,
+      "failed": 0,
+      "status": "PASS"
+    },
+    {
+      "name": "Recovery-Mechanisms",
+      "timestamp": "2025-11-07T16:50:28.170441",
+      "tests": [
+        {
+          "name": "Retry Mechanisms",
+          "description": "Testet automatische Wiederholung",
+          "status": "FAIL",
+          "error_messages": [
+            "Temporary failure"
+          ]
+        },
+        {
+          "name": "Circuit Breaker",
+          "description": "Testet Circuit Breaker Pattern",
+          "status": "PASS",
+          "error_messages": [
+            "Aufruf 1: Exception",
+            "Aufruf 2: Exception",
+            "Aufruf 3: Exception",
+            "Aufruf 4: Exception",
+            "Aufruf 5: Exception",
+            "Aufruf 6: Exception",
+            "Aufruf 7: Exception",
+            "Aufruf 8: Exception",
+            "Aufruf 9: Exception",
+            "Aufruf 10: Exception",
+            "Total attempts: 3"
+          ]
+        },
+        {
+          "name": "Graceful Degradation",
+          "description": "Testet Stufenweise Degradierung",
+          "status": "PASS",
+          "error_messages": [
+            "Level 0 (Full service): Full service data",
+            "Level 1 (Partial service): Partial service data (fallback 1)",
+            "Level 2 (Minimal service): Minimal service data (fallback 2)",
+            "Level 3 (No service): No service available"
+          ]
+        },
+        {
+          "name": "Fallback Mechanisms",
+          "description": "Testet Fallback-Strategien",
+          "status": "PASS",
+          "error_messages": [
+            "No primary, no cache: Default fallback data",
+            "No primary, cache available: Cache fallback data",
+            "Primary available: Primary data source"
+          ]
+        }
+      ],
+      "passed": 3,
+      "failed": 1,
+      "status": "FAIL"
+    },
+    {
+      "name": "All-Exception-Scenarios",
+      "timestamp": "2025-11-07T16:50:28.196110",
+      "tests": [
+        {
+          "name": "ValueError",
+          "description": "Testet ValueError Exception",
+          "status": "PASS",
+          "error_messages": [
+            "Erwarteter ValueError: invalid literal for int() with base 10: 'not_a_number'"
+          ]
+        },
+        {
+          "name": "TypeError",
+          "description": "Testet TypeError Exception",
+          "status": "PASS",
+          "error_messages": [
+            "Erwarteter TypeError: can only concatenate str (not \"int\") to str"
+          ]
+        },
+        {
+          "name": "KeyError",
+          "description": "Testet KeyError Exception",
+          "status": "PASS",
+          "error_messages": [
+            "Erwarteter KeyError: 'nonexistent_key'"
+          ]
+        },
+        {
+          "name": "IndexError",
+          "description": "Testet IndexError Exception",
+          "status": "PASS",
+          "error_messages": [
+            "Erwarteter IndexError: list index out of range"
+          ]
+        },
+        {
+          "name": "AttributeError",
+          "description": "Testet AttributeError Exception",
+          "status": "PASS",
+          "error_messages": [
+            "Erwarteter AttributeError: 'str' object has no attribute 'nonexistent_method'"
+          ]
+        },
+        {
+          "name": "ImportError",
+          "description": "Testet ImportError Exception",
+          "status": "PASS",
+          "error_messages": [
+            "Erwarteter ImportError: No module named 'nonexistent_module_12345'"
+          ]
+        },
+        {
+          "name": "RuntimeError",
+          "description": "Testet RuntimeError Exception",
+          "status": "PASS",
+          "error_messages": [
+            "Erwarteter RuntimeError: Test runtime error"
+          ]
+        },
+        {
+          "name": "ArithmeticError",
+          "description": "Testet ArithmeticError Exception",
+          "status": "PASS",
+          "error_messages": [
+            "Erwarteter ArithmeticError (ZeroDivisionError): division by zero"
+          ]
+        }
+      ],
+      "passed": 8,
+      "failed": 0,
+      "status": "PASS"
+    }
+  ],
+  "summary": {
+    "total_test_suites": 10,
+    "passed_test_suites": 5,
+    "failed_test_suites": 5,
+    "success_rate": "50.0%",
+    "total_individual_tests": 47,
+    "platform": "Linux",
+    "python_version": "3.12.5 (main, Sep  5 2024, 00:16:34) [GCC 12.2.0]",
+    "timestamp": "2025-11-07T16:50:28.198269"
+  },
+  "errors": [],
+  "statistics": {
+    "by_category": {
+      "Network-Connectivity-Errors": {
+        "total": 5,
+        "passed": 3,
+        "failed": 2,
+        "status": "FAIL"
+      },
+      "File-System-Errors": {
+        "total": 5,
+        "passed": 5,
+        "failed": 0,
+        "status": "PASS"
+      },
+      "Database-Connection-Errors": {
+        "total": 4,
+        "passed": 2,
+        "failed": 2,
+        "status": "FAIL"
+      },
+      "Data-Format-Errors": {
+        "total": 5,
+        "passed": 3,
+        "failed": 2,
+        "status": "FAIL"
+      },
+      "Memory-Scenarios": {
+        "total": 4,
+        "passed": 3,
+        "failed": 1,
+        "status": "FAIL"
+      },
+      "Threading-Errors": {
+        "total": 4,
+        "passed": 4,
+        "failed": 0,
+        "status": "PASS"
+      },
+      "Unicode-Encoding-Errors": {
+        "total": 4,
+        "passed": 4,
+        "failed": 0,
+        "status": "PASS"
+      },
+      "Windows-Specific-Errors": {
+        "total": 4,
+        "passed": 4,
+        "failed": 0,
+        "status": "PASS"
+      },
+      "Recovery-Mechanisms": {
+        "total": 4,
+        "passed": 3,
+        "failed": 1,
+        "status": "FAIL"
+      },
+      "All-Exception-Scenarios": {
+        "total": 8,
+        "passed": 8,
+        "failed": 0,
+        "status": "PASS"
+      }
+    },
+    "test_environment": {
+      "platform": "Linux",
+      "architecture": [
+        "64bit",
+        "ELF"
+      ],
+      "python_version": "3.12.5 (main, Sep  5 2024, 00:16:34) [GCC 12.2.0]",
+      "processor": "",
+      "machine": "x86_64"
+    }
+  }
+}

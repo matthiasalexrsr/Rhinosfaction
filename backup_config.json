@@ -1,0 +1,10 @@
+{
+  "auto_backup_enabled": true,
+  "auto_backup_interval_hours": 24,
+  "retention_days": 30,
+  "max_auto_backups": 10,
+  "max_manual_backups": 50,
+  "compress_images": true,
+  "include_patients_json": true,
+  "include_registry_json": true
+}

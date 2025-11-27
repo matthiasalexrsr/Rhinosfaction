@@ -1,0 +1,5 @@
+{
+  ".txt": "notepad.exe",
+  ".pdf": "acrobat.exe",
+  ".jpg": "photoshop.exe"
+}

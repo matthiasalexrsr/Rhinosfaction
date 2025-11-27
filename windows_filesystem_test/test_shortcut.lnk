@@ -1,0 +1,6 @@
+{
+  "target": "/workspace/target_file.txt",
+  "working_dir": "/workspace",
+  "description": "Test Shortcut",
+  "icon": "shell32.dll,1"
+}

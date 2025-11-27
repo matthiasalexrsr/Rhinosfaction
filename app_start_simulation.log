@@ -1,0 +1,11 @@
+2025-11-07 07:10:18,110 - INFO - Starte umfassende App-Start-Simulation...
+2025-11-07 07:10:18,111 - INFO - Starte Test: QApplication_Start
+2025-11-07 07:10:18,118 - ERROR - Fehler in QApplication_Start: No module named 'PyQt5'
+2025-11-07 07:10:18,122 - INFO - Starte Test: Module_Imports
+2025-11-07 07:10:18,122 - INFO - Starte Test: Configuration_Loading
+2025-11-07 07:10:18,159 - INFO - Starte Test: Database_Connection
+2025-11-07 07:10:18,173 - INFO - Starte Test: Widget_Initialization
+2025-11-07 07:10:18,181 - INFO - Starte Test: Error_Handling_Missing_Dependencies
+2025-11-07 07:10:18,182 - INFO - Starte Test: Logging_System_Initialization
+2025-11-07 07:10:18,187 - INFO - Starte Test: Session_Management
+2025-11-07 07:10:18,200 - INFO - Report gespeichert: /workspace/docs/app_start_simulation_report.md

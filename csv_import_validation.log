@@ -1,0 +1,38 @@
+2025-11-07 06:57:12,556 - INFO - 🚀 Starte CSV-Import und Datenvalidierung Tests
+2025-11-07 06:57:12,557 - INFO - 📋 Führe Encoding-Tests aus...
+2025-11-07 06:57:12,572 - INFO - ✅ utf-8 Encoding-Test erfolgreich
+2025-11-07 06:57:12,581 - ERROR - ❌ utf-16 Encoding-Test fehlgeschlagen: UTF-16 stream does not start with BOM
+2025-11-07 06:57:12,597 - INFO - ✅ iso-8859-1 Encoding-Test erfolgreich
+2025-11-07 06:57:12,608 - INFO - ✅ cp1252 Encoding-Test erfolgreich
+2025-11-07 06:57:12,609 - INFO - 📋 Führe Datentyp-Validation aus...
+2025-11-07 06:57:12,610 - INFO - 📋 Führe Fehler-Behandlung aus...
+2025-11-07 06:57:12,630 - ERROR - ❌ Error-Handling Fehlende Spalten fehlgeschlagen: Keine Fehler für Fehlende Spalten erkannt
+2025-11-07 06:57:12,640 - ERROR - ❌ Error-Handling Ungültige Characters fehlgeschlagen: Keine Fehler für Ungültige Characters erkannt
+2025-11-07 06:57:12,656 - INFO - 📋 Führe Unicode-Support aus...
+2025-11-07 06:57:12,656 - ERROR - Fehler in Unicode-Support: name 'test_cases' is not defined
+2025-11-07 06:57:12,659 - INFO - 📋 Führe Große-Dateien aus...
+2025-11-07 06:57:12,700 - INFO - ✅ Large-File 1000 Datensätze erfolgreich
+2025-11-07 06:57:12,823 - INFO - ✅ Large-File 5000 Datensätze erfolgreich
+2025-11-07 06:57:13,034 - INFO - ✅ Large-File 10000 Datensätze erfolgreich
+2025-11-07 06:57:13,039 - INFO - 📋 Führe Multi-Byte-Characters aus...
+2025-11-07 06:57:13,047 - ERROR - ❌ Multi-Byte 3-Byte UTF-8 (漢字) fehlgeschlagen: UTF-16 stream does not start with BOM
+2025-11-07 06:57:13,056 - ERROR - ❌ Multi-Byte 4-Byte UTF-8 (Emoji) fehlgeschlagen: UTF-16 stream does not start with BOM
+2025-11-07 06:57:13,057 - INFO - 📋 Führe Datums-Parsing aus...
+2025-11-07 06:57:13,061 - INFO - ✅ Date-Parsing YYYY-MM-DD erfolgreich
+2025-11-07 06:57:13,061 - INFO - ✅ Date-Parsing DD.MM.YYYY erfolgreich
+2025-11-07 06:57:13,063 - INFO - ✅ Date-Parsing MM/DD/YYYY erfolgreich
+2025-11-07 06:57:13,069 - INFO - ✅ Date-Parsing DD/MM/YYYY erfolgreich
+2025-11-07 06:57:13,071 - INFO - ✅ Date-Parsing YYYY/MM/DD erfolgreich
+2025-11-07 06:57:13,073 - INFO - ✅ Date-Parsing DD-MM-YYYY erfolgreich
+2025-11-07 06:57:13,075 - INFO - 📋 Führe Zahlen-Format-Parsing aus...
+2025-11-07 06:57:13,077 - INFO - ✅ Number-Parsing Integer-Werte erfolgreich
+2025-11-07 06:57:13,077 - INFO - ✅ Number-Parsing Float-Werte erfolgreich
+2025-11-07 06:57:13,077 - INFO - ✅ Number-Parsing Deutsche Dezimalzahlen erfolgreich
+2025-11-07 06:57:13,077 - INFO - ✅ Number-Parsing Ungültige Werte erfolgreich
+2025-11-07 06:57:13,079 - INFO - 📋 Führe Schema-Validation aus...
+2025-11-07 06:57:13,081 - INFO - ✅ Schema-Validation Vollständiges Schema erfolgreich
+2025-11-07 06:57:13,084 - INFO - ✅ Schema-Validation Fehlende Pflichtfelder erfolgreich
+2025-11-07 06:57:13,085 - INFO - ✅ Schema-Validation Ungültige Werte erfolgreich
+2025-11-07 06:57:13,088 - INFO - 📋 Führe Memory-Management aus...
+2025-11-07 06:57:13,452 - INFO - ✅ Memory-Management erfolgreich: 0.00 MB Growth
+2025-11-07 06:57:13,454 - INFO - ✅ Alle CSV-Import-Tests abgeschlossen

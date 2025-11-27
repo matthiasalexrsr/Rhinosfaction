@@ -1,0 +1,255 @@
+============================================
+  RHINOPLASTIK - PYTHON INSTALLATION CHECK
+============================================
+
+Teste Python Installation...
+Python 3.12.7
+
+Ô£à Python ist installiert!
+Teste pip...
+pip 25.3 from C:\Users\matth\AppData\Local\Programs\Python\Python312\Lib\site-packages\pip (python 3.12)
+
+Ô£à pip ist verf├╝gbar!
+Installiere PyInstaller...
+Requirement already satisfied: pyinstaller in c:\users\matth\appdata\local\programs\python\python312\lib\site-packages (6.16.0)
+Requirement already satisfied: altgraph in c:\users\matth\appdata\local\programs\python\python312\lib\site-packages (from pyinstaller) (0.17.4)
+Requirement already satisfied: packaging>=22.0 in c:\users\matth\appdata\local\programs\python\python312\lib\site-packages (from pyinstaller) (25.0)
+Requirement already satisfied: pefile!=2024.8.26,>=2022.5.30 in c:\users\matth\appdata\local\programs\python\python312\lib\site-packages (from pyinstaller) (2023.2.7)
+Requirement already satisfied: pyinstaller-hooks-contrib>=2025.8 in c:\users\matth\appdata\local\programs\python\python312\lib\site-packages (from pyinstaller) (2025.9)
+Requirement already satisfied: pywin32-ctypes>=0.2.1 in c:\users\matth\appdata\local\programs\python\python312\lib\site-packages (from pyinstaller) (0.2.3)
+Requirement already satisfied: setuptools>=42.0.0 in c:\users\matth\appdata\local\programs\python\python312\lib\site-packages (from pyinstaller) (80.9.0)
+
+Ô£à PyInstaller installiert!
+Installiere Abh├ñngigkeiten aus requirements.txt...
+Requirement already satisfied: PySide6>=6.5.0 in c:\users\matth\appdata\local\programs\python\python312\lib\site-packages (from -r requirements.txt (line 2)) (6.10.0)
+Requirement already satisfied: pydantic>=2.0.0 in c:\users\matth\appdata\local\programs\python\python312\lib\site-packages (from -r requirements.txt (line 5)) (2.12.4)
+Requirement already satisfied: pandas>=2.0.0 in c:\users\matth\appdata\local\programs\python\python312\lib\site-packages (from -r requirements.txt (line 8)) (2.3.3)
+Requirement already satisfied: openpyxl>=3.1.0 in c:\users\matth\appdata\local\programs\python\python312\lib\site-packages (from -r requirements.txt (line 9)) (3.1.5)
+Requirement already satisfied: Pillow>=10.0.0 in c:\users\matth\appdata\local\programs\python\python312\lib\site-packages (from -r requirements.txt (line 12)) (12.0.0)
+Requirement already satisfied: reportlab>=4.0.0 in c:\users\matth\appdata\local\programs\python\python312\lib\site-packages (from -r requirements.txt (line 15)) (4.4.4)
+Requirement already satisfied: bcrypt>=4.0.0 in c:\users\matth\appdata\local\programs\python\python312\lib\site-packages (from -r requirements.txt (line 18)) (5.0.0)
+Requirement already satisfied: matplotlib>=3.7.0 in c:\users\matth\appdata\local\programs\python\python312\lib\site-packages (from -r requirements.txt (line 21)) (3.10.7)
+Requirement already satisfied: numpy>=1.24.0 in c:\users\matth\appdata\local\programs\python\python312\lib\site-packages (from -r requirements.txt (line 22)) (2.3.4)
+Requirement already satisfied: PyYAML>=6.0 in c:\users\matth\appdata\local\programs\python\python312\lib\site-packages (from -r requirements.txt (line 25)) (6.0.3)
+Requirement already satisfied: pytest>=7.4.0 in c:\users\matth\appdata\local\programs\python\python312\lib\site-packages (from -r requirements.txt (line 28)) (8.4.2)
+Requirement already satisfied: pytest-qt>=4.2.0 in c:\users\matth\appdata\local\programs\python\python312\lib\site-packages (from -r requirements.txt (line 29)) (4.5.0)
+Requirement already satisfied: pyinstaller>=5.13.0 in c:\users\matth\appdata\local\programs\python\python312\lib\site-packages (from -r requirements.txt (line 32)) (6.16.0)
+Requirement already satisfied: python-dateutil>=2.8.2 in c:\users\matth\appdata\local\programs\python\python312\lib\site-packages (from -r requirements.txt (line 35)) (2.9.0.post0)
+ERROR: Could not find a version that satisfies the requirement atomicwrites>=2.2.1 (from versions: 0.1.0, 0.1.1, 0.1.2, 0.1.3, 0.1.4, 0.1.5, 0.1.6, 0.1.7, 0.1.8, 0.1.9, 1.0.0, 1.1.0, 1.1.5, 1.2.0, 1.2.1, 1.3.0, 1.4.0, 1.4.1)
+ERROR: No matching distribution found for atomicwrites>=2.2.1
+ÔÜá´©Å  Versuche manuelle Installation...
+Requirement already satisfied: PySide6 in c:\users\matth\appdata\local\programs\python\python312\lib\site-packages (6.10.0)
+Requirement already satisfied: pandas in c:\users\matth\appdata\local\programs\python\python312\lib\site-packages (2.3.3)
+Requirement already satisfied: numpy in c:\users\matth\appdata\local\programs\python\python312\lib\site-packages (2.3.4)
+Requirement already satisfied: matplotlib in c:\users\matth\appdata\local\programs\python\python312\lib\site-packages (3.10.7)
+Requirement already satisfied: bcrypt in c:\users\matth\appdata\local\programs\python\python312\lib\site-packages (5.0.0)
+Requirement already satisfied: reportlab in c:\users\matth\appdata\local\programs\python\python312\lib\site-packages (4.4.4)
+Requirement already satisfied: PyYAML in c:\users\matth\appdata\local\programs\python\python312\lib\site-packages (6.0.3)
+Requirement already satisfied: Pillow in c:\users\matth\appdata\local\programs\python\python312\lib\site-packages (12.0.0)
+Requirement already satisfied: openpyxl in c:\users\matth\appdata\local\programs\python\python312\lib\site-packages (3.1.5)
+Requirement already satisfied: pydantic in c:\users\matth\appdata\local\programs\python\python312\lib\site-packages (2.12.4)
+Collecting atomicwrites
+  Downloading atomicwrites-1.4.1.tar.gz (14 kB)
+  Installing build dependencies ... done
+  Getting requirements to build wheel ... done
+  Preparing metadata (pyproject.toml) ... done
+Requirement already satisfied: shiboken6==6.10.0 in c:\users\matth\appdata\local\programs\python\python312\lib\site-packages (from PySide6) (6.10.0)
+Requirement already satisfied: PySide6_Essentials==6.10.0 in c:\users\matth\appdata\local\programs\python\python312\lib\site-packages (from PySide6) (6.10.0)
+Requirement already satisfied: PySide6_Addons==6.10.0 in c:\users\matth\appdata\local\programs\python\python312\lib\site-packages (from PySide6) (6.10.0)
+Requirement already satisfied: python-dateutil>=2.8.2 in c:\users\matth\appdata\local\programs\python\python312\lib\site-packages (from pandas) (2.9.0.post0)
+Requirement already satisfied: pytz>=2020.1 in c:\users\matth\appdata\local\programs\python\python312\lib\site-packages (from pandas) (2025.2)
+Requirement already satisfied: tzdata>=2022.7 in c:\users\matth\appdata\local\programs\python\python312\lib\site-packages (from pandas) (2025.2)
+Requirement already satisfied: contourpy>=1.0.1 in c:\users\matth\appdata\local\programs\python\python312\lib\site-packages (from matplotlib) (1.3.3)
+Requirement already satisfied: cycler>=0.10 in c:\users\matth\appdata\local\programs\python\python312\lib\site-packages (from matplotlib) (0.12.1)
+Requirement already satisfied: fonttools>=4.22.0 in c:\users\matth\appdata\local\programs\python\python312\lib\site-packages (from matplotlib) (4.60.1)
+Requirement already satisfied: kiwisolver>=1.3.1 in c:\users\matth\appdata\local\programs\python\python312\lib\site-packages (from matplotlib) (1.4.9)
+Requirement already satisfied: packaging>=20.0 in c:\users\matth\appdata\local\programs\python\python312\lib\site-packages (from matplotlib) (25.0)
+Requirement already satisfied: pyparsing>=3 in c:\users\matth\appdata\local\programs\python\python312\lib\site-packages (from matplotlib) (3.2.5)
+Requirement already satisfied: charset-normalizer in c:\users\matth\appdata\local\programs\python\python312\lib\site-packages (from reportlab) (3.4.4)
+Requirement already satisfied: et-xmlfile in c:\users\matth\appdata\local\programs\python\python312\lib\site-packages (from openpyxl) (2.0.0)
+Requirement already satisfied: annotated-types>=0.6.0 in c:\users\matth\appdata\local\programs\python\python312\lib\site-packages (from pydantic) (0.7.0)
+Requirement already satisfied: pydantic-core==2.41.5 in c:\users\matth\appdata\local\programs\python\python312\lib\site-packages (from pydantic) (2.41.5)
+Requirement already satisfied: typing-extensions>=4.14.1 in c:\users\matth\appdata\local\programs\python\python312\lib\site-packages (from pydantic) (4.15.0)
+Requirement already satisfied: typing-inspection>=0.4.2 in c:\users\matth\appdata\local\programs\python\python312\lib\site-packages (from pydantic) (0.4.2)
+Requirement already satisfied: six>=1.5 in c:\users\matth\appdata\local\programs\python\python312\lib\site-packages (from python-dateutil>=2.8.2->pandas) (1.17.0)
+Building wheels for collected packages: atomicwrites
+  Building wheel for atomicwrites (pyproject.toml) ... done
+  Created wheel for atomicwrites: filename=atomicwrites-1.4.1-py2.py3-none-any.whl size=7055 sha256=277d0316ad52be7f88cb48d653ccb499548ff56adbcc67ad5f9e632e5e53d8d1
+  Stored in directory: c:\users\matth\appdata\local\pip\cache\wheels\6b\37\a4\ae30755673c2d1e07228f13b4491fcaef62438f771d5012d07
+Successfully built atomicwrites
+Installing collected packages: atomicwrites
+Successfully installed atomicwrites-1.4.1
+
+Ô£à Alle Abh├ñngigkeiten installiert!
+Starte Build...
+188 INFO: PyInstaller: 6.16.0, contrib hooks: 2025.9
+189 INFO: Python: 3.12.7
+212 INFO: Platform: Windows-10-10.0.19045-SP0
+213 INFO: Python environment: C:\Users\matth\AppData\Local\Programs\Python\Python312
+216 INFO: Module search paths (PYTHONPATH):
+['C:\\Users\\matth\\AppData\\Local\\Programs\\Python\\Python312\\Scripts\\pyinstaller.exe',
+ 'C:\\Users\\matth\\AppData\\Local\\Programs\\Python\\Python312\\python312.zip',
+ 'C:\\Users\\matth\\AppData\\Local\\Programs\\Python\\Python312\\DLLs',
+ 'C:\\Users\\matth\\AppData\\Local\\Programs\\Python\\Python312\\Lib',
+ 'C:\\Users\\matth\\AppData\\Local\\Programs\\Python\\Python312',
+ 'C:\\Users\\matth\\AppData\\Local\\Programs\\Python\\Python312\\Lib\\site-packages',
+ 'C:\\Users\\matth\\AppData\\Local\\Programs\\Python\\Python312\\Lib\\site-packages\\setuptools\\_vendor',
+ 'C:\\Rhinoplastik_FINAL\\rhinoplastik_essentials']
+612 INFO: Appending 'datas' from .spec
+625 INFO: checking Analysis
+626 INFO: Building Analysis because Analysis-00.toc is non existent
+626 INFO: Looking for Python shared library...
+627 INFO: Using Python shared library: C:\Users\matth\AppData\Local\Programs\Python\Python312\python312.dll
+627 INFO: Running Analysis Analysis-00.toc
+627 INFO: Target bytecode optimization level: 0
+628 INFO: Initializing module dependency graph...
+629 INFO: Initializing module graph hook caches...
+645 INFO: Analyzing modules for base_library.zip ...
+1774 INFO: Processing standard module hook 'hook-encodings.py' from 'C:\\Users\\matth\\AppData\\Local\\Programs\\Python\\Python312\\Lib\\site-packages\\PyInstaller\\hooks'
+3338 INFO: Processing standard module hook 'hook-pickle.py' from 'C:\\Users\\matth\\AppData\\Local\\Programs\\Python\\Python312\\Lib\\site-packages\\PyInstaller\\hooks'
+6575 INFO: Processing standard module hook 'hook-heapq.py' from 'C:\\Users\\matth\\AppData\\Local\\Programs\\Python\\Python312\\Lib\\site-packages\\PyInstaller\\hooks'
+6972 INFO: Caching module dependency graph...
+7010 INFO: Analyzing C:\Rhinoplastik_FINAL\rhinoplastik_essentials\app.py
+7018 INFO: Processing standard module hook 'hook-PySide6.py' from 'C:\\Users\\matth\\AppData\\Local\\Programs\\Python\\Python312\\Lib\\site-packages\\PyInstaller\\hooks'
+7186 INFO: Processing standard module hook 'hook-shiboken6.py' from 'C:\\Users\\matth\\AppData\\Local\\Programs\\Python\\Python312\\Lib\\site-packages\\PyInstaller\\hooks'
+7333 INFO: Processing standard module hook 'hook-PySide6.QtNetwork.py' from 'C:\\Users\\matth\\AppData\\Local\\Programs\\Python\\Python312\\Lib\\site-packages\\PyInstaller\\hooks'
+8252 INFO: Processing standard module hook 'hook-PySide6.QtCore.py' from 'C:\\Users\\matth\\AppData\\Local\\Programs\\Python\\Python312\\Lib\\site-packages\\PyInstaller\\hooks'
+9133 INFO: Processing standard module hook 'hook-PySide6.QtWidgets.py' from 'C:\\Users\\matth\\AppData\\Local\\Programs\\Python\\Python312\\Lib\\site-packages\\PyInstaller\\hooks'
+10116 INFO: Processing standard module hook 'hook-PySide6.QtGui.py' from 'C:\\Users\\matth\\AppData\\Local\\Programs\\Python\\Python312\\Lib\\site-packages\\PyInstaller\\hooks'
+10720 INFO: Processing standard module hook 'hook-platform.py' from 'C:\\Users\\matth\\AppData\\Local\\Programs\\Python\\Python312\\Lib\\site-packages\\PyInstaller\\hooks'
+10725 INFO: Processing standard module hook 'hook-cryptography.py' from 'C:\\Users\\matth\\AppData\\Local\\Programs\\Python\\Python312\\Lib\\site-packages\\_pyinstaller_hooks_contrib\\stdhooks'
+11556 INFO: hook-cryptography: cryptography does not seem to be using dynamically linked OpenSSL.
+11679 INFO: Processing standard module hook 'hook-bcrypt.py' from 'C:\\Users\\matth\\AppData\\Local\\Programs\\Python\\Python312\\Lib\\site-packages\\_pyinstaller_hooks_contrib\\stdhooks'
+11814 INFO: Processing standard module hook 'hook-pydantic.py' from 'C:\\Users\\matth\\AppData\\Local\\Programs\\Python\\Python312\\Lib\\site-packages\\_pyinstaller_hooks_contrib\\stdhooks'
+12245 INFO: Processing pre-safe-import-module hook 'hook-typing_extensions.py' from 'C:\\Users\\matth\\AppData\\Local\\Programs\\Python\\Python312\\Lib\\site-packages\\PyInstaller\\hooks\\pre_safe_import_module'
+12246 INFO: SetuptoolsInfo: initializing cached setuptools info...
+16239 INFO: Processing standard module hook 'hook-multiprocessing.util.py' from 'C:\\Users\\matth\\AppData\\Local\\Programs\\Python\\Python312\\Lib\\site-packages\\PyInstaller\\hooks'
+16307 INFO: Processing standard module hook 'hook-xml.py' from 'C:\\Users\\matth\\AppData\\Local\\Programs\\Python\\Python312\\Lib\\site-packages\\PyInstaller\\hooks'
+16514 INFO: Processing standard module hook 'hook-_ctypes.py' from 'C:\\Users\\matth\\AppData\\Local\\Programs\\Python\\Python312\\Lib\\site-packages\\PyInstaller\\hooks'
+17203 INFO: Processing standard module hook 'hook-zoneinfo.py' from 'C:\\Users\\matth\\AppData\\Local\\Programs\\Python\\Python312\\Lib\\site-packages\\_pyinstaller_hooks_contrib\\stdhooks'
+17225 INFO: Processing standard module hook 'hook-sysconfig.py' from 'C:\\Users\\matth\\AppData\\Local\\Programs\\Python\\Python312\\Lib\\site-packages\\PyInstaller\\hooks'
+18016 INFO: Processing standard module hook 'hook-pandas.py' from 'C:\\Users\\matth\\AppData\\Local\\Programs\\Python\\Python312\\Lib\\site-packages\\PyInstaller\\hooks'
+19238 INFO: Processing standard module hook 'hook-numpy.py' from 'C:\\Users\\matth\\AppData\\Local\\Programs\\Python\\Python312\\Lib\\site-packages\\PyInstaller\\hooks'
+19672 INFO: Processing standard module hook 'hook-difflib.py' from 'C:\\Users\\matth\\AppData\\Local\\Programs\\Python\\Python312\\Lib\\site-packages\\PyInstaller\\hooks'
+21569 INFO: Processing standard module hook 'hook-charset_normalizer.py' from 'C:\\Users\\matth\\AppData\\Local\\Programs\\Python\\Python312\\Lib\\site-packages\\_pyinstaller_hooks_contrib\\stdhooks'
+21959 INFO: Processing standard module hook 'hook-pytz.py' from 'C:\\Users\\matth\\AppData\\Local\\Programs\\Python\\Python312\\Lib\\site-packages\\PyInstaller\\hooks'
+24153 INFO: Processing standard module hook 'hook-pandas.io.formats.style.py' from 'C:\\Users\\matth\\AppData\\Local\\Programs\\Python\\Python312\\Lib\\site-packages\\PyInstaller\\hooks'
+26245 INFO: Processing standard module hook 'hook-pandas.plotting.py' from 'C:\\Users\\matth\\AppData\\Local\\Programs\\Python\\Python312\\Lib\\site-packages\\PyInstaller\\hooks'
+26292 INFO: Processing standard module hook 'hook-matplotlib.py' from 'C:\\Users\\matth\\AppData\\Local\\Programs\\Python\\Python312\\Lib\\site-packages\\PyInstaller\\hooks'
+26590 INFO: Processing pre-safe-import-module hook 'hook-packaging.py' from 'C:\\Users\\matth\\AppData\\Local\\Programs\\Python\\Python312\\Lib\\site-packages\\PyInstaller\\hooks\\pre_safe_import_module'
+26679 INFO: Processing pre-safe-import-module hook 'hook-gi.py' from 'C:\\Users\\matth\\AppData\\Local\\Programs\\Python\\Python312\\Lib\\site-packages\\PyInstaller\\hooks\\pre_safe_import_module'
+26941 INFO: Processing standard module hook 'hook-matplotlib.backend_bases.py' from 'C:\\Users\\matth\\AppData\\Local\\Programs\\Python\\Python312\\Lib\\site-packages\\PyInstaller\\hooks'
+27058 INFO: Processing standard module hook 'hook-PIL.py' from 'C:\\Users\\matth\\AppData\\Local\\Programs\\Python\\Python312\\Lib\\site-packages\\PyInstaller\\hooks'
+27149 INFO: Processing standard module hook 'hook-PIL.Image.py' from 'C:\\Users\\matth\\AppData\\Local\\Programs\\Python\\Python312\\Lib\\site-packages\\PyInstaller\\hooks'
+27548 INFO: Processing standard module hook 'hook-xml.etree.cElementTree.py' from 'C:\\Users\\matth\\AppData\\Local\\Programs\\Python\\Python312\\Lib\\site-packages\\PyInstaller\\hooks'
+27705 INFO: Processing standard module hook 'hook-PIL.ImageFilter.py' from 'C:\\Users\\matth\\AppData\\Local\\Programs\\Python\\Python312\\Lib\\site-packages\\PyInstaller\\hooks'
+28459 INFO: Processing standard module hook 'hook-matplotlib.backends.py' from 'C:\\Users\\matth\\AppData\\Local\\Programs\\Python\\Python312\\Lib\\site-packages\\PyInstaller\\hooks'
+28544 INFO: Processing standard module hook 'hook-matplotlib.pyplot.py' from 'C:\\Users\\matth\\AppData\\Local\\Programs\\Python\\Python312\\Lib\\site-packages\\PyInstaller\\hooks'
+29409 INFO: Processing standard module hook 'hook-dateutil.py' from 'C:\\Users\\matth\\AppData\\Local\\Programs\\Python\\Python312\\Lib\\site-packages\\_pyinstaller_hooks_contrib\\stdhooks'
+29486 INFO: Processing pre-safe-import-module hook 'hook-six.moves.py' from 'C:\\Users\\matth\\AppData\\Local\\Programs\\Python\\Python312\\Lib\\site-packages\\PyInstaller\\hooks\\pre_safe_import_module'
+31381 INFO: Processing standard module hook 'hook-openpyxl.py' from 'C:\\Users\\matth\\AppData\\Local\\Programs\\Python\\Python312\\Lib\\site-packages\\_pyinstaller_hooks_contrib\\stdhooks'
+33454 INFO: Processing standard module hook 'hook-sqlite3.py' from 'C:\\Users\\matth\\AppData\\Local\\Programs\\Python\\Python312\\Lib\\site-packages\\PyInstaller\\hooks'
+33823 INFO: Processing standard module hook 'hook-pandas.io.clipboard.py' from 'C:\\Users\\matth\\AppData\\Local\\Programs\\Python\\Python312\\Lib\\site-packages\\PyInstaller\\hooks'
+34204 INFO: Processing standard module hook 'hook-xml.dom.domreg.py' from 'C:\\Users\\matth\\AppData\\Local\\Programs\\Python\\Python312\\Lib\\site-packages\\PyInstaller\\hooks'
+34523 INFO: Processing standard module hook 'hook-pytest.py' from 'C:\\Users\\matth\\AppData\\Local\\Programs\\Python\\Python312\\Lib\\site-packages\\_pyinstaller_hooks_contrib\\stdhooks'
+34729 INFO: Processing standard module hook 'hook-pygments.py' from 'C:\\Users\\matth\\AppData\\Local\\Programs\\Python\\Python312\\Lib\\site-packages\\PyInstaller\\hooks'
+35952 INFO: Processing standard module hook 'hook-py.py' from 'C:\\Users\\matth\\AppData\\Local\\Programs\\Python\\Python312\\Lib\\site-packages\\_pyinstaller_hooks_contrib\\stdhooks'
+36292 INFO: Processing pre-safe-import-module hook 'hook-tomli.py' from 'C:\\Users\\matth\\AppData\\Local\\Programs\\Python\\Python312\\Lib\\site-packages\\PyInstaller\\hooks\\pre_safe_import_module'
+36293 INFO: Setuptools: 'tomli' appears to be a setuptools-vendored copy - creating alias to 'setuptools._vendor.tomli'!
+36343 INFO: Processing standard module hook 'hook-setuptools.py' from 'C:\\Users\\matth\\AppData\\Local\\Programs\\Python\\Python312\\Lib\\site-packages\\PyInstaller\\hooks'
+36370 INFO: Processing pre-safe-import-module hook 'hook-distutils.py' from 'C:\\Users\\matth\\AppData\\Local\\Programs\\Python\\Python312\\Lib\\site-packages\\PyInstaller\\hooks\\pre_safe_import_module'
+36397 INFO: Processing pre-safe-import-module hook 'hook-jaraco.functools.py' from 'C:\\Users\\matth\\AppData\\Local\\Programs\\Python\\Python312\\Lib\\site-packages\\PyInstaller\\hooks\\pre_safe_import_module'
+36398 INFO: Setuptools: 'jaraco.functools' appears to be a setuptools-vendored copy - creating alias to 'setuptools._vendor.jaraco.functools'!
+36405 INFO: Processing pre-safe-import-module hook 'hook-more_itertools.py' from 'C:\\Users\\matth\\AppData\\Local\\Programs\\Python\\Python312\\Lib\\site-packages\\PyInstaller\\hooks\\pre_safe_import_module'
+36406 INFO: Setuptools: 'more_itertools' appears to be a setuptools-vendored copy - creating alias to 'setuptools._vendor.more_itertools'!
+36682 INFO: Processing pre-safe-import-module hook 'hook-jaraco.text.py' from 'C:\\Users\\matth\\AppData\\Local\\Programs\\Python\\Python312\\Lib\\site-packages\\PyInstaller\\hooks\\pre_safe_import_module'
+36683 INFO: Setuptools: 'jaraco.text' appears to be a setuptools-vendored copy - creating alias to 'setuptools._vendor.jaraco.text'!
+36692 INFO: Processing standard module hook 'hook-setuptools._vendor.jaraco.text.py' from 'C:\\Users\\matth\\AppData\\Local\\Programs\\Python\\Python312\\Lib\\site-packages\\PyInstaller\\hooks'
+36693 INFO: Processing pre-safe-import-module hook 'hook-importlib_resources.py' from 'C:\\Users\\matth\\AppData\\Local\\Programs\\Python\\Python312\\Lib\\site-packages\\PyInstaller\\hooks\\pre_safe_import_module'
+36695 INFO: Processing pre-safe-import-module hook 'hook-jaraco.context.py' from 'C:\\Users\\matth\\AppData\\Local\\Programs\\Python\\Python312\\Lib\\site-packages\\PyInstaller\\hooks\\pre_safe_import_module'
+36696 INFO: Setuptools: 'jaraco.context' appears to be a setuptools-vendored copy - creating alias to 'setuptools._vendor.jaraco.context'!
+36703 INFO: Processing pre-safe-import-module hook 'hook-backports.tarfile.py' from 'C:\\Users\\matth\\AppData\\Local\\Programs\\Python\\Python312\\Lib\\site-packages\\PyInstaller\\hooks\\pre_safe_import_module'
+36703 INFO: Setuptools: 'backports.tarfile' appears to be a setuptools-vendored copy - creating alias to 'setuptools._vendor.backports.tarfile'!
+36783 INFO: Processing standard module hook 'hook-backports.py' from 'C:\\Users\\matth\\AppData\\Local\\Programs\\Python\\Python312\\Lib\\site-packages\\_pyinstaller_hooks_contrib\\stdhooks'
+36963 INFO: Processing pre-safe-import-module hook 'hook-importlib_metadata.py' from 'C:\\Users\\matth\\AppData\\Local\\Programs\\Python\\Python312\\Lib\\site-packages\\PyInstaller\\hooks\\pre_safe_import_module'
+36964 INFO: Setuptools: 'importlib_metadata' appears to be a setuptools-vendored copy - creating alias to 'setuptools._vendor.importlib_metadata'!
+36985 INFO: Processing standard module hook 'hook-setuptools._vendor.importlib_metadata.py' from 'C:\\Users\\matth\\AppData\\Local\\Programs\\Python\\Python312\\Lib\\site-packages\\PyInstaller\\hooks'
+36987 INFO: Processing pre-safe-import-module hook 'hook-zipp.py' from 'C:\\Users\\matth\\AppData\\Local\\Programs\\Python\\Python312\\Lib\\site-packages\\PyInstaller\\hooks\\pre_safe_import_module'
+36987 INFO: Setuptools: 'zipp' appears to be a setuptools-vendored copy - creating alias to 'setuptools._vendor.zipp'!
+37584 INFO: Processing pre-safe-import-module hook 'hook-wheel.py' from 'C:\\Users\\matth\\AppData\\Local\\Programs\\Python\\Python312\\Lib\\site-packages\\PyInstaller\\hooks\\pre_safe_import_module'
+37585 INFO: Setuptools: 'wheel' appears to be a setuptools-vendored copy - creating alias to 'setuptools._vendor.wheel'!
+38479 INFO: Processing standard module hook 'hook-pkg_resources.py' from 'C:\\Users\\matth\\AppData\\Local\\Programs\\Python\\Python312\\Lib\\site-packages\\PyInstaller\\hooks'
+38804 INFO: Processing pre-safe-import-module hook 'hook-platformdirs.py' from 'C:\\Users\\matth\\AppData\\Local\\Programs\\Python\\Python312\\Lib\\site-packages\\PyInstaller\\hooks\\pre_safe_import_module'
+38805 INFO: Setuptools: 'platformdirs' appears to be a setuptools-vendored copy - creating alias to 'setuptools._vendor.platformdirs'!
+39908 INFO: Processing standard module hook 'hook-reportlab.lib.utils.py' from 'C:\\Users\\matth\\AppData\\Local\\Programs\\Python\\Python312\\Lib\\site-packages\\_pyinstaller_hooks_contrib\\stdhooks'
+40031 INFO: Processing standard module hook 'hook-reportlab.pdfbase._fontdata.py' from 'C:\\Users\\matth\\AppData\\Local\\Programs\\Python\\Python312\\Lib\\site-packages\\_pyinstaller_hooks_contrib\\stdhooks'
+42566 INFO: Processing standard module hook 'hook-matplotlib.backends.backend_qtagg.py' from 'C:\\Users\\matth\\AppData\\Local\\Programs\\Python\\Python312\\Lib\\site-packages\\PyInstaller\\hooks'
+42571 INFO: Processing standard module hook 'hook-matplotlib.backends.qt_compat.py' from 'C:\\Users\\matth\\AppData\\Local\\Programs\\Python\\Python312\\Lib\\site-packages\\PyInstaller\\hooks'
+42572 INFO: hook-matplotlib.backends.qt_compat: selected 'PySide6' as Qt bindings because hook for 'PySide6' has been run before.
+42710 INFO: Processing pre-safe-import-module hook 'hook-win32com.py' from 'C:\\Users\\matth\\AppData\\Local\\Programs\\Python\\Python312\\Lib\\site-packages\\_pyinstaller_hooks_contrib\\pre_safe_import_module'
+43353 INFO: Analyzing hidden import 'PySide6.QtSvg'
+43362 INFO: Processing standard module hook 'hook-PySide6.QtSvg.py' from 'C:\\Users\\matth\\AppData\\Local\\Programs\\Python\\Python312\\Lib\\site-packages\\PyInstaller\\hooks'
+43521 INFO: Analyzing hidden import 'PySide6.QtOpenGL'
+45077 INFO: Processing standard module hook 'hook-PySide6.QtOpenGL.py' from 'C:\\Users\\matth\\AppData\\Local\\Programs\\Python\\Python312\\Lib\\site-packages\\PyInstaller\\hooks'
+45446 INFO: Analyzing hidden import 'PIL.ImageTk'
+45452 INFO: Processing module hooks (post-graph stage)...
+45669 INFO: Processing standard module hook 'hook-matplotlib.backends.py' from 'C:\\Users\\matth\\AppData\\Local\\Programs\\Python\\Python312\\Lib\\site-packages\\PyInstaller\\hooks'
+45670 INFO: Matplotlib backend selection method: automatic discovery of used backends
+46046 INFO: Trying determine the default backend as first importable candidate from the list: ['QtAgg', 'Qt5Agg', 'Gtk4Agg', 'Gtk3Agg', 'TkAgg', 'WxAgg']
+46572 INFO: Selected matplotlib backends: ['QtAgg']
+47027 INFO: Processing standard module hook 'hook-PIL.SpiderImagePlugin.py' from 'C:\\Users\\matth\\AppData\\Local\\Programs\\Python\\Python312\\Lib\\site-packages\\PyInstaller\\hooks'
+49084 INFO: Processing standard module hook 'hook-tzdata.py' from 'C:\\Users\\matth\\AppData\\Local\\Programs\\Python\\Python312\\Lib\\site-packages\\_pyinstaller_hooks_contrib\\stdhooks'
+49710 INFO: Performing binary vs. data reclassification (1761 entries)
+50428 INFO: Looking for ctypes DLLs
+50509 INFO: Analyzing run-time hooks ...
+50518 INFO: Including run-time hook 'pyi_rth_inspect.py' from 'C:\\Users\\matth\\AppData\\Local\\Programs\\Python\\Python312\\Lib\\site-packages\\PyInstaller\\hooks\\rthooks'
+50520 INFO: Including run-time hook 'pyi_rth_pkgutil.py' from 'C:\\Users\\matth\\AppData\\Local\\Programs\\Python\\Python312\\Lib\\site-packages\\PyInstaller\\hooks\\rthooks'
+50522 INFO: Including run-time hook 'pyi_rth_multiprocessing.py' from 'C:\\Users\\matth\\AppData\\Local\\Programs\\Python\\Python312\\Lib\\site-packages\\PyInstaller\\hooks\\rthooks'
+50524 INFO: Including run-time hook 'pyi_rth_pyside6.py' from 'C:\\Users\\matth\\AppData\\Local\\Programs\\Python\\Python312\\Lib\\site-packages\\PyInstaller\\hooks\\rthooks'
+50526 INFO: Processing pre-find-module-path hook 'hook-_pyi_rth_utils.py' from 'C:\\Users\\matth\\AppData\\Local\\Programs\\Python\\Python312\\Lib\\site-packages\\PyInstaller\\hooks\\pre_find_module_path'
+50528 INFO: Processing standard module hook 'hook-_pyi_rth_utils.py' from 'C:\\Users\\matth\\AppData\\Local\\Programs\\Python\\Python312\\Lib\\site-packages\\PyInstaller\\hooks'
+50532 INFO: Including run-time hook 'pyi_rth_mplconfig.py' from 'C:\\Users\\matth\\AppData\\Local\\Programs\\Python\\Python312\\Lib\\site-packages\\PyInstaller\\hooks\\rthooks'
+50541 INFO: Including run-time hook 'pyi_rth_setuptools.py' from 'C:\\Users\\matth\\AppData\\Local\\Programs\\Python\\Python312\\Lib\\site-packages\\PyInstaller\\hooks\\rthooks'
+50543 INFO: Including run-time hook 'pyi_rth_pkgres.py' from 'C:\\Users\\matth\\AppData\\Local\\Programs\\Python\\Python312\\Lib\\site-packages\\PyInstaller\\hooks\\rthooks'
+50547 INFO: Including run-time hook 'pyi_rth_cryptography_openssl.py' from 'C:\\Users\\matth\\AppData\\Local\\Programs\\Python\\Python312\\Lib\\site-packages\\_pyinstaller_hooks_contrib\\rthooks'
+50621 INFO: Creating base_library.zip...
+50643 INFO: Looking for dynamic libraries
+C:\Users\matth\AppData\Local\Programs\Python\Python312\Lib\site-packages\PyInstaller\building\build_main.py:227: UserWarning: pkg_resources is deprecated as an API. See https://setuptools.pypa.io/en/latest/pkg_resources.html. The pkg_resources package is slated for removal as early as 2025-11-30. Refrain from using this package or pin to Setuptools<81.
+  __import__(package)
+52994 INFO: Extra DLL search directories (AddDllDirectory): ['C:\\Users\\matth\\AppData\\Local\\Programs\\Python\\Python312\\Lib\\site-packages\\shiboken6', 'C:\\Users\\matth\\AppData\\Local\\Programs\\Python\\Python312\\Lib\\site-packages\\numpy.libs', 'C:\\Users\\matth\\AppData\\Local\\Programs\\Python\\Python312\\Lib\\site-packages\\pandas.libs']
+52994 INFO: Extra DLL search directories (PATH): ['C:\\Users\\matth\\AppData\\Local\\Programs\\Python\\Python312\\Lib\\site-packages\\PySide6']
+54673 INFO: Warnings written to C:\Rhinoplastik_FINAL\rhinoplastik_essentials\build\rhinoplastik_app\warn-rhinoplastik_app.txt
+54894 INFO: Graph cross-reference written to C:\Rhinoplastik_FINAL\rhinoplastik_essentials\build\rhinoplastik_app\xref-rhinoplastik_app.html
+54997 INFO: checking PYZ
+54997 INFO: Building PYZ because PYZ-00.toc is non existent
+54998 INFO: Building PYZ (ZlibArchive) C:\Rhinoplastik_FINAL\rhinoplastik_essentials\build\rhinoplastik_app\PYZ-00.pyz
+56724 INFO: Building PYZ (ZlibArchive) C:\Rhinoplastik_FINAL\rhinoplastik_essentials\build\rhinoplastik_app\PYZ-00.pyz completed successfully.
+56765 INFO: checking PKG
+56765 INFO: Building PKG because PKG-00.toc is non existent
+56766 INFO: Building PKG (CArchive) Rhinoplastik_App.pkg
+56807 INFO: Building PKG (CArchive) Rhinoplastik_App.pkg completed successfully.
+56809 INFO: Bootloader C:\Users\matth\AppData\Local\Programs\Python\Python312\Lib\site-packages\PyInstaller\bootloader\Windows-64bit-intel\runw.exe
+56809 INFO: checking EXE
+56813 INFO: Building EXE because EXE-00.toc is non existent
+56814 INFO: Building EXE from EXE-00.toc
+56815 INFO: Copying bootloader EXE to C:\Rhinoplastik_FINAL\rhinoplastik_essentials\build\rhinoplastik_app\Rhinoplastik_App.exe
+56827 INFO: Copying icon to EXE
+56833 INFO: Copying 0 resources to EXE
+56833 INFO: Embedding manifest in EXE
+56879 INFO: Appending PKG archive to EXE
+56976 INFO: Fixing EXE headers
+59359 INFO: Building EXE from EXE-00.toc completed successfully.
+59379 INFO: checking COLLECT
+59379 INFO: Building COLLECT because COLLECT-00.toc is non existent
+59380 INFO: Building COLLECT COLLECT-00.toc
+61624 INFO: Building COLLECT COLLECT-00.toc completed successfully.
+61661 INFO: Build complete! The results are available in: C:\Rhinoplastik_FINAL\rhinoplastik_essentials\dist
+
+Ô£à SUCCESS: Build erfolgreich abgeschlossen!
+
+Die App findest du hier:
+­ƒôü dist\Rhinoplastik_App\Rhinoplastik_App.exe
+
+Zum Starten: Doppelklick auf Rhinoplastik_App.exe
+
+Dr├╝cke beliebige Taste zum Beenden...

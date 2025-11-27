@@ -1,0 +1,351 @@
+{
+  "timestamp": "2025-11-07T06:57:13.459383",
+  "summary": {
+    "total_tests": 29,
+    "successful_tests": 24,
+    "failed_tests": 5,
+    "success_rate": 82.75862068965517,
+    "total_duration": 0.835416316986084,
+    "errors": [
+      {
+        "test": "Unicode-Support",
+        "error": "name 'test_cases' is not defined",
+        "traceback": "Traceback (most recent call last):\n  File \"/workspace/csv_import_validation_test.py\", line 225, in run_all_tests\n    test_method()\n  File \"/workspace/csv_import_validation_test.py\", line 502, in test_unicode_support\n    for test_case in test_cases:\n                     ^^^^^^^^^^\nNameError: name 'test_cases' is not defined\n"
+      }
+    ],
+    "warnings": [],
+    "performance_metrics": {
+      "large_file_1000_csv_reader_memory": {
+        "value": "1.03 MB",
+        "unit": "Memory Usage",
+        "timestamp": "2025-11-07T06:57:12.700923"
+      },
+      "large_file_1000_pandas_memory": {
+        "value": "0.69 MB",
+        "unit": "Pandas Memory Usage",
+        "timestamp": "2025-11-07T06:57:12.700941"
+      },
+      "large_file_5000_csv_reader_memory": {
+        "value": "6.19 MB",
+        "unit": "Memory Usage",
+        "timestamp": "2025-11-07T06:57:12.823861"
+      },
+      "large_file_5000_pandas_memory": {
+        "value": "3.46 MB",
+        "unit": "Pandas Memory Usage",
+        "timestamp": "2025-11-07T06:57:12.823889"
+      },
+      "large_file_10000_csv_reader_memory": {
+        "value": "7.62 MB",
+        "unit": "Memory Usage",
+        "timestamp": "2025-11-07T06:57:13.034549"
+      },
+      "large_file_10000_pandas_memory": {
+        "value": "6.92 MB",
+        "unit": "Pandas Memory Usage",
+        "timestamp": "2025-11-07T06:57:13.034567"
+      },
+      "memory_management_initial": {
+        "value": "110.72 MB",
+        "unit": "Initial Memory",
+        "timestamp": "2025-11-07T06:57:13.452902"
+      },
+      "memory_management_peak": {
+        "value": "110.72 MB",
+        "unit": "Peak Memory Usage",
+        "timestamp": "2025-11-07T06:57:13.452918"
+      },
+      "memory_management_growth": {
+        "value": "0.00 MB",
+        "unit": "Memory Growth",
+        "timestamp": "2025-11-07T06:57:13.452922"
+      }
+    }
+  },
+  "detailed_results": [
+    {
+      "name": "Encoding-Test-utf-8",
+      "success": true,
+      "duration": 0.015671253204345703,
+      "details": "Erfolgreich mit utf-8 Encoding gelesen",
+      "encoding": "utf-8",
+      "file_size": "119 bytes",
+      "memory_usage": {
+        "rss_mb": 99.3046875,
+        "vms_mb": 1108.73828125
+      }
+    },
+    {
+      "name": "Encoding-Test-utf-16",
+      "success": false,
+      "duration": 0.007766246795654297,
+      "details": "Fehler: UTF-16 stream does not start with BOM",
+      "encoding": "utf-16",
+      "file_size": "",
+      "memory_usage": {}
+    },
+    {
+      "name": "Encoding-Test-iso-8859-1",
+      "success": true,
+      "duration": 0.014150619506835938,
+      "details": "Erfolgreich mit iso-8859-1 Encoding gelesen",
+      "encoding": "iso-8859-1",
+      "file_size": "119 bytes",
+      "memory_usage": {
+        "rss_mb": 99.3125,
+        "vms_mb": 1108.73828125
+      }
+    },
+    {
+      "name": "Encoding-Test-cp1252",
+      "success": true,
+      "duration": 0.009571552276611328,
+      "details": "Erfolgreich mit cp1252 Encoding gelesen",
+      "encoding": "cp1252",
+      "file_size": "119 bytes",
+      "memory_usage": {
+        "rss_mb": 99.3125,
+        "vms_mb": 1108.73828125
+      }
+    },
+    {
+      "name": "Datentyp-Validation-Gültige_Datentypen",
+      "success": true,
+      "duration": 7.152557373046875e-07,
+      "details": "Erfolgreich: Gültige Datentypen",
+      "encoding": "",
+      "file_size": "",
+      "memory_usage": {}
+    },
+    {
+      "name": "Datentyp-Validation-Ungültige_Datentypen",
+      "success": true,
+      "duration": 1.430511474609375e-06,
+      "details": "Erfolgreich: Ungültige Datentypen",
+      "encoding": "",
+      "file_size": "",
+      "memory_usage": {}
+    },
+    {
+      "name": "Error-Handling-Kaputte_CSV-Syntax",
+      "success": true,
+      "duration": 0.009305953979492188,
+      "details": "Fehler korrekt erkannt: 2 Fehler",
+      "encoding": "",
+      "file_size": "",
+      "memory_usage": {}
+    },
+    {
+      "name": "Error-Handling-Fehlende_Spalten",
+      "success": false,
+      "duration": 0.008101701736450195,
+      "details": "Unerwarteter Fehler: Keine Fehler für Fehlende Spalten erkannt",
+      "encoding": "",
+      "file_size": "",
+      "memory_usage": {}
+    },
+    {
+      "name": "Error-Handling-Ungültige_Characters",
+      "success": false,
+      "duration": 0.008420705795288086,
+      "details": "Unerwarteter Fehler: Keine Fehler für Ungültige Characters erkannt",
+      "encoding": "",
+      "file_size": "",
+      "memory_usage": {}
+    },
+    {
+      "name": "Error-Handling-Inkonsistente_Spaltenanzahl",
+      "success": true,
+      "duration": 0.008706808090209961,
+      "details": "Fehler korrekt erkannt: 1 Fehler",
+      "encoding": "",
+      "file_size": "",
+      "memory_usage": {}
+    },
+    {
+      "name": "Large-File-1000-records",
+      "success": true,
+      "duration": 0.041487693786621094,
+      "details": "Erfolgreich: 1000 Datensätze, 0.15 MB",
+      "encoding": "",
+      "file_size": "0.15 MB",
+      "memory_usage": {
+        "csv_reader": "1.03 MB",
+        "pandas": "0.69 MB"
+      }
+    },
+    {
+      "name": "Large-File-5000-records",
+      "success": true,
+      "duration": 0.12154650688171387,
+      "details": "Erfolgreich: 5000 Datensätze, 0.74 MB",
+      "encoding": "",
+      "file_size": "0.74 MB",
+      "memory_usage": {
+        "csv_reader": "6.19 MB",
+        "pandas": "3.46 MB"
+      }
+    },
+    {
+      "name": "Large-File-10000-records",
+      "success": true,
+      "duration": 0.20933055877685547,
+      "details": "Erfolgreich: 10000 Datensätze, 1.48 MB",
+      "encoding": "",
+      "file_size": "1.48 MB",
+      "memory_usage": {
+        "csv_reader": "7.62 MB",
+        "pandas": "6.92 MB"
+      }
+    },
+    {
+      "name": "Multi-Byte-3-Byte_UTF-8_(漢字)",
+      "success": false,
+      "duration": 0.007863283157348633,
+      "details": "Fehler: UTF-16 stream does not start with BOM",
+      "encoding": "",
+      "file_size": "",
+      "memory_usage": {}
+    },
+    {
+      "name": "Multi-Byte-4-Byte_UTF-8_(Emoji)",
+      "success": false,
+      "duration": 0.007273674011230469,
+      "details": "Fehler: UTF-16 stream does not start with BOM",
+      "encoding": "",
+      "file_size": "",
+      "memory_usage": {}
+    },
+    {
+      "name": "Date-Parsing-YYYY_MM_DD",
+      "success": true,
+      "duration": 0.0033507347106933594,
+      "details": "Erfolgreich: YYYY-MM-DD Format",
+      "encoding": "",
+      "file_size": "",
+      "memory_usage": {}
+    },
+    {
+      "name": "Date-Parsing-DD.MM.YYYY",
+      "success": true,
+      "duration": 1.6689300537109375e-06,
+      "details": "Erfolgreich: DD.MM.YYYY Format",
+      "encoding": "",
+      "file_size": "",
+      "memory_usage": {}
+    },
+    {
+      "name": "Date-Parsing-MM/DD/YYYY",
+      "success": true,
+      "duration": 1.1920928955078125e-06,
+      "details": "Erfolgreich: MM/DD/YYYY Format",
+      "encoding": "",
+      "file_size": "",
+      "memory_usage": {}
+    },
+    {
+      "name": "Date-Parsing-DD/MM/YYYY",
+      "success": true,
+      "duration": 7.152557373046875e-07,
+      "details": "Erfolgreich: DD/MM/YYYY Format",
+      "encoding": "",
+      "file_size": "",
+      "memory_usage": {}
+    },
+    {
+      "name": "Date-Parsing-YYYY/MM/DD",
+      "success": true,
+      "duration": 7.152557373046875e-07,
+      "details": "Erfolgreich: YYYY/MM/DD Format",
+      "encoding": "",
+      "file_size": "",
+      "memory_usage": {}
+    },
+    {
+      "name": "Date-Parsing-DD_MM_YYYY",
+      "success": true,
+      "duration": 1.1920928955078125e-06,
+      "details": "Erfolgreich: DD-MM-YYYY Format",
+      "encoding": "",
+      "file_size": "",
+      "memory_usage": {}
+    },
+    {
+      "name": "Number-Parsing-Integer-Werte",
+      "success": true,
+      "duration": 5.0067901611328125e-06,
+      "details": "Erfolgreich: Integer-Werte",
+      "encoding": "",
+      "file_size": "",
+      "memory_usage": {}
+    },
+    {
+      "name": "Number-Parsing-Float-Werte",
+      "success": true,
+      "duration": 3.337860107421875e-06,
+      "details": "Erfolgreich: Float-Werte",
+      "encoding": "",
+      "file_size": "",
+      "memory_usage": {}
+    },
+    {
+      "name": "Number-Parsing-Deutsche_Dezimalzahlen",
+      "success": true,
+      "duration": 4.291534423828125e-06,
+      "details": "Erfolgreich: Deutsche Dezimalzahlen",
+      "encoding": "",
+      "file_size": "",
+      "memory_usage": {}
+    },
+    {
+      "name": "Number-Parsing-Ungültige_Werte",
+      "success": true,
+      "duration": 6.198883056640625e-06,
+      "details": "Erfolgreich: Ungültige Werte",
+      "encoding": "",
+      "file_size": "",
+      "memory_usage": {}
+    },
+    {
+      "name": "Schema-Validation-Vollständiges_Schema",
+      "success": true,
+      "duration": 2.384185791015625e-07,
+      "details": "Erfolgreich: Vollständiges Schema (erwartet: True)",
+      "encoding": "",
+      "file_size": "",
+      "memory_usage": {}
+    },
+    {
+      "name": "Schema-Validation-Fehlende_Pflichtfelder",
+      "success": true,
+      "duration": 2.384185791015625e-07,
+      "details": "Erfolgreich: Fehlende Pflichtfelder (erwartet: False)",
+      "encoding": "",
+      "file_size": "",
+      "memory_usage": {}
+    },
+    {
+      "name": "Schema-Validation-Ungültige_Werte",
+      "success": true,
+      "duration": 0.0,
+      "details": "Erfolgreich: Ungültige Werte (erwartet: False)",
+      "encoding": "",
+      "file_size": "",
+      "memory_usage": {}
+    },
+    {
+      "name": "Memory-Management",
+      "success": true,
+      "duration": 0.3628420829772949,
+      "details": "Erfolgreich: 10000 Zeilen verarbeitet, 0.00 MB Memory-Growth",
+      "encoding": "",
+      "file_size": "",
+      "memory_usage": {}
+    }
+  ],
+  "system_info": {
+    "python_version": "3.12.5 (main, Sep  5 2024, 00:16:34) [GCC 12.2.0]",
+    "platform": "linux",
+    "available_imports": false
+  }
+}
