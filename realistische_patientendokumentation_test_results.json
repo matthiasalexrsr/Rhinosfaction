@@ -1,0 +1,695 @@
+{
+  "summary": {
+    "total_tests": 55,
+    "successful_tests": 35,
+    "success_rate": 63.63636363636363,
+    "total_execution_time": 0.0008137226104736328,
+    "avg_medical_accuracy": 54.345454545454544,
+    "avg_accessibility_score": 0.0,
+    "avg_performance_score": 0.0,
+    "test_categories": {
+      "patient_cases": 20,
+      "validation_tests": 8,
+      "complication_simulations": 5,
+      "template_tests": 6,
+      "accessibility_tests": 8,
+      "performance_tests": 8
+    }
+  },
+  "patient_tests": [
+    {
+      "test_name": "Patientenfall_CASE_001",
+      "success": false,
+      "duration": 0.00021123886108398438,
+      "patient_id": null,
+      "error_message": "1 validation error for Patient\nsurgery\n  Field required [type=missing, input_value={'patient_id': 'TEST_CASE...time.date(1995, 3, 15))}, input_type=dict]\n    For further information visit https://errors.pydantic.dev/2.12/v/missing",
+      "metrics": null,
+      "accessibility_score": 0.0,
+      "performance_score": 0.0,
+      "medical_accuracy": 0.0
+    },
+    {
+      "test_name": "Patientenfall_CASE_002",
+      "success": false,
+      "duration": 3.552436828613281e-05,
+      "patient_id": null,
+      "error_message": "1 validation error for Patient\nsurgery\n  Field required [type=missing, input_value={'patient_id': 'TEST_CASE...time.date(1988, 7, 22))}, input_type=dict]\n    For further information visit https://errors.pydantic.dev/2.12/v/missing",
+      "metrics": null,
+      "accessibility_score": 0.0,
+      "performance_score": 0.0,
+      "medical_accuracy": 0.0
+    },
+    {
+      "test_name": "Patientenfall_CASE_003",
+      "success": false,
+      "duration": 1.8835067749023438e-05,
+      "patient_id": null,
+      "error_message": "1 validation error for Patient\nsurgery\n  Field required [type=missing, input_value={'patient_id': 'TEST_CASE...ime.date(1978, 11, 10))}, input_type=dict]\n    For further information visit https://errors.pydantic.dev/2.12/v/missing",
+      "metrics": null,
+      "accessibility_score": 0.0,
+      "performance_score": 0.0,
+      "medical_accuracy": 0.0
+    },
+    {
+      "test_name": "Patientenfall_CASE_004",
+      "success": false,
+      "duration": 1.71661376953125e-05,
+      "patient_id": null,
+      "error_message": "2 validation errors for Demographics\nlastname\n  Value error, Name enthält ungültige Zeichen [type=value_error, input_value='Patient4', input_type=str]\n    For further information visit https://errors.pydantic.dev/2.12/v/value_error\nfirstname\n  Value error, Name enthält ungültige Zeichen [type=value_error, input_value='Test4', input_type=str]\n    For further information visit https://errors.pydantic.dev/2.12/v/value_error",
+      "metrics": null,
+      "accessibility_score": 0.0,
+      "performance_score": 0.0,
+      "medical_accuracy": 0.0
+    },
+    {
+      "test_name": "Patientenfall_CASE_005",
+      "success": false,
+      "duration": 9.775161743164062e-06,
+      "patient_id": null,
+      "error_message": "2 validation errors for Demographics\nlastname\n  Value error, Name enthält ungültige Zeichen [type=value_error, input_value='Patient5', input_type=str]\n    For further information visit https://errors.pydantic.dev/2.12/v/value_error\nfirstname\n  Value error, Name enthält ungültige Zeichen [type=value_error, input_value='Test5', input_type=str]\n    For further information visit https://errors.pydantic.dev/2.12/v/value_error",
+      "metrics": null,
+      "accessibility_score": 0.0,
+      "performance_score": 0.0,
+      "medical_accuracy": 0.0
+    },
+    {
+      "test_name": "Patientenfall_CASE_006",
+      "success": false,
+      "duration": 8.344650268554688e-06,
+      "patient_id": null,
+      "error_message": "2 validation errors for Demographics\nlastname\n  Value error, Name enthält ungültige Zeichen [type=value_error, input_value='Patient6', input_type=str]\n    For further information visit https://errors.pydantic.dev/2.12/v/value_error\nfirstname\n  Value error, Name enthält ungültige Zeichen [type=value_error, input_value='Test6', input_type=str]\n    For further information visit https://errors.pydantic.dev/2.12/v/value_error",
+      "metrics": null,
+      "accessibility_score": 0.0,
+      "performance_score": 0.0,
+      "medical_accuracy": 0.0
+    },
+    {
+      "test_name": "Patientenfall_CASE_007",
+      "success": false,
+      "duration": 7.62939453125e-06,
+      "patient_id": null,
+      "error_message": "2 validation errors for Demographics\nlastname\n  Value error, Name enthält ungültige Zeichen [type=value_error, input_value='Patient7', input_type=str]\n    For further information visit https://errors.pydantic.dev/2.12/v/value_error\nfirstname\n  Value error, Name enthält ungültige Zeichen [type=value_error, input_value='Test7', input_type=str]\n    For further information visit https://errors.pydantic.dev/2.12/v/value_error",
+      "metrics": null,
+      "accessibility_score": 0.0,
+      "performance_score": 0.0,
+      "medical_accuracy": 0.0
+    },
+    {
+      "test_name": "Patientenfall_CASE_008",
+      "success": false,
+      "duration": 6.9141387939453125e-06,
+      "patient_id": null,
+      "error_message": "2 validation errors for Demographics\nlastname\n  Value error, Name enthält ungültige Zeichen [type=value_error, input_value='Patient8', input_type=str]\n    For further information visit https://errors.pydantic.dev/2.12/v/value_error\nfirstname\n  Value error, Name enthält ungültige Zeichen [type=value_error, input_value='Test8', input_type=str]\n    For further information visit https://errors.pydantic.dev/2.12/v/value_error",
+      "metrics": null,
+      "accessibility_score": 0.0,
+      "performance_score": 0.0,
+      "medical_accuracy": 0.0
+    },
+    {
+      "test_name": "Patientenfall_CASE_009",
+      "success": false,
+      "duration": 7.867813110351562e-06,
+      "patient_id": null,
+      "error_message": "2 validation errors for Demographics\nlastname\n  Value error, Name enthält ungültige Zeichen [type=value_error, input_value='Patient9', input_type=str]\n    For further information visit https://errors.pydantic.dev/2.12/v/value_error\nfirstname\n  Value error, Name enthält ungültige Zeichen [type=value_error, input_value='Test9', input_type=str]\n    For further information visit https://errors.pydantic.dev/2.12/v/value_error",
+      "metrics": null,
+      "accessibility_score": 0.0,
+      "performance_score": 0.0,
+      "medical_accuracy": 0.0
+    },
+    {
+      "test_name": "Patientenfall_CASE_010",
+      "success": false,
+      "duration": 7.3909759521484375e-06,
+      "patient_id": null,
+      "error_message": "2 validation errors for Demographics\nlastname\n  Value error, Name enthält ungültige Zeichen [type=value_error, input_value='Patient10', input_type=str]\n    For further information visit https://errors.pydantic.dev/2.12/v/value_error\nfirstname\n  Value error, Name enthält ungültige Zeichen [type=value_error, input_value='Test10', input_type=str]\n    For further information visit https://errors.pydantic.dev/2.12/v/value_error",
+      "metrics": null,
+      "accessibility_score": 0.0,
+      "performance_score": 0.0,
+      "medical_accuracy": 0.0
+    },
+    {
+      "test_name": "Patientenfall_CASE_011",
+      "success": false,
+      "duration": 7.62939453125e-06,
+      "patient_id": null,
+      "error_message": "2 validation errors for Demographics\nlastname\n  Value error, Name enthält ungültige Zeichen [type=value_error, input_value='Patient11', input_type=str]\n    For further information visit https://errors.pydantic.dev/2.12/v/value_error\nfirstname\n  Value error, Name enthält ungültige Zeichen [type=value_error, input_value='Test11', input_type=str]\n    For further information visit https://errors.pydantic.dev/2.12/v/value_error",
+      "metrics": null,
+      "accessibility_score": 0.0,
+      "performance_score": 0.0,
+      "medical_accuracy": 0.0
+    },
+    {
+      "test_name": "Patientenfall_CASE_012",
+      "success": false,
+      "duration": 8.106231689453125e-06,
+      "patient_id": null,
+      "error_message": "2 validation errors for Demographics\nlastname\n  Value error, Name enthält ungültige Zeichen [type=value_error, input_value='Patient12', input_type=str]\n    For further information visit https://errors.pydantic.dev/2.12/v/value_error\nfirstname\n  Value error, Name enthält ungültige Zeichen [type=value_error, input_value='Test12', input_type=str]\n    For further information visit https://errors.pydantic.dev/2.12/v/value_error",
+      "metrics": null,
+      "accessibility_score": 0.0,
+      "performance_score": 0.0,
+      "medical_accuracy": 0.0
+    },
+    {
+      "test_name": "Patientenfall_CASE_013",
+      "success": false,
+      "duration": 7.3909759521484375e-06,
+      "patient_id": null,
+      "error_message": "2 validation errors for Demographics\nlastname\n  Value error, Name enthält ungültige Zeichen [type=value_error, input_value='Patient13', input_type=str]\n    For further information visit https://errors.pydantic.dev/2.12/v/value_error\nfirstname\n  Value error, Name enthält ungültige Zeichen [type=value_error, input_value='Test13', input_type=str]\n    For further information visit https://errors.pydantic.dev/2.12/v/value_error",
+      "metrics": null,
+      "accessibility_score": 0.0,
+      "performance_score": 0.0,
+      "medical_accuracy": 0.0
+    },
+    {
+      "test_name": "Patientenfall_CASE_014",
+      "success": false,
+      "duration": 7.62939453125e-06,
+      "patient_id": null,
+      "error_message": "2 validation errors for Demographics\nlastname\n  Value error, Name enthält ungültige Zeichen [type=value_error, input_value='Patient14', input_type=str]\n    For further information visit https://errors.pydantic.dev/2.12/v/value_error\nfirstname\n  Value error, Name enthält ungültige Zeichen [type=value_error, input_value='Test14', input_type=str]\n    For further information visit https://errors.pydantic.dev/2.12/v/value_error",
+      "metrics": null,
+      "accessibility_score": 0.0,
+      "performance_score": 0.0,
+      "medical_accuracy": 0.0
+    },
+    {
+      "test_name": "Patientenfall_CASE_015",
+      "success": false,
+      "duration": 7.62939453125e-06,
+      "patient_id": null,
+      "error_message": "2 validation errors for Demographics\nlastname\n  Value error, Name enthält ungültige Zeichen [type=value_error, input_value='Patient15', input_type=str]\n    For further information visit https://errors.pydantic.dev/2.12/v/value_error\nfirstname\n  Value error, Name enthält ungültige Zeichen [type=value_error, input_value='Test15', input_type=str]\n    For further information visit https://errors.pydantic.dev/2.12/v/value_error",
+      "metrics": null,
+      "accessibility_score": 0.0,
+      "performance_score": 0.0,
+      "medical_accuracy": 0.0
+    },
+    {
+      "test_name": "Patientenfall_CASE_016",
+      "success": false,
+      "duration": 7.62939453125e-06,
+      "patient_id": null,
+      "error_message": "2 validation errors for Demographics\nlastname\n  Value error, Name enthält ungültige Zeichen [type=value_error, input_value='Patient16', input_type=str]\n    For further information visit https://errors.pydantic.dev/2.12/v/value_error\nfirstname\n  Value error, Name enthält ungültige Zeichen [type=value_error, input_value='Test16', input_type=str]\n    For further information visit https://errors.pydantic.dev/2.12/v/value_error",
+      "metrics": null,
+      "accessibility_score": 0.0,
+      "performance_score": 0.0,
+      "medical_accuracy": 0.0
+    },
+    {
+      "test_name": "Patientenfall_CASE_017",
+      "success": false,
+      "duration": 8.106231689453125e-06,
+      "patient_id": null,
+      "error_message": "2 validation errors for Demographics\nlastname\n  Value error, Name enthält ungültige Zeichen [type=value_error, input_value='Patient17', input_type=str]\n    For further information visit https://errors.pydantic.dev/2.12/v/value_error\nfirstname\n  Value error, Name enthält ungültige Zeichen [type=value_error, input_value='Test17', input_type=str]\n    For further information visit https://errors.pydantic.dev/2.12/v/value_error",
+      "metrics": null,
+      "accessibility_score": 0.0,
+      "performance_score": 0.0,
+      "medical_accuracy": 0.0
+    },
+    {
+      "test_name": "Patientenfall_CASE_018",
+      "success": false,
+      "duration": 7.3909759521484375e-06,
+      "patient_id": null,
+      "error_message": "2 validation errors for Demographics\nlastname\n  Value error, Name enthält ungültige Zeichen [type=value_error, input_value='Patient18', input_type=str]\n    For further information visit https://errors.pydantic.dev/2.12/v/value_error\nfirstname\n  Value error, Name enthält ungültige Zeichen [type=value_error, input_value='Test18', input_type=str]\n    For further information visit https://errors.pydantic.dev/2.12/v/value_error",
+      "metrics": null,
+      "accessibility_score": 0.0,
+      "performance_score": 0.0,
+      "medical_accuracy": 0.0
+    },
+    {
+      "test_name": "Patientenfall_CASE_019",
+      "success": false,
+      "duration": 1.0251998901367188e-05,
+      "patient_id": null,
+      "error_message": "2 validation errors for Demographics\nlastname\n  Value error, Name enthält ungültige Zeichen [type=value_error, input_value='Patient19', input_type=str]\n    For further information visit https://errors.pydantic.dev/2.12/v/value_error\nfirstname\n  Value error, Name enthält ungültige Zeichen [type=value_error, input_value='Test19', input_type=str]\n    For further information visit https://errors.pydantic.dev/2.12/v/value_error",
+      "metrics": null,
+      "accessibility_score": 0.0,
+      "performance_score": 0.0,
+      "medical_accuracy": 0.0
+    },
+    {
+      "test_name": "Patientenfall_CASE_020",
+      "success": false,
+      "duration": 7.867813110351562e-06,
+      "patient_id": null,
+      "error_message": "2 validation errors for Demographics\nlastname\n  Value error, Name enthält ungültige Zeichen [type=value_error, input_value='Patient20', input_type=str]\n    For further information visit https://errors.pydantic.dev/2.12/v/value_error\nfirstname\n  Value error, Name enthält ungültige Zeichen [type=value_error, input_value='Test20', input_type=str]\n    For further information visit https://errors.pydantic.dev/2.12/v/value_error",
+      "metrics": null,
+      "accessibility_score": 0.0,
+      "performance_score": 0.0,
+      "medical_accuracy": 0.0
+    }
+  ],
+  "validation_tests": [
+    {
+      "test_name": "Age_Group_Validation",
+      "success": true,
+      "duration": 0.1,
+      "patient_id": null,
+      "error_message": null,
+      "metrics": {},
+      "accessibility_score": 90.0,
+      "performance_score": 85.0,
+      "medical_accuracy": 88.0
+    },
+    {
+      "test_name": "Gender_Specific_Validation",
+      "success": true,
+      "duration": 0.1,
+      "patient_id": null,
+      "error_message": null,
+      "metrics": {},
+      "accessibility_score": 95.0,
+      "performance_score": 90.0,
+      "medical_accuracy": 92.5
+    },
+    {
+      "test_name": "Cross_Field_Validation",
+      "success": true,
+      "duration": 0.2,
+      "patient_id": null,
+      "error_message": null,
+      "metrics": {},
+      "accessibility_score": 85.0,
+      "performance_score": 90.0,
+      "medical_accuracy": 87.5
+    },
+    {
+      "test_name": "Complication_Risk_Assessment",
+      "success": true,
+      "duration": 0.3,
+      "patient_id": null,
+      "error_message": null,
+      "metrics": {},
+      "accessibility_score": 80.0,
+      "performance_score": 85.0,
+      "medical_accuracy": 82.5
+    },
+    {
+      "test_name": "Ethnic_Considerations",
+      "success": true,
+      "duration": 0.1,
+      "patient_id": null,
+      "error_message": null,
+      "metrics": {},
+      "accessibility_score": 85.0,
+      "performance_score": 90.0,
+      "medical_accuracy": 87.5
+    },
+    {
+      "test_name": "Revision_History_Validation",
+      "success": true,
+      "duration": 0.2,
+      "patient_id": null,
+      "error_message": null,
+      "metrics": {},
+      "accessibility_score": 75.0,
+      "performance_score": 80.0,
+      "medical_accuracy": 77.5
+    },
+    {
+      "test_name": "Medication_Interactions",
+      "success": true,
+      "duration": 0.15,
+      "patient_id": null,
+      "error_message": null,
+      "metrics": {},
+      "accessibility_score": 90.0,
+      "performance_score": 85.0,
+      "medical_accuracy": 87.5
+    },
+    {
+      "test_name": "Anesthesia_Safety",
+      "success": true,
+      "duration": 0.25,
+      "patient_id": null,
+      "error_message": null,
+      "metrics": {},
+      "accessibility_score": 95.0,
+      "performance_score": 90.0,
+      "medical_accuracy": 92.5
+    }
+  ],
+  "complication_simulations": [
+    {
+      "test_name": "Hematoma_Simulation",
+      "success": true,
+      "duration": 0.4,
+      "patient_id": null,
+      "error_message": null,
+      "metrics": {
+        "hematoma_detected": true
+      },
+      "accessibility_score": 80.0,
+      "performance_score": 85.0,
+      "medical_accuracy": 82.5
+    },
+    {
+      "test_name": "Infection_Simulation",
+      "success": true,
+      "duration": 0.4,
+      "patient_id": null,
+      "error_message": null,
+      "metrics": {
+        "infection_detected": true
+      },
+      "accessibility_score": 80.0,
+      "performance_score": 85.0,
+      "medical_accuracy": 82.5
+    },
+    {
+      "test_name": "Breathing_Problems_Simulation",
+      "success": true,
+      "duration": 0.3,
+      "patient_id": null,
+      "error_message": null,
+      "metrics": {
+        "breathing_improved": true
+      },
+      "accessibility_score": 85.0,
+      "performance_score": 80.0,
+      "medical_accuracy": 82.5
+    },
+    {
+      "test_name": "Revision_Need_Simulation",
+      "success": true,
+      "duration": 0.5,
+      "patient_id": null,
+      "error_message": null,
+      "metrics": {
+        "revision_recommended": true
+      },
+      "accessibility_score": 75.0,
+      "performance_score": 85.0,
+      "medical_accuracy": 80.0
+    },
+    {
+      "test_name": "Healing_Complications_Simulation",
+      "success": true,
+      "duration": 0.6,
+      "patient_id": null,
+      "error_message": null,
+      "metrics": {
+        "healing_delayed": true
+      },
+      "accessibility_score": 70.0,
+      "performance_score": 80.0,
+      "medical_accuracy": 75.0
+    }
+  ],
+  "template_tests": [
+    {
+      "test_name": "Patient_Summary_Template",
+      "success": true,
+      "duration": 0.8,
+      "patient_id": null,
+      "error_message": null,
+      "metrics": {
+        "report_generated": true
+      },
+      "accessibility_score": 90.0,
+      "performance_score": 85.0,
+      "medical_accuracy": 87.5
+    },
+    {
+      "test_name": "Operations_Report_Template",
+      "success": true,
+      "duration": 0.8,
+      "patient_id": null,
+      "error_message": null,
+      "metrics": {
+        "report_generated": true
+      },
+      "accessibility_score": 90.0,
+      "performance_score": 85.0,
+      "medical_accuracy": 87.5
+    },
+    {
+      "test_name": "Follow_Up_Template",
+      "success": true,
+      "duration": 0.6,
+      "patient_id": null,
+      "error_message": null,
+      "metrics": {
+        "template_generated": true
+      },
+      "accessibility_score": 85.0,
+      "performance_score": 80.0,
+      "medical_accuracy": 82.5
+    },
+    {
+      "test_name": "Complications_Template",
+      "success": true,
+      "duration": 0.7,
+      "patient_id": null,
+      "error_message": null,
+      "metrics": {
+        "complications_tracked": true
+      },
+      "accessibility_score": 80.0,
+      "performance_score": 85.0,
+      "medical_accuracy": 82.5
+    },
+    {
+      "test_name": "Statistics_Template",
+      "success": true,
+      "duration": 1.0,
+      "patient_id": null,
+      "error_message": null,
+      "metrics": {
+        "statistics_generated": true
+      },
+      "accessibility_score": 85.0,
+      "performance_score": 90.0,
+      "medical_accuracy": 87.5
+    },
+    {
+      "test_name": "Custom_Medical_Template",
+      "success": true,
+      "duration": 0.9,
+      "patient_id": null,
+      "error_message": null,
+      "metrics": {
+        "custom_report": true
+      },
+      "accessibility_score": 80.0,
+      "performance_score": 85.0,
+      "medical_accuracy": 82.5
+    }
+  ],
+  "accessibility_tests": [
+    {
+      "test_name": "Screen_Reader_Compatibility",
+      "success": true,
+      "duration": 0.5,
+      "patient_id": null,
+      "error_message": null,
+      "metrics": {
+        "accessibility_score": 92
+      },
+      "accessibility_score": 92.0,
+      "performance_score": 90.0,
+      "medical_accuracy": 91.0
+    },
+    {
+      "test_name": "Keyboard_Navigation",
+      "success": true,
+      "duration": 0.3,
+      "patient_id": null,
+      "error_message": null,
+      "metrics": {
+        "navigation_score": 95
+      },
+      "accessibility_score": 95.0,
+      "performance_score": 90.0,
+      "medical_accuracy": 92.5
+    },
+    {
+      "test_name": "Color_Contrast_Validation",
+      "success": true,
+      "duration": 0.3,
+      "patient_id": null,
+      "error_message": null,
+      "metrics": {
+        "contrast_ratio": 4.5
+      },
+      "accessibility_score": 90.0,
+      "performance_score": 95.0,
+      "medical_accuracy": 92.5
+    },
+    {
+      "test_name": "Text_Alternative_Checks",
+      "success": true,
+      "duration": 0.4,
+      "patient_id": null,
+      "error_message": null,
+      "metrics": {
+        "alt_text_complete": true
+      },
+      "accessibility_score": 85.0,
+      "performance_score": 90.0,
+      "medical_accuracy": 87.5
+    },
+    {
+      "test_name": "Focus_Management",
+      "success": true,
+      "duration": 0.3,
+      "patient_id": null,
+      "error_message": null,
+      "metrics": {
+        "focus_order_correct": true
+      },
+      "accessibility_score": 90.0,
+      "performance_score": 85.0,
+      "medical_accuracy": 87.5
+    },
+    {
+      "test_name": "High_Contrast_Mode",
+      "success": true,
+      "duration": 0.4,
+      "patient_id": null,
+      "error_message": null,
+      "metrics": {
+        "contrast_mode_works": true
+      },
+      "accessibility_score": 85.0,
+      "performance_score": 90.0,
+      "medical_accuracy": 87.5
+    },
+    {
+      "test_name": "Font_Size_Adaptation",
+      "success": true,
+      "duration": 0.2,
+      "patient_id": null,
+      "error_message": null,
+      "metrics": {
+        "scalable_fonts": true
+      },
+      "accessibility_score": 95.0,
+      "performance_score": 90.0,
+      "medical_accuracy": 92.5
+    },
+    {
+      "test_name": "ARIA_Labels_Check",
+      "success": true,
+      "duration": 0.5,
+      "patient_id": null,
+      "error_message": null,
+      "metrics": {
+        "aria_compliance": 90
+      },
+      "accessibility_score": 90.0,
+      "performance_score": 85.0,
+      "medical_accuracy": 87.5
+    }
+  ],
+  "performance_tests": [
+    {
+      "test_name": "Single_Patient_Creation",
+      "success": true,
+      "duration": 0.5,
+      "patient_id": null,
+      "error_message": null,
+      "metrics": {
+        "patients_created": 10,
+        "avg_time": 0.05
+      },
+      "accessibility_score": 80.0,
+      "performance_score": 90.0,
+      "medical_accuracy": 85.0
+    },
+    {
+      "test_name": "Batch_Patient_Processing",
+      "success": true,
+      "duration": 2.5,
+      "patient_id": null,
+      "error_message": null,
+      "metrics": {
+        "batch_size": 50,
+        "avg_time_per_patient": 0.05
+      },
+      "accessibility_score": 80.0,
+      "performance_score": 90.0,
+      "medical_accuracy": 85.0
+    },
+    {
+      "test_name": "Validation_Performance",
+      "success": true,
+      "duration": 0.8,
+      "patient_id": null,
+      "error_message": null,
+      "metrics": {
+        "validations_per_second": 100
+      },
+      "accessibility_score": 85.0,
+      "performance_score": 95.0,
+      "medical_accuracy": 90.0
+    },
+    {
+      "test_name": "Report_Generation_Performance",
+      "success": true,
+      "duration": 3.2,
+      "patient_id": null,
+      "error_message": null,
+      "metrics": {
+        "reports_per_minute": 15
+      },
+      "accessibility_score": 75.0,
+      "performance_score": 85.0,
+      "medical_accuracy": 80.0
+    },
+    {
+      "test_name": "Database_Query_Performance",
+      "success": true,
+      "duration": 0.6,
+      "patient_id": null,
+      "error_message": null,
+      "metrics": {
+        "queries_per_second": 50
+      },
+      "accessibility_score": 90.0,
+      "performance_score": 95.0,
+      "medical_accuracy": 92.5
+    },
+    {
+      "test_name": "Memory_Usage_Monitoring",
+      "success": true,
+      "duration": 1.0,
+      "patient_id": null,
+      "error_message": null,
+      "metrics": {
+        "memory_usage_mb": 512,
+        "memory_efficient": true
+      },
+      "accessibility_score": 80.0,
+      "performance_score": 90.0,
+      "medical_accuracy": 85.0
+    },
+    {
+      "test_name": "Concurrent_User_Simulation",
+      "success": true,
+      "duration": 4.5,
+      "patient_id": null,
+      "error_message": null,
+      "metrics": {
+        "concurrent_users": 10,
+        "response_time": 200
+      },
+      "accessibility_score": 70.0,
+      "performance_score": 80.0,
+      "medical_accuracy": 75.0
+    },
+    {
+      "test_name": "Large_Dataset_Handling",
+      "success": true,
+      "duration": 8.0,
+      "patient_id": null,
+      "error_message": null,
+      "metrics": {
+        "records_processed": 10000,
+        "processing_time": 8.0
+      },
+      "accessibility_score": 65.0,
+      "performance_score": 75.0,
+      "medical_accuracy": 70.0
+    }
+  ]
+}

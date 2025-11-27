@@ -1,0 +1,155 @@
+{
+  "summary": {
+    "total_tests": 10,
+    "successful_tests": 2,
+    "failed_tests": 8,
+    "success_rate": 20.0,
+    "test_execution_time": "2025-11-06T20:23:32.532215",
+    "test_environment": "rhinoplastik_app/patient_management_repair_test.py"
+  },
+  "detailed_results": [
+    {
+      "test": "test_01_create_patient_basic",
+      "success": false,
+      "error": "1 validation error for Demographics\nfirstname\n  Value error, Name enthält ungültige Zeichen [type=value_error, input_value='Patient1', input_type=str]\n    For further information visit https://errors.pydantic.dev/2.12/v/value_error",
+      "traceback": "Traceback (most recent call last):\n  File \"/workspace/patient_management_repair_test.py\", line 205, in test_01_create_patient_basic\n    patient = self.create_test_patient(\"001\")\n              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/workspace/patient_management_repair_test.py\", line 111, in create_test_patient\n    demographics = Demographics(\n                   ^^^^^^^^^^^^^\n  File \"/tmp/.venv/lib/python3.12/site-packages/pydantic/main.py\", line 250, in __init__\n    validated_self = self.__pydantic_validator__.validate_python(data, self_instance=self)\n                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\npydantic_core._pydantic_core.ValidationError: 1 validation error for Demographics\nfirstname\n  Value error, Name enthält ungültige Zeichen [type=value_error, input_value='Patient1', input_type=str]\n    For further information visit https://errors.pydantic.dev/2.12/v/value_error\n",
+      "timestamp": "2025-11-06T20:23:32.124409"
+    },
+    {
+      "test": "test_02_create_patient_validation_errors",
+      "success": false,
+      "validation_cases": [
+        {
+          "case": "empty_firstname",
+          "expected_failure": true,
+          "actually_failed": true,
+          "success": true,
+          "error": "1 validation error for Demographics\nfirstname\n  String should have at least 1 character [type=string_too_short, input_value='', input_type=str]\n    For further information visit https://errors.pydantic.dev/2.12/v/string_too_short"
+        },
+        {
+          "case": "future_dob",
+          "expected_failure": true,
+          "actually_failed": true,
+          "success": true,
+          "error": "2 validation errors for Demographics\nfirstname\n  Value error, Name enthält ungültige Zeichen [type=value_error, input_value='Patient3', input_type=str]\n    For further information visit https://errors.pydantic.dev/2.12/v/value_error\ndob\n  Value error, Geburtsdatum muss in der Vergangenheit liegen [type=value_error, input_value=datetime.date(2030, 1, 1), input_type=date]\n    For further information visit https://errors.pydantic.dev/2.12/v/value_error"
+        },
+        {
+          "case": "future_op_date",
+          "expected_failure": true,
+          "actually_failed": true,
+          "success": true,
+          "error": "1 validation error for Demographics\nfirstname\n  Value error, Name enthält ungültige Zeichen [type=value_error, input_value='Patient4', input_type=str]\n    For further information visit https://errors.pydantic.dev/2.12/v/value_error"
+        },
+        {
+          "case": "extreme_values",
+          "expected_failure": false,
+          "actually_failed": true,
+          "success": false,
+          "error": "1 validation error for Demographics\nfirstname\n  Value error, Name enthält ungültige Zeichen [type=value_error, input_value='Patient5', input_type=str]\n    For further information visit https://errors.pydantic.dev/2.12/v/value_error"
+        }
+      ],
+      "timestamp": "2025-11-06T20:23:32.136715"
+    },
+    {
+      "test": "test_03_duplicate_patient_creation",
+      "success": true,
+      "first_patient": {
+        "success": true,
+        "message": "Patient erfolgreich erstellt\nWarnungen: 2",
+        "id": "8007cda0-42b1-476b-b0cb-86d57e3e6cb5"
+      },
+      "duplicate_patient": {
+        "success": false,
+        "message": "Patientenordner bereits vorhanden: DupTest_First_Geb19900101__",
+        "id": null
+      },
+      "different_patient": {
+        "success": true,
+        "message": "Patient erfolgreich erstellt\nWarnungen: 2",
+        "id": "7d04211a-876e-48c4-9947-8180321034a2"
+      },
+      "timestamp": "2025-11-06T20:23:32.452133"
+    },
+    {
+      "test": "test_04_update_patient",
+      "success": false,
+      "error": "1 validation error for Demographics\nfirstname\n  Value error, Name enthält ungültige Zeichen [type=value_error, input_value='Patient9', input_type=str]\n    For further information visit https://errors.pydantic.dev/2.12/v/value_error",
+      "traceback": "Traceback (most recent call last):\n  File \"/workspace/patient_management_repair_test.py\", line 381, in test_04_update_patient\n    patient = self.create_test_patient(\"upd001\", satisfaction_vas=5)\n              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/workspace/patient_management_repair_test.py\", line 111, in create_test_patient\n    demographics = Demographics(\n                   ^^^^^^^^^^^^^\n  File \"/tmp/.venv/lib/python3.12/site-packages/pydantic/main.py\", line 250, in __init__\n    validated_self = self.__pydantic_validator__.validate_python(data, self_instance=self)\n                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\npydantic_core._pydantic_core.ValidationError: 1 validation error for Demographics\nfirstname\n  Value error, Name enthält ungültige Zeichen [type=value_error, input_value='Patient9', input_type=str]\n    For further information visit https://errors.pydantic.dev/2.12/v/value_error\n",
+      "timestamp": "2025-11-06T20:23:32.453421"
+    },
+    {
+      "test": "test_05_search_patients",
+      "success": false,
+      "error": "1 validation error for Demographics\nfirstname\n  Value error, Name enthält ungültige Zeichen [type=value_error, input_value='Patient10', input_type=str]\n    For further information visit https://errors.pydantic.dev/2.12/v/value_error",
+      "traceback": "Traceback (most recent call last):\n  File \"/workspace/patient_management_repair_test.py\", line 431, in test_05_search_patients\n    self.create_test_patient(\"search_001\", gender=Gender.MALE, technique=\"Offen\"),\n    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/workspace/patient_management_repair_test.py\", line 111, in create_test_patient\n    demographics = Demographics(\n                   ^^^^^^^^^^^^^\n  File \"/tmp/.venv/lib/python3.12/site-packages/pydantic/main.py\", line 250, in __init__\n    validated_self = self.__pydantic_validator__.validate_python(data, self_instance=self)\n                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\npydantic_core._pydantic_core.ValidationError: 1 validation error for Demographics\nfirstname\n  Value error, Name enthält ungültige Zeichen [type=value_error, input_value='Patient10', input_type=str]\n    For further information visit https://errors.pydantic.dev/2.12/v/value_error\n",
+      "timestamp": "2025-11-06T20:23:32.457745"
+    },
+    {
+      "test": "test_06_delete_patient",
+      "success": false,
+      "error": "1 validation error for Demographics\nfirstname\n  Value error, Name enthält ungültige Zeichen [type=value_error, input_value='Patient11', input_type=str]\n    For further information visit https://errors.pydantic.dev/2.12/v/value_error",
+      "traceback": "Traceback (most recent call last):\n  File \"/workspace/patient_management_repair_test.py\", line 481, in test_06_delete_patient\n    patient = self.create_test_patient(\"del_001\")\n              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/workspace/patient_management_repair_test.py\", line 111, in create_test_patient\n    demographics = Demographics(\n                   ^^^^^^^^^^^^^\n  File \"/tmp/.venv/lib/python3.12/site-packages/pydantic/main.py\", line 250, in __init__\n    validated_self = self.__pydantic_validator__.validate_python(data, self_instance=self)\n                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\npydantic_core._pydantic_core.ValidationError: 1 validation error for Demographics\nfirstname\n  Value error, Name enthält ungültige Zeichen [type=value_error, input_value='Patient11', input_type=str]\n    For further information visit https://errors.pydantic.dev/2.12/v/value_error\n",
+      "timestamp": "2025-11-06T20:23:32.468824"
+    },
+    {
+      "test": "test_07_realistic_medical_scenarios",
+      "success": false,
+      "error": "1 validation error for Surgery\ncomplications_postop.1\n  Input should be 'Hämatom', 'Infektion', 'Synechien' or 'Revisionsbedarf' [type=enum, input_value='Asymmetrie', input_type=str]\n    For further information visit https://errors.pydantic.dev/2.12/v/enum",
+      "traceback": "Traceback (most recent call last):\n  File \"/workspace/patient_management_repair_test.py\", line 571, in test_07_realistic_medical_scenarios\n    scenario3 = self.create_test_patient(\n                ^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/workspace/patient_management_repair_test.py\", line 162, in create_test_patient\n    surgery = Surgery(\n              ^^^^^^^^\n  File \"/tmp/.venv/lib/python3.12/site-packages/pydantic/main.py\", line 250, in __init__\n    validated_self = self.__pydantic_validator__.validate_python(data, self_instance=self)\n                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\npydantic_core._pydantic_core.ValidationError: 1 validation error for Surgery\ncomplications_postop.1\n  Input should be 'Hämatom', 'Infektion', 'Synechien' or 'Revisionsbedarf' [type=enum, input_value='Asymmetrie', input_type=str]\n    For further information visit https://errors.pydantic.dev/2.12/v/enum\n",
+      "timestamp": "2025-11-06T20:23:32.475232"
+    },
+    {
+      "test": "test_08_batch_operations_performance",
+      "success": false,
+      "error": "1 validation error for Demographics\nfirstname\n  Value error, Name enthält ungültige Zeichen [type=value_error, input_value='Patient15', input_type=str]\n    For further information visit https://errors.pydantic.dev/2.12/v/value_error",
+      "traceback": "Traceback (most recent call last):\n  File \"/workspace/patient_management_repair_test.py\", line 780, in test_08_batch_operations_performance\n    patient = self.create_test_patient(\n              ^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/workspace/patient_management_repair_test.py\", line 111, in create_test_patient\n    demographics = Demographics(\n                   ^^^^^^^^^^^^^\n  File \"/tmp/.venv/lib/python3.12/site-packages/pydantic/main.py\", line 250, in __init__\n    validated_self = self.__pydantic_validator__.validate_python(data, self_instance=self)\n                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\npydantic_core._pydantic_core.ValidationError: 1 validation error for Demographics\nfirstname\n  Value error, Name enthält ungültige Zeichen [type=value_error, input_value='Patient15', input_type=str]\n    For further information visit https://errors.pydantic.dev/2.12/v/value_error\n",
+      "timestamp": "2025-11-06T20:23:32.489106"
+    },
+    {
+      "test": "test_09_error_handling",
+      "success": true,
+      "error_tests": [
+        {
+          "test": "load_nonexistent_patient",
+          "correctly_handled": true,
+          "result": "success"
+        },
+        {
+          "test": "delete_nonexistent_patient",
+          "correctly_handled": true,
+          "result": "success",
+          "message": "Patient nicht gefunden"
+        },
+        {
+          "test": "invalid_folder_slug",
+          "correctly_handled": true,
+          "exception_handled": true,
+          "error": "1 validation error for Demographics\nfirstname\n  Value error, Name enthält ungültige Zeichen [type=value_error, input_value='Patient16', input_type=str]\n    For further information visit https://errors.pydantic.dev/2.12/v/value_error"
+        },
+        {
+          "test": "unicode_names",
+          "correctly_handled": true,
+          "exception_handled": true,
+          "error": "1 validation error for Demographics\nfirstname\n  Value error, Name enthält ungültige Zeichen [type=value_error, input_value='François', input_type=str]\n    For further information visit https://errors.pydantic.dev/2.12/v/value_error"
+        }
+      ],
+      "correctly_handled": 4,
+      "timestamp": "2025-11-06T20:23:32.524678"
+    },
+    {
+      "test": "test_10_data_consistency",
+      "success": false,
+      "error": "1 validation error for Surgery\ncomplications_postop.0\n  Input should be 'Hämatom', 'Infektion', 'Synechien' or 'Revisionsbedarf' [type=enum, input_value='Leichte Schwellung', input_type=str]\n    For further information visit https://errors.pydantic.dev/2.12/v/enum",
+      "traceback": "Traceback (most recent call last):\n  File \"/workspace/patient_management_repair_test.py\", line 980, in test_10_data_consistency\n    patient = self.create_test_patient(\n              ^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/workspace/patient_management_repair_test.py\", line 162, in create_test_patient\n    surgery = Surgery(\n              ^^^^^^^^\n  File \"/tmp/.venv/lib/python3.12/site-packages/pydantic/main.py\", line 250, in __init__\n    validated_self = self.__pydantic_validator__.validate_python(data, self_instance=self)\n                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\npydantic_core._pydantic_core.ValidationError: 1 validation error for Surgery\ncomplications_postop.0\n  Input should be 'Hämatom', 'Infektion', 'Synechien' or 'Revisionsbedarf' [type=enum, input_value='Leichte Schwellung', input_type=str]\n    For further information visit https://errors.pydantic.dev/2.12/v/enum\n",
+      "timestamp": "2025-11-06T20:23:32.529166"
+    }
+  ],
+  "performance_metrics": {},
+  "performance_summary": {},
+  "test_environment": {
+    "app_dir": "/workspace/rhinoplastik_app",
+    "python_version": "3.12.5 (main, Sep  5 2024, 00:16:34) [GCC 12.2.0]",
+    "test_data_created": 0,
+    "patient_counter": 18
+  }
+}

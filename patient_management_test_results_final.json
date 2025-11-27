@@ -1,0 +1,429 @@
+{
+  "summary": {
+    "total_tests": 11,
+    "successful_tests": 1,
+    "failed_tests": 10,
+    "success_rate": 9.09,
+    "test_execution_time": "2025-11-06T21:03:19.994433",
+    "test_environment": "rhinoplastik_app/patient_management_full_repair_test.py",
+    "repaired_issues": [
+      "folder_slug automatisch korrekt generiert",
+      "Namen nur mit gültigen Zeichen (Buchstaben, Leerzeichen, Bindestriche)",
+      "Komplikationen verwenden exakte Enum-Werte",
+      "Unicode-Namen werden korrekt behandelt",
+      "10 realistische medizinische Szenarien",
+      "Batch-Operationen mit Performance-Messung",
+      "Umfassende Fehlerbehandlung"
+    ]
+  },
+  "detailed_results": [
+    {
+      "test": "test_01_create_patient_basic",
+      "success": false,
+      "message": "Patientenordner bereits vorhanden: Test_Alpha_Geb19900101__",
+      "duration_ms": 2.51,
+      "patient_id": null,
+      "timestamp": "2025-11-06T21:03:19.530064",
+      "error_details": "Patientenordner bereits vorhanden: Test_Alpha_Geb19900101__"
+    },
+    {
+      "test": "test_01_create_patient_basic",
+      "success": false,
+      "message": "Patientenordner bereits vorhanden: Test_Alpha_Geb19900101__",
+      "duration_ms": 2.51,
+      "patient_id": null,
+      "timestamp": "2025-11-06T21:03:19.530064",
+      "error_details": "Patientenordner bereits vorhanden: Test_Alpha_Geb19900101__"
+    },
+    {
+      "test": "test_02_create_patient_validation_errors",
+      "success": false,
+      "validation_cases": [
+        {
+          "case": "empty_firstname",
+          "expected_failure": true,
+          "actually_failed": true,
+          "success": true,
+          "error": "1 validation error for Demographics\nfirstname\n  String should have at least 1 character [type=string_too_short, input_value='', input_type=str]\n    For further information visit https://errors.pydantic.dev/2.12/v/string_too_short"
+        },
+        {
+          "case": "future_dob",
+          "expected_failure": true,
+          "actually_failed": true,
+          "success": true,
+          "error": "1 validation error for Demographics\ndob\n  Value error, Geburtsdatum muss in der Vergangenheit liegen [type=value_error, input_value=datetime.date(2030, 1, 1), input_type=date]\n    For further information visit https://errors.pydantic.dev/2.12/v/value_error"
+        },
+        {
+          "case": "future_op_date",
+          "expected_failure": true,
+          "actually_failed": true,
+          "success": true,
+          "error": "1 validation error for Surgery\nop_date\n  Value error, OP-Datum muss heute oder in der Vergangenheit liegen [type=value_error, input_value=datetime.date(2030, 1, 1), input_type=date]\n    For further information visit https://errors.pydantic.dev/2.12/v/value_error"
+        },
+        {
+          "case": "extreme_values",
+          "expected_failure": false,
+          "actually_failed": true,
+          "success": false,
+          "error": "2 validation errors for Measurements\nnose_length_mm\n  Input should be greater than or equal to 30 [type=greater_than_equal, input_value=20, input_type=int]\n    For further information visit https://errors.pydantic.dev/2.12/v/greater_than_equal\nnose_width_mm\n  Input should be less than or equal to 50 [type=less_than_equal, input_value=60, input_type=int]\n    For further information visit https://errors.pydantic.dev/2.12/v/less_than_equal"
+        }
+      ],
+      "timestamp": "2025-11-06T21:03:19.536176"
+    },
+    {
+      "test": "test_03_duplicate_patient_creation",
+      "success": false,
+      "first_patient": {
+        "success": false,
+        "message": "Patientenordner bereits vorhanden: DupTest_First_Geb19900101__",
+        "id": null
+      },
+      "duplicate_patient": {
+        "success": false,
+        "message": "Patientenordner bereits vorhanden: DupTest_First_Geb19900101__",
+        "id": null
+      },
+      "different_patient": {
+        "success": false,
+        "message": "Patientenordner bereits vorhanden: DupTest_Second_Geb19900101__",
+        "id": null
+      },
+      "timestamp": "2025-11-06T21:03:19.546999"
+    },
+    {
+      "test": "test_04_update_patient",
+      "success": false,
+      "error": "Patient creation failed"
+    },
+    {
+      "test": "test_05_search_patients",
+      "success": false,
+      "created_patients": 0,
+      "search_results": [
+        {
+          "filters": {
+            "Geschlecht": "Männlich"
+          },
+          "found_count": 11,
+          "expected_count": 2,
+          "correct": false
+        },
+        {
+          "filters": {
+            "Geschlecht": "Weiblich"
+          },
+          "found_count": 7,
+          "expected_count": 2,
+          "correct": false
+        },
+        {
+          "filters": {
+            "Technik": "Offen"
+          },
+          "found_count": 12,
+          "expected_count": 2,
+          "correct": false
+        },
+        {
+          "filters": {
+            "Technik": "Geschlossen"
+          },
+          "found_count": 6,
+          "expected_count": 2,
+          "correct": false
+        }
+      ],
+      "timestamp": "2025-11-06T21:03:19.734774"
+    },
+    {
+      "test": "test_06_delete_patient",
+      "success": false,
+      "error": "Patient creation failed"
+    },
+    {
+      "test": "test_07_realistic_medical_scenarios",
+      "success": false,
+      "total_scenarios": 10,
+      "successful_scenarios": 0,
+      "created_scenarios": [
+        {
+          "scenario": "scen_001",
+          "name": "Höckernase Jung",
+          "success": false,
+          "patient_id": null,
+          "message": "Patientenordner bereits vorhanden: Schmidt_Anna_Geb19950515__"
+        },
+        {
+          "scenario": "scen_002",
+          "name": "Schiefnase Alt",
+          "success": false,
+          "patient_id": null,
+          "message": "Patientenordner bereits vorhanden: Mustermann_Max_Geb19750820__"
+        },
+        {
+          "scenario": "scen_003",
+          "name": "Infektion + Revision",
+          "success": false,
+          "patient_id": null,
+          "message": "Patientenordner bereits vorhanden: Fischer_Elena_Geb19881203__"
+        },
+        {
+          "scenario": "scen_004",
+          "name": "Minimal Invasiv",
+          "success": false,
+          "patient_id": null,
+          "message": "Patientenordner bereits vorhanden: Weber_Tom_Geb19920912__"
+        },
+        {
+          "scenario": "scen_005",
+          "name": "Perfektes Ergebnis",
+          "success": false,
+          "patient_id": null,
+          "message": "Patientenordner bereits vorhanden: Müller_Sarah_Geb19900328__"
+        },
+        {
+          "scenario": "scen_006",
+          "name": "Atemprobleme",
+          "success": false,
+          "patient_id": null,
+          "message": "Patientenordner bereits vorhanden: Kovacs_Denis_Geb19850714__"
+        },
+        {
+          "scenario": "scen_007",
+          "name": "Erste Operation",
+          "success": false,
+          "patient_id": null,
+          "message": "Patientenordner bereits vorhanden: Hoffmann_Julia_Geb19931108__"
+        },
+        {
+          "scenario": "scen_008",
+          "name": "Hämatom Revision",
+          "success": false,
+          "patient_id": null,
+          "message": "Patientenordner bereits vorhanden: Schneider_Michael_Geb19800219__"
+        },
+        {
+          "scenario": "scen_009",
+          "name": "Breitnase Anatomie",
+          "success": false,
+          "patient_id": null,
+          "message": "Patientenordner bereits vorhanden: Wang_Lisa_Geb19870126__"
+        },
+        {
+          "scenario": "scen_010",
+          "name": "Komplikationslos",
+          "success": false,
+          "patient_id": null,
+          "message": "Patientenordner bereits vorhanden: König_Alexander_Geb19910611__"
+        }
+      ],
+      "timestamp": "2025-11-06T21:03:19.755726"
+    },
+    {
+      "test": "test_08_batch_operations_performance",
+      "success": false,
+      "performance": {
+        "creation": {
+          "total_patients": 0,
+          "avg_creation_time_ms": 0,
+          "min_creation_time_ms": 0,
+          "max_creation_time_ms": 0,
+          "total_creation_time_ms": 0
+        },
+        "listing": {
+          "list_time_s": 0.015,
+          "patient_count": 18
+        },
+        "statistics": {
+          "stats_time_s": 0.014,
+          "stats": {
+            "total": 18,
+            "gender_distribution": {
+              "Männlich": 11,
+              "Weiblich": 7
+            },
+            "technique_distribution": {
+              "Offen": 12,
+              "Geschlossen": 6
+            },
+            "indication_distribution": {
+              "Ästhetisch": 18
+            },
+            "measurements": {
+              "Nasenlänge_mm": {
+                "count": 18,
+                "mean": 50.2,
+                "min": 9.0,
+                "max": 60.0
+              },
+              "Nasenbreite_mm": {
+                "count": 18,
+                "mean": 34.1,
+                "min": 7.0,
+                "max": 45.0
+              },
+              "Tip-Rotation°": {
+                "count": 17,
+                "mean": 95.0,
+                "min": 95.0,
+                "max": 95.0
+              },
+              "Zufriedenheit_VAS": {
+                "count": 18,
+                "mean": 9.3,
+                "min": 4.0,
+                "max": 35.0
+              }
+            },
+            "outcomes": {
+              "satisfaction": {
+                "count": 18,
+                "mean": 9.3,
+                "min": 4,
+                "max": 35
+              },
+              "airflow": {
+                "count": 18,
+                "mean": 9.1,
+                "min": 7,
+                "max": 45
+              }
+            }
+          }
+        },
+        "updates": {
+          "updated_patients": 0,
+          "avg_update_time_ms": 0,
+          "min_update_time_ms": 0,
+          "max_update_time_ms": 0,
+          "total_update_time_ms": 0
+        }
+      },
+      "timestamp": "2025-11-06T21:03:19.926808"
+    },
+    {
+      "test": "test_09_error_handling",
+      "success": true,
+      "error_tests": [
+        {
+          "test": "load_nonexistent_patient",
+          "correctly_handled": true,
+          "result": "success"
+        },
+        {
+          "test": "delete_nonexistent_patient",
+          "correctly_handled": true,
+          "result": "success",
+          "message": "Patient nicht gefunden"
+        },
+        {
+          "test": "unicode_names",
+          "correctly_handled": true,
+          "exception_handled": true,
+          "error": "1 validation error for Demographics\nfirstname\n  Value error, Name enthält ungültige Zeichen [type=value_error, input_value='François', input_type=str]\n    For further information visit https://errors.pydantic.dev/2.12/v/value_error"
+        },
+        {
+          "test": "multiple_complications",
+          "correctly_handled": false,
+          "result": "error",
+          "message": "Fehler beim Speichern der JSON-Datei"
+        }
+      ],
+      "correctly_handled": 3,
+      "timestamp": "2025-11-06T21:03:19.979754"
+    },
+    {
+      "test": "test_10_data_consistency",
+      "success": false,
+      "error": "Failed to create patient for consistency test"
+    }
+  ],
+  "performance_metrics": {
+    "creation": {
+      "total_patients": 0,
+      "avg_creation_time_ms": 0,
+      "min_creation_time_ms": 0,
+      "max_creation_time_ms": 0,
+      "total_creation_time_ms": 0
+    },
+    "listing": {
+      "list_time_s": 0.015,
+      "patient_count": 18
+    },
+    "statistics": {
+      "stats_time_s": 0.014,
+      "stats": {
+        "total": 18,
+        "gender_distribution": {
+          "Männlich": 11,
+          "Weiblich": 7
+        },
+        "technique_distribution": {
+          "Offen": 12,
+          "Geschlossen": 6
+        },
+        "indication_distribution": {
+          "Ästhetisch": 18
+        },
+        "measurements": {
+          "Nasenlänge_mm": {
+            "count": 18,
+            "mean": 50.2,
+            "min": 9.0,
+            "max": 60.0
+          },
+          "Nasenbreite_mm": {
+            "count": 18,
+            "mean": 34.1,
+            "min": 7.0,
+            "max": 45.0
+          },
+          "Tip-Rotation°": {
+            "count": 17,
+            "mean": 95.0,
+            "min": 95.0,
+            "max": 95.0
+          },
+          "Zufriedenheit_VAS": {
+            "count": 18,
+            "mean": 9.3,
+            "min": 4.0,
+            "max": 35.0
+          }
+        },
+        "outcomes": {
+          "satisfaction": {
+            "count": 18,
+            "mean": 9.3,
+            "min": 4,
+            "max": 35
+          },
+          "airflow": {
+            "count": 18,
+            "mean": 9.1,
+            "min": 7,
+            "max": 45
+          }
+        }
+      }
+    },
+    "updates": {
+      "updated_patients": 0,
+      "avg_update_time_ms": 0,
+      "min_update_time_ms": 0,
+      "max_update_time_ms": 0,
+      "total_update_time_ms": 0
+    }
+  },
+  "performance_summary": {
+    "avg_creation_time": "0 ms",
+    "avg_update_time": "0 ms"
+  },
+  "test_environment": {
+    "app_dir": "/workspace/rhinoplastik_app",
+    "python_version": "3.12.5 (main, Sep  5 2024, 00:16:34) [GCC 12.2.0]",
+    "test_data_created": 0,
+    "patient_counter": 0,
+    "name_counter": 42
+  }
+}

@@ -1,0 +1,79 @@
+2025-11-07 16:48:54,461 - INFO - Memory-Analyzer initialisiert - System: {'cpu_count': 24, 'memory_total_gb': 92.53288269042969, 'platform': 'linux', 'python_version': '3.12.5 (main, Sep  5 2024, 00:16:34) [GCC 12.2.0]', 'available_memory_gb': 77.43808364868164}
+2025-11-07 16:48:54,461 - INFO - === UMFASSENDE MEMORY-LEAK-ANALYSE GESTARTET ===
+2025-11-07 16:48:54,461 - INFO - === TEST 1: Memory-Usage-Patterns ===
+2025-11-07 16:48:54,469 - INFO - Baseline Memory: 74.89 MB
+2025-11-07 16:48:54,469 - INFO - Teste GUI_Initialization...
+2025-11-07 16:48:54,707 - INFO - Performance GUI_Initialization: 226.47ms, Memory: 16.55MB
+2025-11-07 16:48:54,709 - INFO -   Memory Increase: 16.55 MB
+2025-11-07 16:48:54,709 - INFO - Teste Database_Connection...
+2025-11-07 16:48:59,789 - ERROR - Operation Database_Connection fehlgeschlagen: database is locked
+2025-11-07 16:48:59,792 - INFO - Performance Database_Connection: 5064.03ms, Memory: 0.00MB
+2025-11-07 16:48:59,792 - ERROR -   Fehler bei Database_Connection: database is locked
+2025-11-07 16:48:59,792 - INFO - Teste Large_Data_Processing...
+2025-11-07 16:48:59,944 - INFO - Processed 5000 rows from large dataset
+2025-11-07 16:48:59,947 - INFO - Performance Large_Data_Processing: 113.22ms, Memory: 2.51MB
+2025-11-07 16:49:00,018 - INFO -   Memory Increase: 2.51 MB
+2025-11-07 16:49:00,018 - INFO - Teste File_Operations...
+2025-11-07 16:49:04,640 - INFO - Open files - Initial: 1, Final: 1
+2025-11-07 16:49:04,960 - INFO - Performance File_Operations: 4929.43ms, Memory: 0.00MB
+2025-11-07 16:49:04,963 - INFO -   Memory Increase: 0.00 MB
+2025-11-07 16:49:04,963 - INFO - Teste Thread_Creation...
+2025-11-07 16:49:05,116 - INFO - Completed 50 thread operations
+2025-11-07 16:49:05,118 - INFO - Performance Thread_Creation: 94.21ms, Memory: 5.64MB
+2025-11-07 16:49:05,120 - INFO -   Memory Increase: 5.64 MB
+2025-11-07 16:49:05,126 - INFO - Results saved: memory_test_results/memory_usage_patterns.json
+2025-11-07 16:49:05,126 - INFO - === TEST 2: Large-Dataset-Handling ===
+2025-11-07 16:49:05,136 - INFO - Testing chunk size: 100
+2025-11-07 16:49:05,352 - INFO -   Processed 5000 rows in 0.22s
+2025-11-07 16:49:05,352 - INFO -   Memory increase: -1.19 MB
+2025-11-07 16:49:05,353 - INFO - Testing chunk size: 500
+2025-11-07 16:49:05,441 - INFO -   Processed 5000 rows in 0.09s
+2025-11-07 16:49:05,441 - INFO -   Memory increase: 0.89 MB
+2025-11-07 16:49:05,441 - INFO - Testing chunk size: 1000
+2025-11-07 16:49:05,527 - INFO -   Processed 5000 rows in 0.09s
+2025-11-07 16:49:05,527 - INFO -   Memory increase: 0.00 MB
+2025-11-07 16:49:05,527 - INFO - Testing chunk size: 2000
+2025-11-07 16:49:05,552 - INFO -   Processed 5000 rows in 0.02s
+2025-11-07 16:49:05,552 - INFO -   Memory increase: 0.00 MB
+2025-11-07 16:49:05,559 - INFO - Results saved: memory_test_results/large_dataset_handling.json
+2025-11-07 16:49:05,560 - INFO - === TEST 3: Image-Memory-Management ===
+2025-11-07 16:49:05,627 - INFO - Testing image size: 800x600
+2025-11-07 16:49:05,748 - INFO - Testing image size: 1920x1080
+2025-11-07 16:49:05,927 - INFO - Testing image size: 3840x2160
+2025-11-07 16:49:06,340 - INFO - File handles - Initial: 1, During: 1, Final: 1
+2025-11-07 16:49:06,360 - INFO - Results saved: memory_test_results/image_memory_management.json
+2025-11-07 16:49:06,360 - INFO - === TEST 4: Database-Connection-Pooling ===
+2025-11-07 16:49:06,938 - INFO - Pool test - Memory per connection: 0.00 MB
+2025-11-07 16:49:06,938 - INFO - Query performance - Avg: 2.92ms, Max: 4.03ms
+2025-11-07 16:49:06,946 - INFO - Results saved: memory_test_results/database_connection_pooling.json
+2025-11-07 16:49:06,946 - INFO - === TEST 5: Thread-Memory-Management ===
+2025-11-07 16:49:06,946 - INFO - Testing 10 threads...
+2025-11-07 16:49:07,542 - INFO -   Threads: 10, Memory/Thread: 1.26 MB
+2025-11-07 16:49:07,542 - INFO - Testing 50 threads...
+2025-11-07 16:49:08,275 - INFO -   Threads: 50, Memory/Thread: 0.30 MB
+2025-11-07 16:49:08,275 - INFO - Testing 100 threads...
+2025-11-07 16:49:09,264 - INFO -   Threads: 100, Memory/Thread: 0.15 MB
+2025-11-07 16:49:09,264 - INFO - Testing 200 threads...
+2025-11-07 16:49:10,684 - INFO -   Threads: 200, Memory/Thread: 0.11 MB
+2025-11-07 16:49:10,685 - INFO - Testing concurrent file I/O...
+2025-11-07 16:49:11,677 - INFO - Concurrent I/O - Processed 200 files
+2025-11-07 16:49:11,683 - INFO - Results saved: memory_test_results/thread_memory_management.json
+2025-11-07 16:49:11,683 - INFO - === TEST 9: Garbage-Collection-Performance ===
+2025-11-07 16:49:12,557 - INFO - GC Performance - Collected: 0 objects in 136.64ms
+2025-11-07 16:49:12,557 - INFO - Memory freed: 0.00 MB
+2025-11-07 16:49:12,557 - INFO - Testing automatic GC behavior...
+2025-11-07 16:49:13,198 - INFO - Results saved: memory_test_results/garbage_collection_performance.json
+2025-11-07 16:49:13,198 - INFO - === TEST 10: Memory-Leak-Detection ===
+2025-11-07 16:49:13,453 - INFO - Baseline Memory: 244.27 MB
+2025-11-07 16:49:13,524 - INFO - Cycle 0: GC collected 0 objects
+2025-11-07 16:49:13,754 - INFO - Cycle 10: GC collected 0 objects
+2025-11-07 16:49:14,040 - INFO - Cycle 20: GC collected 0 objects
+2025-11-07 16:49:14,318 - INFO - Cycle 30: GC collected 0 objects
+2025-11-07 16:49:14,549 - INFO - Cycle 40: GC collected 0 objects
+2025-11-07 16:49:14,760 - ERROR - Leak detection test error: cannot create weak reference to 'dict' object
+2025-11-07 16:49:14,765 - INFO - Results saved: memory_test_results/memory_leak_detection.json
+2025-11-07 16:49:14,815 - INFO - Results saved: memory_test_results/comprehensive_analysis_summary.json
+2025-11-07 16:49:14,815 - INFO - === MEMORY-LEAK-ANALYSE ABGESCHLOSSEN ===
+2025-11-07 16:49:14,815 - INFO - Gesamtdauer: 20.31 Sekunden
+2025-11-07 16:49:14,817 - INFO - Final Memory: 244.27 MB
+2025-11-07 16:49:14,818 - INFO - Memory Increase: 169.38 MB

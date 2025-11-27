@@ -1,0 +1,46 @@
+{
+  "timestamp": "2025-11-06T20:34:46.019588",
+  "total_tests": 8,
+  "passed": 5,
+  "failed": 3,
+  "success_rate": 62.5,
+  "test_results": {
+    "test_basic_tab_navigation": "PASSED",
+    "test_tab_state_persistence": "FAILED",
+    "test_dynamic_tab_visibility": "FAILED",
+    "test_minimum_window_size": "FAILED",
+    "test_patient_editor_modal_opening": "PASSED",
+    "test_layout_rendering_performance": "PASSED",
+    "test_memory_usage_monitoring": "PASSED",
+    "test_ui_responsiveness_under_load": "PASSED"
+  },
+  "performance_metrics": {
+    "tab_switch_avg": 91.87469216408329,
+    "tab_switch_max": 142.38763060883053,
+    "tab_switch_min": 51.43828020462446,
+    "modal_open_time": 307.3428115857032,
+    "layout_render_avg": 0.001986821492513021,
+    "layout_render_max": 0.002384185791015625,
+    "initial_memory_mb": 15.80859375,
+    "final_memory_mb": 24.629156607568426,
+    "memory_increase_mb": 8.820562857568426,
+    "ui_load_test_time_s": 0.032453060150146484,
+    "ui_responsiveness_avg_ms": 1.0817686716715493,
+    "ui_tab_changes": 30
+  },
+  "benchmarks": {
+    "tab_switch_max": 200,
+    "modal_open_max": 500,
+    "layout_render_max": 300,
+    "memory_increase_max": 50,
+    "ui_responsiveness_max": 100
+  },
+  "benchmark_compliance": {
+    "tab_switch_performance": true,
+    "modal_opening_performance": true,
+    "layout_rendering_performance": true,
+    "memory_usage": true,
+    "ui_responsiveness": true
+  },
+  "note": "Headless Test - Mock-Implementationen für Demo-Zwecke"
+}

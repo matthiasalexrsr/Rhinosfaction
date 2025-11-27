@@ -1,0 +1,124 @@
+{
+  "total_tests": 13,
+  "passed": 11,
+  "failed": 2,
+  "errors": [
+    "Dynamische UI-Updates: Dynamic-UI-Test fehlgeschlagen: 'int' object is not callable",
+    "Fehlerbehandlung: Fehlerbehandlung-Test fehlgeschlagen: False is not true : SQL-Injection 1' OR '1'='1 sollte erkannt werden"
+  ],
+  "test_categories": {
+    "Eingabevalidierung": {
+      "passed": 3,
+      "failed": 0
+    },
+    "Fehlerbehandlung": {
+      "passed": 1,
+      "failed": 1
+    },
+    "Grundfunktionalität": {
+      "passed": 4,
+      "failed": 0
+    },
+    "Benutzerinteraktionen": {
+      "passed": 2,
+      "failed": 1
+    },
+    "Responsive Layout": {
+      "passed": 1,
+      "failed": 0
+    }
+  },
+  "detailed_results": [
+    {
+      "test_name": "Grenzwert-Validierung",
+      "passed": true,
+      "message": "Grenzwert-Validierung funktional",
+      "category": "Eingabevalidierung",
+      "timestamp": "2025-11-06T20:33:45.905078"
+    },
+    {
+      "test_name": "Datenkonsistenz",
+      "passed": true,
+      "message": "Datenkonsistenz funktional",
+      "category": "Fehlerbehandlung",
+      "timestamp": "2025-11-06T20:33:45.905150"
+    },
+    {
+      "test_name": "Datums-Validierung",
+      "passed": true,
+      "message": "Datums-Validierung funktional",
+      "category": "Grundfunktionalität",
+      "timestamp": "2025-11-06T20:33:45.905209"
+    },
+    {
+      "test_name": "Dropdown-Funktionalität",
+      "passed": true,
+      "message": "Dropdown funktional",
+      "category": "Grundfunktionalität",
+      "timestamp": "2025-11-06T20:33:45.905247"
+    },
+    {
+      "test_name": "Dynamische UI-Updates",
+      "passed": false,
+      "message": "Dynamic-UI-Test fehlgeschlagen: 'int' object is not callable",
+      "category": "Benutzerinteraktionen",
+      "timestamp": "2025-11-06T20:33:45.905276"
+    },
+    {
+      "test_name": "Fehlerbehandlung",
+      "passed": false,
+      "message": "Fehlerbehandlung-Test fehlgeschlagen: False is not true : SQL-Injection 1' OR '1'='1 sollte erkannt werden",
+      "category": "Fehlerbehandlung",
+      "timestamp": "2025-11-06T20:33:45.906393"
+    },
+    {
+      "test_name": "Tastatureingaben",
+      "passed": true,
+      "message": "Tastatureingaben funktional",
+      "category": "Benutzerinteraktionen",
+      "timestamp": "2025-11-06T20:33:45.906621"
+    },
+    {
+      "test_name": "Medizinische Daten-Validierung",
+      "passed": true,
+      "message": "Medizinische Daten-Validierung funktional",
+      "category": "Eingabevalidierung",
+      "timestamp": "2025-11-06T20:33:45.906660"
+    },
+    {
+      "test_name": "Maus-Interaktionen",
+      "passed": true,
+      "message": "Maus-Interaktionen funktional",
+      "category": "Benutzerinteraktionen",
+      "timestamp": "2025-11-06T20:33:45.906687"
+    },
+    {
+      "test_name": "Pflichtfeld-Validierung",
+      "passed": true,
+      "message": "Pflichtfeld-Validierung funktional",
+      "category": "Eingabevalidierung",
+      "timestamp": "2025-11-06T20:33:45.906713"
+    },
+    {
+      "test_name": "Responsive Layout",
+      "passed": true,
+      "message": "Responsive Layout funktional",
+      "category": "Responsive Layout",
+      "timestamp": "2025-11-06T20:33:45.906736"
+    },
+    {
+      "test_name": "Text-Eingabe",
+      "passed": true,
+      "message": "Text-Eingabe funktional",
+      "category": "Grundfunktionalität",
+      "timestamp": "2025-11-06T20:33:45.906770"
+    },
+    {
+      "test_name": "UI-Erstellung",
+      "passed": true,
+      "message": "UI-Erstellung erfolgreich simuliert",
+      "category": "Grundfunktionalität",
+      "timestamp": "2025-11-06T20:33:45.906924"
+    }
+  ]
+}

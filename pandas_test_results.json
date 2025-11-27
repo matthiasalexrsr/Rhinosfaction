@@ -1,0 +1,239 @@
+{
+  "test_suite": "Pandas Integration Test Suite - Optimiert",
+  "timestamp": "2025-11-07T07:01:00.321546",
+  "pandas_version": "2.3.3",
+  "numpy_version": "2.3.4",
+  "test_results": [
+    {
+      "test_name": "Pandas Import Validierung",
+      "timestamp": "2025-11-07T07:01:00.321563",
+      "results": [
+        {
+          "operation": "Standard pandas import",
+          "status": "SUCCESS",
+          "version": "2.3.3"
+        },
+        {
+          "operation": "numpy Integration",
+          "status": "SUCCESS",
+          "version": "2.3.4"
+        },
+        {
+          "operation": "Zeitreihen-Funktionalität",
+          "status": "SUCCESS"
+        },
+        {
+          "operation": "String-Operationen",
+          "status": "SUCCESS"
+        },
+        {
+          "operation": "Kategorien und MultiIndex",
+          "status": "SUCCESS"
+        }
+      ]
+    },
+    {
+      "test_name": "DataFrame-Operationen",
+      "timestamp": "2025-11-07T07:01:00.821692",
+      "results": [
+        {
+          "operation": "DataFrame Creation",
+          "status": "SUCCESS",
+          "rows": 1000,
+          "columns": 8
+        },
+        {
+          "operation": "Spalten-Selection",
+          "status": "SUCCESS",
+          "selected_columns": 3
+        },
+        {
+          "operation": "Zeilen-Selection",
+          "status": "SUCCESS",
+          "selected_rows": 10
+        },
+        {
+          "operation": "Filter-Operationen",
+          "status": "SUCCESS",
+          "filtered_adults": 1000,
+          "filtered_complications": 50
+        },
+        {
+          "operation": "Query-Operation",
+          "status": "SUCCESS",
+          "query_results": 21
+        },
+        {
+          "operation": "loc/iloc Operationen",
+          "status": "SUCCESS",
+          "loc_results": 100,
+          "iloc_results": 100
+        }
+      ]
+    },
+    {
+      "test_name": "GroupBy und Aggregations",
+      "timestamp": "2025-11-07T07:01:01.341350",
+      "results": [
+        {
+          "operation": "Grundlegende GroupBy",
+          "status": "SUCCESS",
+          "groups": 3
+        },
+        {
+          "operation": "Surgery Type GroupBy",
+          "status": "SUCCESS",
+          "surgery_types": 3
+        },
+        {
+          "operation": "Multi-Column GroupBy",
+          "status": "SUCCESS",
+          "group_combinations": 9
+        },
+        {
+          "operation": "Transform-Operationen",
+          "status": "SUCCESS"
+        },
+        {
+          "operation": "Custom Aggregation",
+          "status": "SUCCESS"
+        }
+      ]
+    },
+    {
+      "test_name": "Merge/Join-Operationen",
+      "timestamp": "2025-11-07T07:01:01.880290",
+      "results": [
+        {
+          "operation": "Test-DataFrames Creation",
+          "status": "SUCCESS",
+          "patients": 500,
+          "operations": 1000,
+          "follow_ups": 300
+        },
+        {
+          "operation": "Inner Join",
+          "status": "SUCCESS",
+          "result_size": 1000
+        },
+        {
+          "operation": "Left Join",
+          "status": "SUCCESS",
+          "result_size": 573
+        },
+        {
+          "operation": "Right Join",
+          "status": "SUCCESS",
+          "result_size": 1000
+        },
+        {
+          "operation": "Outer Join",
+          "status": "SUCCESS",
+          "result_size": 573
+        },
+        {
+          "operation": "Multi-Table Join",
+          "status": "SUCCESS",
+          "result_size": 1135
+        },
+        {
+          "operation": "Concat Operation",
+          "status": "SUCCESS",
+          "result_size": 200
+        },
+        {
+          "operation": "Index Join",
+          "status": "SUCCESS",
+          "result_size": 1000
+        }
+      ]
+    },
+    {
+      "test_name": "NaN-Handling und Data-Cleaning",
+      "timestamp": "2025-11-07T07:01:02.396959",
+      "results": [
+        {
+          "operation": "NaN-Testdaten Creation",
+          "status": "SUCCESS",
+          "nan_count": 424
+        },
+        {
+          "operation": "NaN-Erkennung",
+          "status": "SUCCESS",
+          "columns_with_nan": 5
+        },
+        {
+          "operation": "Drop NaN Rows",
+          "status": "SUCCESS",
+          "original_rows": 1000,
+          "cleaned_rows": 733
+        },
+        {
+          "operation": "Drop NaN Columns",
+          "status": "SUCCESS",
+          "original_columns": 6,
+          "cleaned_columns": 6
+        },
+        {
+          "operation": "Fill NaN Values",
+          "status": "SUCCESS",
+          "nan_after_fill": 100
+        },
+        {
+          "operation": "Data Quality Checks",
+          "status": "SUCCESS",
+          "duplicates": 0,
+          "unique_genders": 2
+        }
+      ]
+    },
+    {
+      "test_name": "Performance bei optimierten Datasets",
+      "timestamp": "2025-11-07T07:01:02.920674",
+      "results": [
+        {
+          "operation": "Performance bei optimierten Datasets",
+          "status": "FAILED",
+          "error": "Cannot generate range with start=1577836800000000000 and periods=100000"
+        }
+      ]
+    },
+    {
+      "test_name": "Export-Funktionen",
+      "timestamp": "2025-11-07T07:01:03.441913",
+      "results": [
+        {
+          "operation": "CSV Export",
+          "status": "SUCCESS",
+          "file_size_kb": 51.96,
+          "export_time_seconds": 0.008
+        },
+        {
+          "operation": "CSV Import",
+          "status": "SUCCESS",
+          "imported_rows": 1000,
+          "import_time_seconds": 0.003
+        },
+        {
+          "operation": "JSON Export",
+          "status": "SUCCESS",
+          "file_size_kb": 194.44,
+          "export_time_seconds": 0.003
+        },
+        {
+          "operation": "Excel Export",
+          "status": "SUCCESS",
+          "file_size_kb": 48.43,
+          "export_time_seconds": 0.391,
+          "sheets": 2
+        }
+      ]
+    }
+  ],
+  "summary": {
+    "successful_tests": 6,
+    "partial_tests": 0,
+    "failed_tests": 1,
+    "total_tests": 7
+  }
+}
