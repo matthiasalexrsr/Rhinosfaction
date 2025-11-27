@@ -1,0 +1,51 @@
+{
+  "external_libraries": {
+    "total_tested": 24,
+    "successful": 16,
+    "failed": 8,
+    "errors": [
+      "❌ PySide6.QtWidgets: module 'PySide6' has no attribute 'QtWidgets' :)",
+      "❌ PySide6.QtCore: module 'PySide6' has no attribute 'QtCore' :)",
+      "❌ PySide6.QtGui: module 'PySide6' has no attribute 'QtGui' :)",
+      "❌ matplotlib.pyplot: module 'matplotlib' has no attribute 'pyplot'",
+      "❌ psutil: No module named 'psutil'",
+      "❌ fuzzywuzzy: No module named 'fuzzywuzzy'",
+      "❌ pyotp: No module named 'pyotp'",
+      "❌ qrcode: No module named 'qrcode'"
+    ]
+  },
+  "windows_specific": {
+    "total_tested": 5,
+    "successful": 5,
+    "failed": 0,
+    "available_on_platform": false,
+    "errors": []
+  },
+  "local_modules": {
+    "total_tested": 20,
+    "successful": 15,
+    "failed": 5,
+    "errors": [
+      "❌ ui.main_window: unmatched ')' (custom_report_builder.py, line 528)",
+      "❌ core.audit: No module named 'core.input_validator'",
+      "❌ core.reports: No module named 'core.patient_model'",
+      "❌ core.search: No module named 'fuzzywuzzy'",
+      "❌ core.backup.backup_service: No module named 'atomicwrites'"
+    ]
+  },
+  "error_handling": {
+    "total_tested": 2,
+    "successful": 2,
+    "failed": 0,
+    "errors": []
+  },
+  "circular_dependencies": {
+    "total_tested": 2,
+    "successful": 1,
+    "failed": 1,
+    "circular_deps_found": [],
+    "errors": [
+      "ui.main_window Import-Fehler: unmatched ')' (custom_report_builder.py, line 528)"
+    ]
+  }
+}

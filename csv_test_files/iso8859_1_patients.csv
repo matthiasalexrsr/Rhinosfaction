@@ -1,0 +1,6 @@
+patient_id,lastname,firstname,gender,dob,op_date,technique,nose_shape,op_duration_min,blood_loss_ml,satisfaction_vas
+P001,Müller,Max,m,1985-03-15,2024-01-15,Septum-Resektion,Klassisch,120,50,8.5
+P002,Schmidt,Anna,w,1990-07-22,2024-02-10,Rhinoplastik,Operation,95,30,9.2
+P003,Weber,Peter,m,1988-11-08,2024-03-05,Septumplastik,Natürlich,110,45,7.8
+P004,Schäfer,Emma,w,1992-01-30,2024-01-20,Tip-Refinement,Fein,75,20,8.9
+P005,Wagner,Tobias,m,1987-09-12,2024-02-28,Endoskopisch,Minimal,85,35,8.1

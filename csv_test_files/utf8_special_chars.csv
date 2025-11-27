@@ -1,0 +1,6 @@
+patient_id,lastname,firstname,gender,dob,op_date,technique,nose_shape,op_duration_min,blood_loss_ml,satisfaction_vas
+P006,García,Lucía,w,1991-04-18,2024-03-12,Septum-Resektion,Clásica,130,55,8.7
+P007,Østergård,Mikkel,m,1989-12-03,2024-01-25,Rhinoplastik,Naturlig,105,40,9.0
+P008,Ćurić,Ana,w,1993-06-14,2024-02-15,Septumplastik,Prirodno,90,25,8.3
+P009,Müller,Jürgen,m,1986-08-27,2024-03-20,Tip-Refinement,Klassisch,115,50,7.9
+P010,Sørensen,Frederik,m,1994-02-11,2024-01-08,Endoskopisch,Minimal,80,30,8.6

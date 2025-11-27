@@ -1,0 +1,10 @@
+{
+  "timestamp": "2025-11-07T06:46:22.678491",
+  "total_tests": 23,
+  "passed": 21,
+  "failed": 2,
+  "errors": [
+    "app.py: No module named 'atomicwrites'",
+    "ui.main_window.MainWindow: No module named 'atomicwrites'"
+  ]
+}

@@ -1,0 +1,262 @@
+# Python Syntax & Code-Style Konfiguration für Rhinoplastik App
+# Version: 1.0
+# Erstellt: 2025-11-07
+
+# =============================================================================
+# PYTHON VERSION ANFORDERUNGEN
+# =============================================================================
+python_requires = ">=3.8"
+supported_versions = ["3.8", "3.9", "3.10", "3.11", "3.12"]
+
+# =============================================================================
+# CODE-STYLE REGELN (PEP 8 + Projekt-spezifische Anpassungen)
+# =============================================================================
+style_rules:
+  line_length: 120  # Empfohlen: max 120 Zeichen (statt 79 von PEP 8)
+  indentation: 4    # 4 Spaces für Indentation
+  encoding: "utf-8" # UTF-8 für alle Dateien
+  newline: "\n"     # Unix-style line endings
+  
+  # Verbotene Patterns
+  forbidden:
+    - "print("        # Kein print als Statement
+    - "exec("         # Kein exec()
+    - "import *"      # Wildcard imports
+    - "raise Exception"  # Spezifische Exception-Klassen
+    - "except:"       # Bloße except-Klauseln
+
+# =============================================================================
+# IMPORT-REGELN
+# =============================================================================
+import_rules:
+  # Reihenfolge der Imports (isort-Standard)
+  sections:
+    - "future"        # __future__ imports
+    - "standard"      # Standard library
+    - "thirdparty"    # Third-party packages
+    - "local"         # Local application
+  
+  # Erlaubte Import-Patterns
+  allowed_patterns:
+    - "from . import *"        # Relative Wildcard in __init__.py
+    - "import typing as t"     # Typing-Aliases
+    - "from typing import *"   # Typing wildcard (in type stubs)
+  
+  # Verbotene Import-Patterns
+  forbidden_patterns:
+    - "import re as regex"     # Unnötige Aliases für Standard-Library
+    - "from os.path import *"  # Zu spezifische Wildcards
+    - "import sys as system"   # Verwirrende Aliases
+
+# =============================================================================
+# SYNTAX-VALIDIERUNG CHECKLISTE
+# =============================================================================
+validation_checks:
+  syntax:
+    - name: "AST_Parsing"
+      tool: "ast.parse()"
+      required: true
+    
+    - name: "Indentation_Check"
+      tool: "Regex"
+      required: true
+      
+    - name: "Line_Length_Check"
+      tool: "Regex" 
+      max_length: 120
+      required: true
+      
+    - name: "Trailing_Whitespace_Check"
+      tool: "Regex"
+      required: true
+      
+    - name: "UTF8_Encoding_Check"
+      tool: "Chardet"
+      required: true
+  
+  imports:
+    - name: "Import_Availability"
+      tool: "importlib.util"
+      required: true
+      
+    - name: "Circular_Import_Check"
+      tool: "Custom"
+      required: false
+      
+    - name: "Unused_Import_Check"
+      tool: "Flake8"
+      required: false
+  
+  security:
+    - name: "Exec_Usage_Check"
+      tool: "Regex"
+      required: true
+      
+    - name: "Eval_Usage_Check"
+      tool: "Regex"
+      required: true
+
+# =============================================================================
+# AUTOMATISCHE TOOL-KONFIGURATION
+# =============================================================================
+tools:
+  # Black (Code Formatter)
+  black:
+    line_length: 120
+    target_version: ["py38", "py39", "py310", "py311", "py312"]
+    include: '\.pyi?$'
+    extend_exclude = '''
+    /(
+      build
+      | dist
+      | __pycache__
+      | .git
+      | node_modules
+    )/
+    '''
+  
+  # isort (Import Sorter)
+  isort:
+    profile: "black"
+    line_length: 120
+    multi_line_output: 3
+    include_trailing_comma: true
+    force_grid_wrap: 0
+    use_parentheses: true
+    ensure_newline_before_comments: true
+    skip_glob = ["**/build/**", "**/dist/**", "**/__pycache__/**"]
+  
+  # Flake8 (Linter)
+  flake8:
+    max-line-length: 120
+    extend-ignore = [
+      "E203",  # whitespace before ':'
+      "E501",  # line too long (handled by black)
+      "W503",  # line break before binary operator
+    ]
+    exclude = [
+      ".git",
+      "__pycache__",
+      "build",
+      "dist",
+      "*.egg-info",
+      ".venv",
+      "venv",
+    ]
+  
+  # mypy (Type Checker)
+  mypy:
+    python_version: "3.8"
+    warn_return_any: true
+    warn_unused_configs: true
+    disallow_untyped_defs: false  #渐进式类型检查
+    check_untyped_defs: true
+    no_implicit_optional: true
+    warn_redundant_casts: true
+
+# =============================================================================
+# PRÄ-COMMIT HOOKS
+# =============================================================================
+pre_commit_hooks:
+  - id: "black"
+    language_version: "python3"
+    args: ["--line-length=120"]
+  
+  - id: "isort"
+    args: ["--profile", "black", "--line-length=120"]
+  
+  - id: "flake8"
+    args: ["--max-line-length=120"]
+  
+  - id: "trailing-whitespace"
+    args: ["--markdown-linebreak-ext=md"]
+  
+  - id: "end-of-file-fixer"
+  
+  - id: "check-yaml"
+  
+  - id: "check-added-large-files"
+    args: ["--maxkb=1000"]
+
+# =============================================================================
+# CI/CD INTEGRATION
+# =============================================================================
+ci_cd:
+  github_actions:
+    python_version: "3.12"
+    steps:
+      - name: "Install dependencies"
+        run: |
+          pip install -r requirements.txt
+          pip install black isort flake8 mypy
+      
+      - name: "Code formatting check (black)"
+        run: "black --check --line-length=120 ."
+      
+      - name: "Import sorting check (isort)"
+        run: "isort --check-only --profile black ."
+      
+      - name: "Linting (flake8)"
+        run: "flake8 --max-line-length=120 ."
+      
+      - name: "Type checking (mypy)"
+        run: "mypy . --ignore-missing-imports"
+      
+      - name: "Run tests"
+        run: "python -m pytest"
+
+# =============================================================================
+# ENTWICKLER-RICHTLINIEN
+# =============================================================================
+developer_guidelines:
+  naming:
+    variables: "snake_case"
+    functions: "snake_case"
+    classes: "PascalCase"
+    constants: "UPPER_SNAKE_CASE"
+    private_methods: "_leading_underscore"
+    magic_methods: "__double_leading_underscore"
+  
+  documentation:
+    docstrings: "Google Style"
+    required_for:
+      - "Public functions"
+      - "Classes"
+      - "Modules"
+    optional_for:
+      - "Private functions"
+      - "Simple variables"
+  
+  error_handling:
+    - "Use specific exception types"
+    - "Log exceptions with context"
+    - "Don't catch bare Exception"
+    - "Use context managers where appropriate"
+
+# =============================================================================
+# AUSNAHMEN & LEGACY-CODE
+# =============================================================================
+exceptions:
+  # Legacy-Dateien, die von den Regeln ausgenommen sind
+  legacy_files:
+    - "test_legacy_compatibility.py"
+    - "migration_helpers.py"
+    - "deprecated_features.py"
+  
+  # Temporäre Ausnahmen während Refactoring
+  temporary_exceptions:
+    - "file_path": "core/refactoring_in_progress.py"
+      "reason": "Active refactoring"
+      "until": "2025-12-31"
+
+# =============================================================================
+# VALIDIERUNGS-SKRIPT
+# =============================================================================
+# Dieses Skript kann zur Validierung verwendet werden:
+# python syntax_validator.py
+#
+# Prüft:
+# - Syntax-Korrektheit
+# - Import-Verfügbarkeit
+# - Code-Formatierung
+# - Sicherheits-Richtlinien

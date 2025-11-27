@@ -1,0 +1,168 @@
+{
+  "timestamp": "2025-11-06T20:45:17.720987",
+  "tests": {
+    "tab_order_benutzername-feld_hat_focus": {
+      "passed": false,
+      "description": "Dialog: Benutzername-Feld hat Focus",
+      "timestamp": "2025-11-06T20:45:19.503433"
+    },
+    "tab_order_tab-order_username_->_password": {
+      "passed": true,
+      "description": "Dialog: Tab-Order Username -> Password",
+      "timestamp": "2025-11-06T20:45:19.503545"
+    },
+    "tab_order_tab-order_password_->_login": {
+      "passed": true,
+      "description": "Dialog: Tab-Order Password -> Login",
+      "timestamp": "2025-11-06T20:45:19.503584"
+    },
+    "tab_order_tab-order_login_->_cancel": {
+      "passed": true,
+      "description": "Dialog: Tab-Order Login -> Cancel",
+      "timestamp": "2025-11-06T20:45:19.503609"
+    },
+    "tab_order_escape-taste_funktioniert": {
+      "passed": true,
+      "description": "Dialog: Escape-Taste funktioniert",
+      "timestamp": "2025-11-06T20:45:19.503631"
+    },
+    "shortcuts_test": {
+      "passed": false,
+      "description": "Fehler: unsupported operand type(s) for /: 'str' and 'str'",
+      "timestamp": "2025-11-06T20:45:19.509557"
+    },
+    "tooltips_username-input_hat_tooltip": {
+      "passed": true,
+      "description": "Login: Username-Input hat Tooltip",
+      "timestamp": "2025-11-06T20:45:19.511521"
+    },
+    "tooltips_password-input_hat_tooltip": {
+      "passed": true,
+      "description": "Login: Password-Input hat Tooltip",
+      "timestamp": "2025-11-06T20:45:19.511605"
+    },
+    "tooltips_login-button_hat_tooltip": {
+      "passed": true,
+      "description": "Login: Login-Button hat Tooltip",
+      "timestamp": "2025-11-06T20:45:19.511637"
+    },
+    "tooltips_cancel-button_hat_tooltip": {
+      "passed": true,
+      "description": "Login: Cancel-Button hat Tooltip",
+      "timestamp": "2025-11-06T20:45:19.511664"
+    },
+    "tooltips_status-label_ist_zugänglich": {
+      "passed": true,
+      "description": "Login: Status-Label ist zugänglich",
+      "timestamp": "2025-11-06T20:45:19.511685"
+    },
+    "slider_update_10": {
+      "passed": true,
+      "description": "Slider auf 10 gesetzt",
+      "timestamp": "2025-11-06T20:45:19.512098"
+    },
+    "slider_update_50": {
+      "passed": true,
+      "description": "Slider auf 50 gesetzt",
+      "timestamp": "2025-11-06T20:45:19.512135"
+    },
+    "slider_update_100": {
+      "passed": true,
+      "description": "Slider auf 100 gesetzt",
+      "timestamp": "2025-11-06T20:45:19.512160"
+    },
+    "dashboard_accessibility_name": {
+      "passed": true,
+      "description": "Dashboard hat Accessibility-Name",
+      "timestamp": "2025-11-06T20:45:19.517842"
+    },
+    "dashboard_accessibility_description": {
+      "passed": true,
+      "description": "Dashboard hat Accessibility-Beschreibung",
+      "timestamp": "2025-11-06T20:45:19.517931"
+    },
+    "screen_reader_dialog_hat_accessiblename": {
+      "passed": true,
+      "description": "Accessibility: Dialog hat AccessibleName",
+      "timestamp": "2025-11-06T20:45:19.520013"
+    },
+    "screen_reader_dialog_hat_accessibledescription": {
+      "passed": true,
+      "description": "Accessibility: Dialog hat AccessibleDescription",
+      "timestamp": "2025-11-06T20:45:19.520097"
+    },
+    "screen_reader_username-input_hat_accessiblename": {
+      "passed": true,
+      "description": "Accessibility: Username-Input hat AccessibleName",
+      "timestamp": "2025-11-06T20:45:19.520129"
+    },
+    "screen_reader_password-input_hat_accessiblename": {
+      "passed": true,
+      "description": "Accessibility: Password-Input hat AccessibleName",
+      "timestamp": "2025-11-06T20:45:19.520161"
+    },
+    "screen_reader_login-button_hat_accessiblename": {
+      "passed": true,
+      "description": "Accessibility: Login-Button hat AccessibleName",
+      "timestamp": "2025-11-06T20:45:19.520182"
+    },
+    "screen_reader_cancel-button_hat_accessiblename": {
+      "passed": true,
+      "description": "Accessibility: Cancel-Button hat AccessibleName",
+      "timestamp": "2025-11-06T20:45:19.520200"
+    },
+    "contrast_grüner_button_(#2e7d32)_vs_weiß": {
+      "passed": true,
+      "description": "Kontrast-Verhältnis: 5.13:1",
+      "timestamp": "2025-11-06T20:45:19.520498"
+    },
+    "contrast_dunkler_text_(#333)_vs_hell_(#f5f5f5)": {
+      "passed": true,
+      "description": "Kontrast-Verhältnis: 11.59:1",
+      "timestamp": "2025-11-06T20:45:19.520528"
+    },
+    "contrast_status-text_(#d32f2f)_vs_hell_(#f5f5f5)": {
+      "passed": true,
+      "description": "Kontrast-Verhältnis: 4.57:1",
+      "timestamp": "2025-11-06T20:45:19.520550"
+    },
+    "contrast_sekundärer_text_(#666)_vs_hell_(#f5f5f5)": {
+      "passed": true,
+      "description": "Kontrast-Verhältnis: 5.27:1",
+      "timestamp": "2025-11-06T20:45:19.520570"
+    },
+    "integration_accessibility-mixin_verfügbar": {
+      "passed": true,
+      "description": "Mixin: Accessibility-Mixin verfügbar",
+      "timestamp": "2025-11-06T20:45:19.522382"
+    },
+    "integration_form-field-setup-methode": {
+      "passed": true,
+      "description": "Mixin: Form-Field-Setup-Methode",
+      "timestamp": "2025-11-06T20:45:19.522447"
+    },
+    "integration_slider-setup-methode": {
+      "passed": true,
+      "description": "Mixin: Slider-Setup-Methode",
+      "timestamp": "2025-11-06T20:45:19.522476"
+    },
+    "integration_keyboard-shortcuts-methode": {
+      "passed": true,
+      "description": "Mixin: Keyboard-Shortcuts-Methode",
+      "timestamp": "2025-11-06T20:45:19.522497"
+    },
+    "integration_tab-navigation-methode": {
+      "passed": true,
+      "description": "Mixin: Tab-Navigation-Methode",
+      "timestamp": "2025-11-06T20:45:19.522516"
+    }
+  },
+  "summary": {
+    "total_tests": 31,
+    "passed_tests": 29,
+    "failed_tests": 2,
+    "success_rate": "93.5%",
+    "overall_rating": "Hervorragend (A+)"
+  },
+  "accessibility_score": 93.54838709677419
+}

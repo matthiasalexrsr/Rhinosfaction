@@ -1,0 +1,8 @@
+patient_id,lastname,firstname,gender,dob,op_date,technique
+P011,Schmidt,Invalid"Quotes,m,1990-01-01,2024-01-01,Rhinoplastik
+P012,Weber,Line1
+Line2,m,1988-02-15,2024-02-15,Septum-Resektion
+P013,Schäfer,Emma,w,1992-03-20,2024-03-20,Tip-Refinement
+P014,Missing,Lastname,m,1987-04-25,2024-04-25
+P015,Wagner,,Tobias,m,1986-05-30,2024-05-30,Endoskopisch
+P016,Null,Field,Test,NULL,2024-06-10,2024-06-10,Invalid-Technique
